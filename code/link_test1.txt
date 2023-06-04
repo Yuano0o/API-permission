@@ -1,0 +1,167 @@
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\media\AudioManager.java
+Permission: android.Manifest.permission#MODIFY_AUDIO_SETTINGS
+Method Name: void startBluetoothSco()
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\media\AudioManager.java
+Permission: android.Manifest.permission#MODIFY_AUDIO_SETTINGS
+Method Name: void startBluetoothScoVirtualCall()
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\media\AudioManager.java
+Permission: android.Manifest.permission#MODIFY_AUDIO_SETTINGS
+Method Name: void setBluetoothScoOn(boolean on)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\service\carrier\CarrierService.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: void notifyCarrierNetworkChange(boolean active)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#READ_PHONE_STATE
+Method Name: PhoneAccountHandle getDefaultOutgoingPhoneAccount(String uriScheme)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#READ_PHONE_STATE
+Method Name: List<PhoneAccountHandle> getCallCapablePhoneAccounts()
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+Method Name: boolean setDefaultDialer(String packageName)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#READ_PHONE_STATE
+Method Name: boolean isVoiceMailNumber(PhoneAccountHandle accountHandle, String number)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#READ_PHONE_STATE
+Method Name: String getVoiceMailNumber(PhoneAccountHandle accountHandle)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#READ_PHONE_STATE
+Method Name: String getLine1Number(PhoneAccountHandle accountHandle)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#READ_PHONE_STATE
+Method Name: boolean isInCall()
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#READ_PHONE_STATE
+Method Name: boolean isInManagedCall()
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+Method Name: void silenceRinger()
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+Method Name: boolean handleMmi(String dialString)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+Method Name: boolean handleMmi(String dialString, PhoneAccountHandle accountHandle)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+Method Name: Uri getAdnUriForPhoneAccount(PhoneAccountHandle accountHandle)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+Method Name: void cancelMissedCallsNotification()
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Permission: android.Manifest.permission#CALL_PHONE
+Method Name: Intent createManageBlockedNumbersIntent()
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\CarrierConfigManager.java
+Permission: android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE
+Method Name: void notifyConfigChangedForSubId(int subId)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\SmsManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+Method Name: void sendTextMessageWithSelfPermissions(
+            String destinationAddress, String scAddress, String text,
+            PendingIntent sentIntent, PendingIntent deliveryIntent, boolean persistMessage)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\SmsManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+Method Name: void injectSmsPdu(byte[] pdu, String format, PendingIntent receivedIntent)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\SmsManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+Method Name: void sendDataMessage(
+            String destinationAddress, String scAddress, short destinationPort,
+            byte[] data, PendingIntent sentIntent, PendingIntent deliveryIntent)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE
+Method Name: void setVisualVoicemailSmsFilterSettings(VisualVoicemailSmsFilterSettings settings)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#SEND_SMS SEND_SMS
+Method Name: void sendVisualVoicemailSms(String number, int port, String text,
+            PendingIntent sentIntent)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+Method Name: void setDataActivationState(int subId, int activationState)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: IccOpenLogicalChannelResponse iccOpenLogicalChannel(String AID, int p2)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: IccOpenLogicalChannelResponse iccOpenLogicalChannel(int subId, String AID, int p2)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: boolean iccCloseLogicalChannel(int channel)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: boolean iccCloseLogicalChannel(int subId, int channel)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: String iccTransmitApduLogicalChannel(int channel, int cla,
+            int instruction, int p1, int p2, int p3, String data)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: String iccTransmitApduLogicalChannel(int subId, int channel, int cla,
+            int instruction, int p1, int p2, int p3, String data)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: String iccTransmitApduBasicChannel(int cla,
+            int instruction, int p1, int p2, int p3, String data)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: String iccTransmitApduBasicChannel(int subId, int cla,
+            int instruction, int p1, int p2, int p3, String data)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: byte[] iccExchangeSimIO(int fileID, int command, int p1, int p2, int p3,
+            String filePath)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: byte[] iccExchangeSimIO(int subId, int fileID, int command, int p1, int p2,
+            int p3, String filePath)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: String sendEnvelopeWithStatus(String content)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: String sendEnvelopeWithStatus(int subId, String content)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: String nvReadItem(int itemID)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: boolean nvWriteItem(int itemID, String itemValue)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: boolean nvWriteCdmaPrl(byte[] preferredRoamingList)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: boolean nvResetConfig(int resetType)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: int getPreferredNetworkType(int subId)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: void setNetworkSelectionModeAutomatic(int subId)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: CellNetworkScanResult getCellNetworkScanResults(int subId)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: boolean setNetworkSelectionModeManual(int subId, OperatorInfo operator,
+            boolean persistSelection)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: boolean setPreferredNetworkType(int subId, int networkType)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#CALL_PHONE
+Method Name: void sendUssdRequest(String ussdRequest,
+                                final UssdResponseCallback callback, Handler handler)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: void setDataEnabled(boolean enable)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: void setSimPowerState(boolean powerUp)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: void setSimPowerStateForSlot(int slotIndex, boolean powerUp)
+file_path: D:/CLASS/1 Now/texwork/shared/permission/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+Method Name: void carrierActionSetMeteredApnsEnabled(int subId, boolean enabled)
+0
