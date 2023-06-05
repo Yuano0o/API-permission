@@ -1,6 +1,7 @@
 #import sys
 import os
 import re
+import json
 
 """
 TODO: 分别提取 1.@RequiresPermission 和 2.{@link} 两种注解的权限, 保存为JSON格式 (同一个JSON)
@@ -13,28 +14,30 @@ def requires_permission(file_path):
     1. 匹配@RequiresPermission注解
 
     TODO: anyof 和 allof 的处理, 统一用,分隔
+
+    DONE: debug, require_test6_26.txt
     
     link DONE 1.2: 匹配import 存储为键值表 
     """
     with open(file_path, 'r') as file:
         content = file.read()
 
-        #pattern = r'@RequiresPermission\((.*?)\)\s*public\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?(.*?)\(' # NOTE 标准匹配 
-        #pattern = r'@RequiresPermission\((.*?)\)\s*public\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))' # NOTE 去除强制匹配
-        
-        # NOTE test3
-        #pattern = r'@RequiresPermission\((.*?)\)\s*(?:@\w+\([\w.]+\)\s*)?\s*(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  ## NOTE 匹配中间可能的注解
-           
-        # NOTE test1
-        #pattern = r'@RequiresPermission\((.*?)\)\s*(?:@\w+(\([\w.]+\))?\s*)?\s*(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
-        
-        # NOTE test2
-        #pattern = r'@RequiresPermission\(([a-zA-Z_.]*)\)\s*(?:@\w+(\([\w.]+\))?\s*)?\s*(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
-        
-        # NOTE test4
-        pattern = r'@RequiresPermission\(([a-zA-Z_.]*)\)\s*(?:@\w+(?:\([\w.]+\))?\s*)?\s*(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
-        # NOTE: 匹配@RequiresPermission(...) + 可能的注解@xxx()/@xxx + java修饰符若干 + 方法名 + 参数
+        # NOTE: require_test3_26.txt
+        #pattern = r'@RequiresPermission\(([\w.={}]+)\)\s*(?:@\w+(?:\([\w.={}]+\))?\s*)?\s*(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
 
+        # NOTE: require_test4_26.txt
+        # pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w.]+\))?\s*)?\s*(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
+
+        # NOTE: require_test5_26.txt
+        #pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w._]+\))?\s*)?\s*(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
+
+        # NOTE: require_test1_26.txt
+        #pattern = r'@RequiresPermission\((.*?)\)\s*(?:@\w+(?:\(.*?\))?\s*)?\s*(?:public|private|protected|default)?\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
+
+        # NOTE: require_test6_26.txt, 去除强制匹配, 匹配anyof和allof, default
+        pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w._]+\))?\s*)?\s*(?:public|private|protected|default)?\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
+        # NOTE: 匹配@RequiresPermission(...^*) + 可能的注解@xxx()/@xxx + java修饰符若干/无修饰符 + 返回值,方法名,参数(并去除;*=的强制匹配)
+        # NOTE: 去除强制匹配: [^;*=]*?(匹配方法,除去变量,注释)   [^*](除去注释)
         matches = re.findall(pattern, content, re.DOTALL) 
 
         if not matches: # 如果没有匹配到, 则返回
@@ -50,17 +53,18 @@ def requires_permission(file_path):
             permissions.append((method_name, permission_string))
             
             #将permission和method_name保存到text.txt中
-            with open('test4.txt', 'a') as file:
-                file.write(f'Path:{file_path}\nMethod: {method_name}\nPermission: {permission_string}\n\n')
+            with open('require_test6_26.txt', 'a') as file:
+                file.write(f'Path: {file_path}\nMethod: {method_name}\nPermission: {permission_string}\n\n')
 
 
         return permissions
 
 
-
 def link_permission(file_path):
     """
     2.匹配{@link android.Manifest.permission#}
+
+    TODO: debug
 
     DONE: 匹配多种模式 如 require the {@link android.Manifest.permission#NFC} permission.
     DONE: 匹配方法名 ok
@@ -70,11 +74,16 @@ def link_permission(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
 
-        #pattern = r'/\*\*(.*?)\*/\s*.*?(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?(.*?\(.*?\))' 
-        
-        # NOTE link_test1.txt
-        pattern = r'/\*\*(.*?)\*/\s*(?:@\w+\([\w.]+\)\s*)?(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?(.*?\(.*?\))'
-        # NOTE 匹配/** */后的第一个method,去除强制匹配,匹配中间可能的注解
+        # NOTE link_test1_26.txt
+        # 匹配/** */后的第一个method
+        # pattern = r'/\*\*(.*?)\*/\s*(?:@\w+(?:\([\w.]+\))?\s*)?(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))' 
+        # NOTE: 匹配/** */ + 可能的注解@xxx()/@xxx + java修饰符若干(防止强制匹配) + 返回值,方法名,参数(并去除;*=的强制匹配)
+
+        #pattern = r'/\*\*(.*?)\*/\s*(?:@\w+(?:\([\w.]+\))?\s*)?(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))\s*\{' 
+        # NOTE link_test2_26
+
+        pattern = r'/\*\*(.*?)\*/\s*(?:@\w+(?:\([\w._={}]+\))?\s*)?(?:public|private|protected|default)?\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))\s*' 
+        # NOTE link_test3_26
 
         matches = re.findall(pattern, content, re.DOTALL) 
 
@@ -90,6 +99,12 @@ def link_permission(file_path):
                 print("Permission:", permission)
                 print("Method Name:", method_name)
 
+                #将permission和method_name保存到text.txt中
+                with open('link_test3_26.txt', 'a') as file:
+                    file.write(f'Path: {file_path}\nMethod: {method_name}\nPermission: {permission}\n\n')
+
+            
+
 def get_files(folder_path):
     """
     3.读取文件夹中的所有.java文件
@@ -103,9 +118,6 @@ def get_files(folder_path):
                 requires_permission(file_path)
                 #link_permission(file_path) #NOTE check 6.4 in 
 
-                #files.append(file_path)
-                #print(file_path)
-                #print(requires_permission)
     return 0 #files # 返回文件路径列表
 
 
@@ -117,11 +129,20 @@ def save_to_file(permissions):
         for method_name, permission in permissions:
             file.write(f'Method: {method_name}\tPermission: {permission}\n')
 
+data = {}
+json_data = json.dumps(data)
 
 # 示例 
 # or folder_path = sys.argv[1]
 file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/' #/android/service/oemlock/OemLockManager.java'
 print(get_files(file_path))
+
+# for api_level in range(26, 33):
+#     folder_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-{level}-master/'.format(level=api_level) 
+#     json_data["path"][api_level-26] = folder_path
+#     permissions = get_files(folder_path)
+    #save_to_file(permissions)
+
 
 
 def match_import(code):
