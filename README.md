@@ -1,6 +1,6 @@
 # Android API-permission mapping methods
 
-- Not comprehensive, but covers state-of-the-art methods
+- Not comprehensive, but covers **state-of-the-art** methods
 	- [12 PScout] \[1]
 	- [16 Axplorer] \[2]
 	- [18 ARCADE] \[4]
@@ -11,26 +11,26 @@
 
 ## Method, Code and Dataset
 
-- [12 PScout] (state-of-the-art) [1]
-	- https://security.csl.toronto.edu/pscout/datasets/
-		- Code & Dataset: API level 14-22 (Android 4.11-5.11)
-- [16 Axplorer] (state-of-the-art)  [2]
-	- https://github.com/reddr/axplorer/tree/master/permissions 
-		- Dataset: API level 16-25 
-- [18 ARCADE] (state-of-the-art) [4]
-	- https://arcade-android.github.io/arcade/
-		- Dataset: API level 23-25
+- [12 PScout] \[1]
+	- state-of-the-art 
+	- [Code & Dataset](https://security.csl.toronto.edu/pscout/): API level 14-22 (Android 4.11-5.11)
+- [16 Axplorer] \[2]
+	- state-of-the-art
+	- [Dataset](https://github.com/reddr/axplorer): API level 16-25 
+- [18 ARCADE] \[4]
+	- state-of-the-art
+	- [Dataset](https://arcade-android.github.io/arcade/): API level 23-25
 - [19 PerRec] \[5]
 	- Code & Dataset
-- [21 NATIDROID] (native library) \[8]
-	- https://natidroid.github.io/
-		- Code & Dataset: API level 24-27+29
-- [21 PSGen] (permission specification) \[7] 
-	- https://github.com/moonZHH/PSGen 
-		- Code & Dataset: Android 9.0, 10.0, and 11.0
-- [22 APMiner] (API-DP) [9]
-	- [https://github.com/ARP-issues/ARP-DP/tree/master/mappings](https://github.com/ARP-issues/ARP-DP/tree/master/mappings)
-		- Code & Dataset: API level 23-30
+- [21 NATIDROID] \[8]
+	- native library
+	- [Code & Dataset](https://natidroid.github.io/): API level 24-27+29
+- [21 PSGen] \[7] 
+	- permission specification
+	- [Code & Dataset](https://github.com/moonZHH/PSGen): Android 9.0, 10.0, and 11.0
+- [22 APMiner] \[9]
+	- API-DP
+	- [Code & Dataset](https://github.com/ARP-issues/ARP-DP): API level 23-30
 
 # Literature Notes
 
