@@ -7,6 +7,11 @@ import json
 TODO: 分别提取 1.@RequiresPermission 和 2.{@link} 两种注解的权限, 保存为JSON格式 (同一个JSON)
 TODO: 保留匹配的完整/原始match字符串 以便检查匹配是否正确 
 TODO: 最后处理成explorer的格式
+
+6.6
+TODO: 处理method_name的格式, replace("\n"), split(" "), 单独提取括号内的参数(+split(","))
+TODO: 处理permission的格式, replace(" "), split(","), 统一命名[explorer], 去重(link内部, link和require交集)
+TODO: 处理路径, 统一命名[explorer]
 """
 
 def requires_permission(file_path):
@@ -23,8 +28,8 @@ def requires_permission(file_path):
         content = file.read()
 
         # NOTE: require_test7_26.txt(the result is the same as test6)   
-        pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w._]+\))?\s*)?\s*(?:public\s+|private\s+|protected\s+|default\s+)?(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
-        # NOTE: 匹配@RequiresPermission(...^*) + 可能的注解@xxx()/@xxx + java修饰符若干/无修饰符 + 返回值,方法名,参数(并去除;*=的强制匹配)  #(?:abstract\s+)?
+        # pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w._]+\))?\s*)?\s*(?:public\s+|private\s+|protected\s+|default\s+)?(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
+        # NOTE: 匹配@RequiresPermission(...^*) + 可能的注解@xxx()/@xxx + java修饰符若干/无修饰符 + 返回值,方法名,参数(并去除;*=的强制匹配) 
         # NOTE: 去除强制匹配: [^;*=]*?(匹配方法,除去变量,注释)   [^*](除去注释)  匹配@中的anyof和allof  
 
         # NOTE: require_test8_26.txt(the methods matched are the same as test7)   
