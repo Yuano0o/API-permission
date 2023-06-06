@@ -13,7 +13,7 @@ def requires_permission(file_path):
     """
     1. 匹配@RequiresPermission注解
 
-    TODO: anyof 和 allof 的处理, 统一用,分隔
+    DONE: anyof 和 allof 的处理, 统一用,分隔
 
     DONE: debug, require_test6_26.txt
     
@@ -22,22 +22,16 @@ def requires_permission(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
 
-        # NOTE: require_test3_26.txt
-        #pattern = r'@RequiresPermission\(([\w.={}]+)\)\s*(?:@\w+(?:\([\w.={}]+\))?\s*)?\s*(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
+        # NOTE: require_test7_26.txt(the result is the same as test6)   
+        pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w._]+\))?\s*)?\s*(?:public\s+|private\s+|protected\s+|default\s+)?(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
+        # NOTE: 匹配@RequiresPermission(...^*) + 可能的注解@xxx()/@xxx + java修饰符若干/无修饰符 + 返回值,方法名,参数(并去除;*=的强制匹配)  #(?:abstract\s+)?
+        # NOTE: 去除强制匹配: [^;*=]*?(匹配方法,除去变量,注释)   [^*](除去注释)  匹配@中的anyof和allof  
 
-        # NOTE: require_test4_26.txt
-        # pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w.]+\))?\s*)?\s*(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
+        # NOTE: require_test8_26.txt(the methods matched are the same as test7)   
+        pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w._]+\))?\s*)?\s*(?:public\s+|private\s+|protected\s+|default\s+)?(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)?([^;*=]*?\(.*?\))'  
+        # NOTE: 匹配@RequiresPermission(...^*) + 可能的注解@xxx()/@xxx + java修饰符若干/无修饰符 + 关建字若干/无 + 返回值,方法名,参数(并去除;*=的强制匹配) 
+        # NOTE: 去除强制匹配: [^;*=]*?(匹配方法,除去变量,注释)   [^*](除去注释)  匹配@中的anyof和allof  
 
-        # NOTE: require_test5_26.txt
-        #pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w._]+\))?\s*)?\s*(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
-
-        # NOTE: require_test1_26.txt
-        #pattern = r'@RequiresPermission\((.*?)\)\s*(?:@\w+(?:\(.*?\))?\s*)?\s*(?:public|private|protected|default)?\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
-
-        # NOTE: require_test6_26.txt, 去除强制匹配, 匹配anyof和allof, default
-        pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w._]+\))?\s*)?\s*(?:public|private|protected|default)?\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))'  
-        # NOTE: 匹配@RequiresPermission(...^*) + 可能的注解@xxx()/@xxx + java修饰符若干/无修饰符 + 返回值,方法名,参数(并去除;*=的强制匹配)
-        # NOTE: 去除强制匹配: [^;*=]*?(匹配方法,除去变量,注释)   [^*](除去注释)
         matches = re.findall(pattern, content, re.DOTALL) 
 
         if not matches: # 如果没有匹配到, 则返回
@@ -47,13 +41,21 @@ def requires_permission(file_path):
         for match in matches:
             permission_string = match[0]
             method_name = match[1] # match[1]?
+
+            # NOTE: require_test9_26, (对require_test8_26处理anyof和allof)
+            pattern_of = r'\{(.*?)\}'
+            match_of = re.search(pattern_of, permission_string.replace("\n", ""), re.DOTALL)
+            if match_of:
+                permission_string = match_of.group(1).replace(" ", "")
+
+
             print("file_path:",file_path)
             print("Permission:", permission_string)
             print("Method Name:", method_name)
             permissions.append((method_name, permission_string))
             
             #将permission和method_name保存到text.txt中
-            with open('require_test6_26.txt', 'a') as file:
+            with open('require_test9_26.txt', 'a') as file:
                 file.write(f'Path: {file_path}\nMethod: {method_name}\nPermission: {permission_string}\n\n')
 
 
@@ -64,7 +66,7 @@ def link_permission(file_path):
     """
     2.匹配{@link android.Manifest.permission#}
 
-    TODO: debug
+    DONE: debug
 
     DONE: 匹配多种模式 如 require the {@link android.Manifest.permission#NFC} permission.
     DONE: 匹配方法名 ok
@@ -74,16 +76,15 @@ def link_permission(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
 
-        # NOTE link_test1_26.txt
+        # NOTE link_test6_26
         # 匹配/** */后的第一个method
-        # pattern = r'/\*\*(.*?)\*/\s*(?:@\w+(?:\([\w.]+\))?\s*)?(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))' 
+        # pattern = r'/\*\*(.*?)\*/\s*(?:@\w+(?:\([\w.={}]+\))?\s*)?(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))' 
         # NOTE: 匹配/** */ + 可能的注解@xxx()/@xxx + java修饰符若干(防止强制匹配) + 返回值,方法名,参数(并去除;*=的强制匹配)
 
-        #pattern = r'/\*\*(.*?)\*/\s*(?:@\w+(?:\([\w.]+\))?\s*)?(?:public|private|protected|default)\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))\s*\{' 
-        # NOTE link_test2_26
-
-        pattern = r'/\*\*(.*?)\*/\s*(?:@\w+(?:\([\w._={}]+\))?\s*)?(?:public|private|protected|default)?\s+(?:final\s+)?(?:synchronized\s+)?(?:native\s+)?([^;*=]*?\(.*?\))\s*' 
-        # NOTE link_test3_26
+        # NOTE link_test7_26 (the methods matched are the same as test7)   
+        # 匹配/** */后的第一个method
+        pattern = r'/\*\*(.*?)\*/\s*(?:@\w+(?:\([\w.={}]+\))?\s*)?(?:public|private|protected|default)\s+(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)?([^;*=]*?\(.*?\))' 
+        # NOTE: 匹配/** */ + 可能的注解@xxx()/@xxx + java修饰符若干(防止强制匹配) + 关建字若干/无 + 返回值,方法名,参数(并去除;*=的强制匹配)
 
         matches = re.findall(pattern, content, re.DOTALL) 
 
@@ -100,7 +101,7 @@ def link_permission(file_path):
                 print("Method Name:", method_name)
 
                 #将permission和method_name保存到text.txt中
-                with open('link_test3_26.txt', 'a') as file:
+                with open('link_test7_26.txt', 'a') as file:
                     file.write(f'Path: {file_path}\nMethod: {method_name}\nPermission: {permission}\n\n')
 
             
