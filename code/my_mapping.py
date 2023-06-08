@@ -8,10 +8,10 @@ TODO: 分别提取 1.@RequiresPermission 和 2.{@link} 两种注解的权限, �
 TODO: 保留匹配的完整/原始match字符串 以便检查匹配是否正确 
 TODO: 最后处理成explorer的格式
 
-6.6
-TODO: 处理method_name的格式, replace("\n"), split(" "), 单独提取括号内的参数(+split(","))
-TODO: 处理permission的格式, replace(" "), split(","), 统一命名[explorer], 去重(link内部, link和require交集)
-TODO: 处理路径, 统一命名[explorer]
+link: json.py 
+    TODO: 处理method_name的格式, replace("\n"), split(" "), 单独提取括号内的参数(+split(","))
+    TODO: 处理permission的格式, replace(" "), split(","), 统一命名[explorer], 去重(link内部, link和require交集)
+    TODO: 处理路径, 统一命名[explorer]
 """
 
 def requires_permission(file_path):
