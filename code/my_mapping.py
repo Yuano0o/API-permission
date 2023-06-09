@@ -154,6 +154,7 @@ print(get_files(file_path))
 def match_import(code):
     """
     DNOE 1.2: 匹配import 存储为键值表
+    TODO: 存储 {"String":"java.lang.String"}
     """
     pattern = r'import\s+(\S+)\s*;' #\S+表示匹配任意非空白字符
     matches = re.findall(pattern, code)

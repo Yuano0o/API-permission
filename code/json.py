@@ -1,12 +1,11 @@
 #import sys
 import os
 import re
-
 import json
 
 
 """
-以requires_permission为例, 对每个.java文件进行处理, 返回一个dict2, 格式为{method_name: {file_path:..., 'permission':...}}
+以requires_permission为例, 对每个.java文件进行处理, 返回一个method_dic, 格式为{method_name: {file_path:..., 'permission':{...}, 'return_value':..., 'method_arg':...}}
 
 link: my_mapping.py
     NOTE/TODO: 删除@NonNull 
@@ -15,51 +14,91 @@ def requires_permission(file_path):
 
     with open(file_path, 'r') as file:
         content = file.read()
-    
-        pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w._]+\))?\s*)?\s*(?:public\s+|private\s+|protected\s+|default\s+)?(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)?(?:@NonNull\s+)?([^;*=]*?\(.*?\))'  
+     
+        pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w._]+\))?\s*)?\s*(?:public\s+|private\s+|protected\s+|default\s+)?(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)?(?:@NonNull\s+)?([^\;\*\=]*?\(.*?\))' #OK
+        #pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@\w+(?:\([\w._]+\))?\s*)?\s*(?:public\s+|private\s+|protected\s+|default\s+)?(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)?(?:@NonNull\s+)?([^\;\*\=]+\(.*?\))'
         # NOTE: 删除@NonNull
+        # NOTE: 匹配函数名 *? > [^;*=]*+
 
         matches = re.findall(pattern, content, re.DOTALL) 
 
         if not matches: # 如果没有匹配到, 则返回
             return
-        
-        dict2 = {}
-        """1.处理method"""
-        # TODO: 处理java.lang.String
+
+        method_dic = {}
+
         for match in matches:
-            permission_string = match[0]
-            method = match[1].replace("\n","") #.replace(" ","") 
-            #print("method:", method)
-            return_value = method.split(' ')[0]
-            #print("return_value:", return_value)
-            method_match = re.search(r'\s+(\w+\(.*?\))', method)
-            method_name = method_match.group(1)
-            #print("method_name:", method_name)
+
+            """
+            DONE: 处理permission
+            NOTE: 以集合形式存储permission
+            TODO: 取1,2的并集, 再用","分隔
+            """
+            permission_dic = set ()
+            for permission in match[0].replace(" ", "").replace("\"", "").replace("\n","").split(","):  #match[0]是permission
+                permission_string = "android.permission." + permission.split(".")[-1]
+                permission_dic.add(permission_string)
+
+            #print("permission_dic:", permission_dic, "\n")
+            #for i in match[0].replace(" ", "").replace("\"", "").split(","):
 
 
-            """2.处理permission"""
-            pattern_of = r'\{(.*?)\}'
-            match_of = re.search(pattern_of, permission_string.replace("\n", ""), re.DOTALL)
-            if match_of:
-                permission_string = match_of.group(1).replace(" ", "")
+            """DONE: 处理file_path, permission集合, 存储为method_dic_sub"""
+            method_dic_sub = {}
+            method_dic_sub["file_path"] = file_path[96:-5].replace("\\", ".") #分隔
+            method_dic_sub["permission"] = permission_dic #分隔
+            #print("method_dic_sub:", method_dic_sub, "\n")
+
+            """
+            TODO: 处理method_name, return_value, method_arg
+            """
+
+            method = match[1].replace("\n","") 
+            #去除强制匹配
+            if method.startswith("("):  
+                continue
+            print("method:", method)
+            return_value = method.split(' ')[0] # OK
+            print("return_value:", return_value)
+            #print ("match:", match)
 
 
-            dict = {}
-            dict["file_path"] = file_path
-            dict["permission"] = permission_string #分隔
-            #dict["method_name"] = method_name #分隔
-            dict2[method_name] = dict
+            #method_args = re.search(r'\(.*\)',method).group(1).split(",")
+            method_arg = ""
+            method_arg_per = []
+            args = re.search(r'\((.*)\)',method).group(1)
+            if args:
+                for arg in args.split(","): 
+                    #print("arg:", arg)
+                    # TODO: 在append这里 匹配import的键值对
+                    method_arg_per.append(re.search(r'(?:final\s*)?(?:@.*\s*)?([\w<>\[\]]+)\s', arg).group(1))
+                    #method_arg += re.search(r'(?:final\s*)?(?:@.*\s*)?([\w<>]+)\s', arg).group(1) #匹配前面可能的final和@..
+                method_arg = "(" + ",".join(method_arg_per) + ")"
+            else:
+                method_arg = "()"
+            print("method_arg:", method_arg)  
 
-            #print(dict, "\n")
+            method_dic_sub["return_value"] = return_value
+            method_dic_sub["method_arg"] = method_arg
+
+
+            method_name = re.search(r'\s+(\w+)\(', method).group(1)
+            
+            # method = match[1].replace("\n","") #.replace(" ","")
+            #method_name = method_name.replace("\n","") #.split(",")
+
+            """存储为method_dic,格式为{method_name: {file_path:..., 'permission':{...}, 'return_value':..., 'method_arg':...}}"""
+            method_dic[method_name] = method_dic_sub 
+
+            #print(method_dic_sub, "\n")
         
             
             #将permission和method_name保存到text.txt中
-            with open('require_test9_26.txt', 'a') as file:
-                file.write(f'Path: {file_path}\nMethod: {method_name}\nPermission: {permission_string}\n\n')
+            with open('require_json_2.txt', 'a') as file:
+                file.write(f'match0: {match[0]}\nmatch1: {match[1]}\nmethod_dic: {method_dic_sub}\n\n')
 
-        print("dict2",dict2)
-        return dict2 #permissions
+        #print("method_dic",method_dic,"\n")
+        return method_dic #permissions
     
 
 
@@ -102,14 +141,14 @@ print(get_files(file_path))
     #save_to_file(permissions)
 
 
-path_name = []
-for api_level in range(26, 33):
+# path_name = []
+# for api_level in range(26, 33):
 
-    folder_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-{level}-master/'.format(level=api_level) 
-    path_name.append(folder_path)
+#     folder_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-{level}-master/'.format(level=api_level) 
+#     path_name.append(folder_path)
 
 
-    #permissions = get_files(folder_path)
-    #save_to_file(permissions)
+#     #permissions = get_files(folder_path)
+#     #save_to_file(permissions)
 
-print(path_name)
+# print(path_name)

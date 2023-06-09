@@ -1,0 +1,1796 @@
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\accessibilityservice\AccessibilityService.java
+Method: getFingerprintGestureController
+Permission: android.permission.USE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\accounts\AccountManager.java
+Method: finishSessionAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS_FULL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\ActivityManager.java
+Method: moveTaskToFront
+Permission: android.permission.REORDER_TASKS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\ActivityManager.java
+Method: moveTaskToFront
+Permission: android.permission.REORDER_TASKS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\ActivityManager.java
+Method: getPackageImportance
+Permission: android.permission.PACKAGE_USAGE_STATS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\ActivityManager.java
+Method: getUidImportance
+Permission: android.permission.PACKAGE_USAGE_STATS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\ActivityManager.java
+Method: addOnUidImportanceListener
+Permission: android.permission.PACKAGE_USAGE_STATS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\ActivityManager.java
+Method: removeOnUidImportanceListener
+Permission: android.permission.PACKAGE_USAGE_STATS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\ActivityManager.java
+Method: killBackgroundProcesses
+Permission: android.permission.KILL_BACKGROUND_PROCESSES
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\ActivityManager.java
+Method: killUid
+Permission: android.permission.KILL_UID
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\ActivityManager.java
+Method: forceStopPackage
+Permission: android.permission.FORCE_STOP_PACKAGES
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\ActivityManager.java
+Method: getCurrentUser
+Permission: android.permission.INTERACT_ACROSS_USERS_FULL}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\ActivityManager.java
+Method: dumpPackageState
+Permission: android.permission.DUMP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\ActivityManager.java
+Method: setPersistentVrThread
+Permission: android.permission.RESTRICTED_VR_ACCESS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\AlarmManager.java
+Method: set
+Permission: android.permission.UPDATE_DEVICE_STATS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\AlarmManager.java
+Method: set
+Permission: android.permission.UPDATE_DEVICE_STATS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\AppOpsManager.java
+Method: setUidMode
+Permission: android.permission.UPDATE_APP_OPS_STATS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\BroadcastOptions.java
+Method: setTemporaryAppWhitelistDuration
+Permission: android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\KeyguardManager.java
+Method: disableKeyguard
+Permission: android.permission.DISABLE_KEYGUARD
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\KeyguardManager.java
+Method: reenableKeyguard
+Permission: android.permission.DISABLE_KEYGUARD
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\KeyguardManager.java
+Method: exitKeyguardSecurely
+Permission: android.permission.DISABLE_KEYGUARD
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\VrManager.java
+Method: setPersistentVrModeEnabled
+Permission: android.permission.RESTRICTED_VR_ACCESS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\VrManager.java
+Method: setVr2dDisplayProperties
+Permission: android.permission.RESTRICTED_VR_ACCESS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\WallpaperManager.java
+Method: setDisplayPadding
+Permission: android.permission.SET_WALLPAPER_HINTS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\WallpaperManager.java
+Method: clearWallpaper
+Permission: android.permission.SET_WALLPAPER
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\WallpaperManager.java
+Method: clearWallpaper
+Permission: android.permission.SET_WALLPAPER
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\WallpaperManager.java
+Method: setWallpaperComponent
+Permission: android.permission.SET_WALLPAPER_COMPONENT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\admin\DevicePolicyManager.java
+Method: packageHasActiveAdmins
+Permission: android.permission.INTERACT_ACROSS_USERS_FULL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\admin\DevicePolicyManager.java
+Method: getDeviceOwnerComponentOnAnyUser
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\admin\DevicePolicyManager.java
+Method: getDeviceOwner
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\admin\DevicePolicyManager.java
+Method: getDeviceOwnerNameOnAnyUser
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\admin\DevicePolicyManager.java
+Method: setActiveProfileOwner
+Permission: android.permission.MANAGE_DEVICE_ADMINS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\admin\DevicePolicyManager.java
+Method: getProfileOwnerNameAsUser
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\admin\DevicePolicyManager.java
+Method: notifyPendingSystemUpdate
+Permission: android.permission.NOTIFY_PENDING_SYSTEM_UPDATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\admin\DevicePolicyManager.java
+Method: notifyPendingSystemUpdate
+Permission: android.permission.NOTIFY_PENDING_SYSTEM_UPDATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\admin\DevicePolicyManager.java
+Method: setDeviceProvisioningConfigApplied
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\admin\DevicePolicyManager.java
+Method: isDeviceProvisioningConfigApplied
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: beginRestoreSession
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: setBackupEnabled
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: isBackupEnabled
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: setAutoRestore
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: getCurrentTransport
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: listAllTransports
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: selectBackupTransport
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: selectBackupTransport
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: backupNow
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: getAvailableRestoreToken
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: isAppEligibleForBackup
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: requestBackup
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: requestBackup
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\backup\BackupManager.java
+Method: cancelBackups
+Permission: android.permission.BACKUP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\job\JobInfo.java
+Method: setPersisted
+Permission: android.permission.RECEIVE_BOOT_COMPLETED
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\job\JobScheduler.java
+Method: scheduleAsPackage
+Permission: android.permission.UPDATE_DEVICE_STATS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\trust\TrustManager.java
+Method: setDeviceLockedForUser
+Permission: android.permission.ACCESS_KEYGUARD_SECURE_STORAGE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\trust\TrustManager.java
+Method: isTrustUsuallyManaged
+Permission: android.permission.TRUST_LISTENER
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\app\usage\UsageStatsManager.java
+Method: whitelistAppTemporarily
+Permission: android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothA2dp.java
+Method: getPriority
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: isEnabled
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: getState
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: getLeState
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: enable
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: disable
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: getAddress
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: setName
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: getScanMode
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: startDiscovery
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: cancelDiscovery
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: isDiscovering
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: getBondedDevices
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: getProfileConnectionState
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: listenUsingRfcommWithServiceRecord
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: listenUsingInsecureRfcommWithServiceRecord
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: startLeScan
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: startLeScan
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothAdapter.java
+Method: stopLeScan
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothDevice.java
+Method: getName
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothDevice.java
+Method: getType
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothDevice.java
+Method: createBond
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothDevice.java
+Method: getBondState
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothDevice.java
+Method: getBluetoothClass
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothDevice.java
+Method: getUuids
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothDevice.java
+Method: fetchUuidsWithSdp
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothDevice.java
+Method: setPairingConfirmation
+Permission: android.permission.BLUETOOTH_PRIVILEGED
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothDevice.java
+Method: createRfcommSocketToServiceRecord
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothDevice.java
+Method: createInsecureRfcommSocketToServiceRecord
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothManager.java
+Method: getConnectionState
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothManager.java
+Method: getConnectedDevices
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothManager.java
+Method: getDevicesMatchingConnectionStates
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothProfile.java
+Method: getConnectedDevices
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothProfile.java
+Method: getDevicesMatchingConnectionStates
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\BluetoothProfile.java
+Method: getConnectionState
+Permission: android.permission.BLUETOOTH
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\le\BluetoothLeScanner.java
+Method: startScan
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\le\BluetoothLeScanner.java
+Method: startScan
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\le\BluetoothLeScanner.java
+Method: startScan
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\le\BluetoothLeScanner.java
+Method: startScanFromSource
+Permission: android.permission.UPDATE_DEVICE_STATS}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\le\BluetoothLeScanner.java
+Method: startScanFromSource
+Permission: android.permission.UPDATE_DEVICE_STATS}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\le\BluetoothLeScanner.java
+Method: stopScan
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\bluetooth\le\BluetoothLeScanner.java
+Method: stopScan
+Permission: android.permission.BLUETOOTH_ADMIN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: startActivityAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS_FULL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: startActivityAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS_FULL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: startActivitiesAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS_FULL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: sendBroadcastAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: sendBroadcastAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: sendBroadcastAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: sendBroadcastAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: sendOrderedBroadcastAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: sendOrderedBroadcastAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: sendOrderedBroadcastAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: sendStickyBroadcast
+Permission: android.permission.BROADCAST_STICKY
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: sendStickyOrderedBroadcast
+Permission: android.permission.BROADCAST_STICKY
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: removeStickyBroadcast
+Permission: android.permission.BROADCAST_STICKY
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: sendStickyBroadcastAsUser
+Permission: android.permission.BROADCAST_STICKY}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: sendStickyBroadcastAsUser
+Permission: android.permission.BROADCAST_STICKY}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: sendStickyOrderedBroadcastAsUser
+Permission: android.permission.BROADCAST_STICKY}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: removeStickyBroadcastAsUser
+Permission: android.permission.BROADCAST_STICKY}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: registerReceiverAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS_FULL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: startForegroundServiceAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: startServiceAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: stopServiceAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: bindServiceAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\Context.java
+Method: bindServiceAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageInstaller.java
+Method: uninstall
+Permission: android.permission.REQUEST_DELETE_PACKAGES}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageInstaller.java
+Method: setPermissionsResult
+Permission: android.permission.INSTALL_PACKAGES
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageInstaller.java
+Method: setGrantedRuntimePermissions
+Permission: android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageInstaller.java
+Method: setAllocateAggressive
+Permission: android.permission.ALLOCATE_AGGRESSIVE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: getPackageInfoAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: getInstalledPackagesAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS_FULL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: grantRuntimePermission
+Permission: android.permission.GRANT_RUNTIME_PERMISSIONS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: revokeRuntimePermission
+Permission: android.permission.REVOKE_RUNTIME_PERMISSIONS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: getPermissionFlags
+Permission: android.permission.REVOKE_RUNTIME_PERMISSIONS}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: updatePermissionFlags
+Permission: android.permission.REVOKE_RUNTIME_PERMISSIONS}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: getInstantApps
+Permission: android.permission.ACCESS_INSTANT_APPS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: getInstantAppIcon
+Permission: android.permission.ACCESS_INSTANT_APPS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: installExistingPackageAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS_FULL}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: verifyIntentFilter
+Permission: android.permission.INTENT_FILTER_VERIFICATION_AGENT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: updateIntentVerificationStatusAsUser
+Permission: android.permission.SET_PREFERRED_APPLICATIONS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: setDefaultBrowserPackageNameAsUser
+Permission: android.permission.SET_PREFERRED_APPLICATIONS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: setUpdateAvailable
+Permission: android.permission.INSTALL_PACKAGES
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: deletePackage
+Permission: android.permission.DELETE_PACKAGES
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: deletePackageAsUser
+Permission: android.permission.INTERACT_ACROSS_USERS_FULL}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: addOnPermissionsChangeListener
+Permission: android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\content\pm\PackageManager.java
+Method: removeOnPermissionsChangeListener
+Permission: android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\camera2\CameraManager.java
+Method: openCamera
+Permission: android.permission.CAMERA
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: authenticate
+Permission: android.permission.USE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: authenticate
+Permission: android.permission.USE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: enroll
+Permission: android.permission.MANAGE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: preEnroll
+Permission: android.permission.MANAGE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: postEnroll
+Permission: android.permission.MANAGE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: setActiveUser
+Permission: android.permission.MANAGE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: remove
+Permission: android.permission.MANAGE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: enumerate
+Permission: android.permission.MANAGE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: rename
+Permission: android.permission.MANAGE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: getEnrolledFingerprints
+Permission: android.permission.USE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: getEnrolledFingerprints
+Permission: android.permission.USE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: hasEnrolledFingerprints
+Permission: android.permission.USE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: hasEnrolledFingerprints
+Permission: android.permission.INTERACT_ACROSS_USERS}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\fingerprint\FingerprintManager.java
+Method: isHardwareDetected
+Permission: android.permission.USE_FINGERPRINT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\hdmi\HdmiControlManager.java
+Method: setStandbyMode
+Permission: android.permission.HDMI_CEC
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\hdmi\HdmiControlManager.java
+Method: addHotplugEventListener
+Permission: android.permission.HDMI_CEC
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\hdmi\HdmiControlManager.java
+Method: removeHotplugEventListener
+Permission: android.permission.HDMI_CEC
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\location\ContextHubManager.java
+Method: getContextHubHandles
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\location\ContextHubManager.java
+Method: getContextHubInfo
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\location\ContextHubManager.java
+Method: loadNanoApp
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\location\ContextHubManager.java
+Method: unloadNanoApp
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\location\ContextHubManager.java
+Method: getNanoAppInstanceInfo
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\location\ContextHubManager.java
+Method: findNanoAppOnHub
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\hardware\location\ContextHubManager.java
+Method: sendMessage
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: requestLocationUpdates
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: requestLocationUpdates
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: requestLocationUpdates
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: requestLocationUpdates
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: requestLocationUpdates
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: requestSingleUpdate
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: requestSingleUpdate
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: requestSingleUpdate
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: requestSingleUpdate
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: requestLocationUpdates
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: requestLocationUpdates
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: addProximityAlert
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: addGeofence
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: getLastKnownLocation
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: addGpsStatusListener
+Permission: android.permission.ACCESS_FINE_LOCATION
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: registerGnssStatusCallback
+Permission: android.permission.ACCESS_FINE_LOCATION
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: registerGnssStatusCallback
+Permission: android.permission.ACCESS_FINE_LOCATION
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: addNmeaListener
+Permission: android.permission.ACCESS_FINE_LOCATION
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: addNmeaListener
+Permission: android.permission.ACCESS_FINE_LOCATION
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: addNmeaListener
+Permission: android.permission.ACCESS_FINE_LOCATION
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: registerGnssMeasurementsCallback
+Permission: android.permission.ACCESS_FINE_LOCATION
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: registerGnssMeasurementsCallback
+Permission: android.permission.ACCESS_FINE_LOCATION
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: registerGnssNavigationMessageCallback
+Permission: android.permission.ACCESS_FINE_LOCATION
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: getGpsStatus
+Permission: android.permission.ACCESS_FINE_LOCATION
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: getGnssBatchSize
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: registerGnssBatchedLocationCallback
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: flushGnssBatch
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\location\LocationManager.java
+Method: unregisterGnssBatchedLocationCallback
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\AudioManager.java
+Method: registerAudioPolicy
+Permission: android.permission.MODIFY_AUDIO_ROUTING
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\AudioManager.java
+Method: unregisterAudioPolicyAsync
+Permission: android.permission.MODIFY_AUDIO_ROUTING
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\RingtoneManager.java
+Method: enableSyncFromParent
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\session\MediaSessionManager.java
+Method: setOnVolumeKeyLongPressListener
+Permission: android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\session\MediaSessionManager.java
+Method: setOnMediaKeyListener
+Permission: android.permission.SET_MEDIA_KEY_LISTENER
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\soundtrigger\SoundTriggerDetector.java
+Method: startRecognition
+Permission: android.permission.MANAGE_SOUND_TRIGGER
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\soundtrigger\SoundTriggerDetector.java
+Method: stopRecognition
+Permission: android.permission.MANAGE_SOUND_TRIGGER
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\soundtrigger\SoundTriggerManager.java
+Method: updateModel
+Permission: android.permission.MANAGE_SOUND_TRIGGER
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\soundtrigger\SoundTriggerManager.java
+Method: getModel
+Permission: android.permission.MANAGE_SOUND_TRIGGER
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\soundtrigger\SoundTriggerManager.java
+Method: deleteModel
+Permission: android.permission.MANAGE_SOUND_TRIGGER
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\soundtrigger\SoundTriggerManager.java
+Method: createSoundTriggerDetector
+Permission: android.permission.MANAGE_SOUND_TRIGGER
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvInputManager.java
+Method: setParentalControlsEnabled
+Permission: android.permission.MODIFY_PARENTAL_CONTROLS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvInputManager.java
+Method: addBlockedRating
+Permission: android.permission.MODIFY_PARENTAL_CONTROLS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvInputManager.java
+Method: removeBlockedRating
+Permission: android.permission.MODIFY_PARENTAL_CONTROLS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvInputManager.java
+Method: notifyPreviewProgramBrowsableDisabled
+Permission: android.permission.NOTIFY_TV_INPUTS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvInputManager.java
+Method: notifyWatchNextProgramBrowsableDisabled
+Permission: android.permission.NOTIFY_TV_INPUTS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvInputManager.java
+Method: notifyPreviewProgramAddedToWatchNext
+Permission: android.permission.NOTIFY_TV_INPUTS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvInputManager.java
+Method: getAvailableTvStreamConfigList
+Permission: android.permission.CAPTURE_TV_INPUT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvInputManager.java
+Method: captureFrame
+Permission: android.permission.CAPTURE_TV_INPUT
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvInputManager.java
+Method: getHardwareList
+Permission: android.permission.TV_INPUT_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvInputManager.java
+Method: acquireTvInputHardware
+Permission: android.permission.TV_INPUT_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvInputManager.java
+Method: acquireTvInputHardware
+Permission: android.permission.TV_INPUT_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvInputManager.java
+Method: releaseTvInputHardware
+Permission: android.permission.TV_INPUT_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\tv\TvView.java
+Method: unblockContent
+Permission: android.permission.MODIFY_PARENTAL_CONTROLS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getNetworkPreference
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getActiveNetworkInfo
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getActiveNetwork
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getActiveNetworkForUid
+Permission: android.permission.CONNECTIVITY_INTERNAL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getActiveNetworkInfoForUid
+Permission: android.permission.CONNECTIVITY_INTERNAL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getNetworkInfo
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getNetworkInfo
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getAllNetworkInfo
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getNetworkForType
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getAllNetworks
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getActiveLinkProperties
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getLinkProperties
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getLinkProperties
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getNetworkCapabilities
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getActiveNetworkQuotaInfo
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getTetherableIfaces
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getTetheredIfaces
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getTetheringErroredIfaces
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: isTetheringSupported
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: startTethering
+Permission: android.permission.TETHER_PRIVILEGED
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: stopTethering
+Permission: android.permission.TETHER_PRIVILEGED
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getTetherableUsbRegexs
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getTetherableWifiRegexs
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getTetherableBluetoothRegexs
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getLastTetherError
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: setGlobalProxy
+Permission: android.permission.CONNECTIVITY_INTERNAL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: isNetworkSupported
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: isActiveNetworkMetered
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: setAirplaneMode
+Permission: android.permission.CONNECTIVITY_INTERNAL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: registerNetworkCallback
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: registerNetworkCallback
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: registerNetworkCallback
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: registerDefaultNetworkCallback
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: registerDefaultNetworkCallback
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: setAcceptUnvalidated
+Permission: android.permission.CONNECTIVITY_INTERNAL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: setAvoidUnvalidated
+Permission: android.permission.CONNECTIVITY_INTERNAL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: startCaptivePortalApp
+Permission: android.permission.CONNECTIVITY_INTERNAL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\ConnectivityManager.java
+Method: getMultipathPreference
+Permission: android.permission.ACCESS_NETWORK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\NetworkScoreManager.java
+Method: getActiveScorer
+Permission: android.permission.REQUEST_NETWORK_SCORES
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\NetworkScoreManager.java
+Method: updateScores
+Permission: android.permission.SCORE_NETWORKS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\NetworkScoreManager.java
+Method: clearScores
+Permission: android.permission.REQUEST_NETWORK_SCORES
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\NetworkScoreManager.java
+Method: setActiveScorer
+Permission: android.permission.SCORE_NETWORKS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\NetworkScoreManager.java
+Method: disableScoring
+Permission: android.permission.REQUEST_NETWORK_SCORES
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\TrafficStats.java
+Method: setThreadStatsUid
+Permission: android.permission.UPDATE_DEVICE_STATS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\TrafficStats.java
+Method: clearThreadStatsUid
+Permission: android.permission.UPDATE_DEVICE_STATS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\VpnService.java
+Method: prepareAndAuthorize
+Permission: android.permission.CONTROL_VPN
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\RttManager.java
+Method: startRanging
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\RttManager.java
+Method: stopRanging
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\RttManager.java
+Method: enableResponder
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\RttManager.java
+Method: disableResponder
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiManager.java
+Method: getPrivilegedConfiguredNetworks
+Permission: android.permission.READ_WIFI_CREDENTIAL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiManager.java
+Method: getConnectionStatistics
+Permission: android.permission.READ_WIFI_CREDENTIAL
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiManager.java
+Method: startScan
+Permission: android.permission.UPDATE_DEVICE_STATS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiManager.java
+Method: setWifiApEnabled
+Permission: android.permission.TETHER_PRIVILEGED
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiManager.java
+Method: getWifiApState
+Permission: android.permission.ACCESS_WIFI_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiManager.java
+Method: isWifiApEnabled
+Permission: android.permission.ACCESS_WIFI_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiManager.java
+Method: getWifiApConfiguration
+Permission: android.permission.ACCESS_WIFI_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiManager.java
+Method: setWifiApConfiguration
+Permission: android.permission.CHANGE_WIFI_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiScanner.java
+Method: startBackgroundScan
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiScanner.java
+Method: startBackgroundScan
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiScanner.java
+Method: stopBackgroundScan
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiScanner.java
+Method: getScanResults
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiScanner.java
+Method: startScan
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiScanner.java
+Method: startScan
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\net\wifi\WifiScanner.java
+Method: stopScan
+Permission: android.permission.LOCATION_HARDWARE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\nfc\NfcAdapter.java
+Method: enable
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\nfc\NfcAdapter.java
+Method: disable
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\nfc\NfcAdapter.java
+Method: disable
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\nfc\NfcAdapter.java
+Method: enableNdefPush
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\nfc\NfcAdapter.java
+Method: disableNdefPush
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\nfc\NfcAdapter.java
+Method: addNfcUnlockHandler
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\nfc\NfcAdapter.java
+Method: removeNfcUnlockHandler
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\Build.java
+Method: getSerial
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\IncidentManager.java
+Method: reportIncident
+Permission: android.permission.PACKAGE_USAGE_STATS}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\IncidentManager.java
+Method: reportIncident
+Permission: android.permission.PACKAGE_USAGE_STATS}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\PowerManager.java
+Method: userActivity
+Permission: android.permission.USER_ACTIVITY}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\RecoverySystem.java
+Method: processPackage
+Permission: android.permission.RECOVERY
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\RecoverySystem.java
+Method: processPackage
+Permission: android.permission.RECOVERY
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\RecoverySystem.java
+Method: installPackage
+Permission: android.permission.RECOVERY
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\RecoverySystem.java
+Method: installPackage
+Permission: android.permission.RECOVERY
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\RecoverySystem.java
+Method: scheduleUpdateOnBoot
+Permission: android.permission.RECOVERY
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\RecoverySystem.java
+Method: cancelScheduledUpdate
+Permission: android.permission.RECOVERY
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\RecoverySystem.java
+Method: rebootWipeAb
+Permission: android.permission.REBOOT}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\UserManager.java
+Method: isManagedProfile
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\UserManager.java
+Method: isManagedProfile
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\UserManager.java
+Method: getUserRestrictionSource
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\UserManager.java
+Method: getUserRestrictionSources
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\UserManager.java
+Method: getSeedAccountName
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\UserManager.java
+Method: getSeedAccountType
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\UserManager.java
+Method: getSeedAccountOptions
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\UserManager.java
+Method: clearSeedAccountData
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\UserManager.java
+Method: getSerialNumbersOfUsers
+Permission: android.permission.MANAGE_USERS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\UserManager.java
+Method: getUserAccount
+Permission: android.permission.MANAGE_USERS}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\UserManager.java
+Method: setUserAccount
+Permission: android.permission.MANAGE_USERS}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\Vibrator.java
+Method: vibrate
+Permission: android.permission.VIBRATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\Vibrator.java
+Method: vibrate
+Permission: android.permission.VIBRATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\Vibrator.java
+Method: vibrate
+Permission: android.permission.VIBRATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\Vibrator.java
+Method: vibrate
+Permission: android.permission.VIBRATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\Vibrator.java
+Method: vibrate
+Permission: android.permission.VIBRATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\Vibrator.java
+Method: vibrate
+Permission: android.permission.VIBRATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\Vibrator.java
+Method: vibrate
+Permission: android.permission.VIBRATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\os\Vibrator.java
+Method: cancel
+Permission: android.permission.VIBRATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\provider\Settings.java
+Method: putString
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\provider\Settings.java
+Method: resetToDefaults
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\provider\Settings.java
+Method: putString
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\provider\Settings.java
+Method: resetToDefaults
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\security\keystore\AttestationUtils.java
+Method: attestDeviceIds
+Permission: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\service\oemlock\OemLockManager.java
+Method: setOemUnlockAllowedByCarrier
+Permission: android.permission.MANAGE_CARRIER_OEM_UNLOCK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\service\oemlock\OemLockManager.java
+Method: isOemUnlockAllowedByCarrier
+Permission: android.permission.MANAGE_CARRIER_OEM_UNLOCK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\service\oemlock\OemLockManager.java
+Method: setOemUnlockAllowedByUser
+Permission: android.permission.MANAGE_USER_OEM_UNLOCK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\service\oemlock\OemLockManager.java
+Method: isOemUnlockAllowedByUser
+Permission: android.permission.MANAGE_USER_OEM_UNLOCK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\service\persistentdata\PersistentDataBlockManager.java
+Method: getDataBlockSize
+Permission: android.permission.ACCESS_PDB_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\service\persistentdata\PersistentDataBlockManager.java
+Method: wipe
+Permission: android.permission.OEM_UNLOCK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\service\persistentdata\PersistentDataBlockManager.java
+Method: setOemUnlockEnabled
+Permission: android.permission.OEM_UNLOCK_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\service\persistentdata\PersistentDataBlockManager.java
+Method: getOemUnlockEnabled
+Permission: android.permission.OEM_UNLOCK_STATE}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\service\persistentdata\PersistentDataBlockManager.java
+Method: getFlashLockState
+Permission: android.permission.OEM_UNLOCK_STATE}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getDefaultOutgoingPhoneAccount
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getPhoneAccountsSupportingScheme
+Permission: android.permission.READ_PHONE_STATE}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getCallCapablePhoneAccounts
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getSelfManagedPhoneAccounts
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: isVoiceMailNumber
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getVoiceMailNumber
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getLine1Number
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: isInCall
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: isInManagedCall
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: isRinging
+Permission: android.permission.READ_PHONE_STATE}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: endCall
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: acceptRingingCall
+Permission: android.permission.MODIFY_PHONE_STATE}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: acceptRingingCall
+Permission: android.permission.MODIFY_PHONE_STATE}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: silenceRinger
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: isTtySupported
+Permission: android.permission.READ_PHONE_STATE}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: handleMmi
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: handleMmi
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getAdnUriForPhoneAccount
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: cancelMissedCallsNotification
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: showInCallScreen
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: placeCall
+Permission: android.permission.MANAGE_OWN_CALLS}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: enablePhoneAccount
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: dumpAnalytics
+Permission: android.permission.DUMP
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\CarrierConfigManager.java
+Method: updateConfigForPhoneId
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\SmsManager.java
+Method: sendTextMessageWithoutPersisting
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\SmsManager.java
+Method: sendMultipartTextMessageWithoutPersisting
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getDeviceSoftwareVersion
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getDeviceSoftwareVersion
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getDeviceId
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getDeviceId
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getImei
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getImei
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getMeid
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getMeid
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCellLocation
+Permission: android.permission.ACCESS_FINE_LOCATION}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: enableLocationUpdates
+Permission: android.permission.CONTROL_LOCATION_UPDATES
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: enableLocationUpdates
+Permission: android.permission.CONTROL_LOCATION_UPDATES
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: disableLocationUpdates
+Permission: android.permission.CONTROL_LOCATION_UPDATES
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getNeighboringCellInfo
+Permission: android.permission.ACCESS_COARSE_LOCATION
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCarrierConfig
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getNetworkType
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getDataNetworkType
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getDataNetworkType
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getVoiceNetworkType
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getVoiceNetworkType
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getSimSerialNumber
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getSimSerialNumber
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getLteOnCdmaMode
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getLteOnCdmaMode
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getSubscriberId
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getSubscriberId
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getGroupIdLevel1
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getGroupIdLevel1
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getLine1Number
+Permission: android.permission.READ_PHONE_NUMBERS}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getLine1Number
+Permission: android.permission.READ_PHONE_NUMBERS}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getLine1AlphaTag
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getLine1AlphaTag
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getMsisdn
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getMsisdn
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getVoiceMailNumber
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getVoiceMailNumber
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCompleteVoiceMailNumber
+Permission: android.permission.CALL_PRIVILEGED
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCompleteVoiceMailNumber
+Permission: android.permission.CALL_PRIVILEGED
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getVisualVoicemailPackageName
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: sendVisualVoicemailSmsForSubscriber
+Permission: android.permission.SEND_SMS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getVoiceActivationState
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getDataActivationState
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getVoiceMessageCount
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getVoiceMessageCount
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getVoiceMailAlphaTag
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getVoiceMailAlphaTag
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCdmaEriIconIndex
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCdmaEriIconIndex
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCdmaEriIconMode
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCdmaEriIconMode
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCdmaEriText
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCdmaEriText
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getAllCellInfo
+Permission: android.permission.ACCESS_COARSE_LOCATION
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getForbiddenPlmns
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getForbiddenPlmns
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCdmaMdn
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCdmaMdn
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCdmaMin
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCdmaMin
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: call
+Permission: android.permission.CALL_PHONE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: endCall
+Permission: android.permission.CALL_PHONE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: answerRingingCall
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: isOffhook
+Permission: android.permission.READ_PHONE_STATE}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: isRinging
+Permission: android.permission.READ_PHONE_STATE}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: isIdle
+Permission: android.permission.READ_PHONE_STATE}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: isRadioOn
+Permission: android.permission.READ_PHONE_STATE}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: supplyPin
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: supplyPuk
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: supplyPinReportResult
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: supplyPukReportResult
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: sendUssdRequest
+Permission: android.permission.CALL_PHONE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: handlePinMmi
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: handlePinMmiForSubscriber
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: toggleRadioOnOff
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setRadio
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setRadioPower
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: enableDataConnectivity
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: disableDataConnectivity
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setDataEnabled
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setDataEnabled
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: enableVideoCalling
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: isVideoCallingEnabled
+Permission: android.permission.READ_PHONE_STATE}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getServiceState
+Permission: android.permission.READ_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getTelephonyHistograms
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setAllowedCarriers
+Permission: android.permission.MODIFY_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getAllowedCarriers
+Permission: android.permission.READ_PRIVILEGED_PHONE_STATE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\view\Display.java
+Method: requestColorMode
+Permission: android.permission.CONFIGURE_DISPLAY_COLOR_MODE
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\view\inputmethod\InputMethodManager.java
+Method: setCurrentInputMethodSubtype
+Permission: android.permission.WRITE_SECURE_SETTINGS
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/com\android\settingslib\SuggestionParser.java
+Method: satisifesRequiredUserType
+Permission: android.permission.MANAGE_USERS
+
