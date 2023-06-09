@@ -29,15 +29,26 @@ def requires_permission(file_path):
 
         for match in matches:
 
+
+
             """
             DONE: 处理permission
             NOTE: 以集合形式存储permission
             TODO: 取1,2的并集, 再用","分隔
             """
+
+            permission_string = match[0]
+
+            # if anyof/allof:
+            pattern_of = r'\{(.*?)\}'  
+            match_of = re.search(pattern_of, permission_string.replace("\n", ""), re.DOTALL)
+            if match_of:
+                permission_string = match_of.group(1).replace(" ", "").replace("\"", "")
+
             permission_dic = set ()
-            for permission in match[0].replace(" ", "").replace("\"", "").replace("\n","").split(","):  #match[0]是permission
-                permission_string = "android.permission." + permission.split(".")[-1]
-                permission_dic.add(permission_string)
+            for permission in permission_string.split(","):  #match[0]是permission
+                #permission_string = 
+                permission_dic.add("android.permission." + permission.split(".")[-1])
 
             #print("permission_dic:", permission_dic, "\n")
             #for i in match[0].replace(" ", "").replace("\"", "").split(","):
@@ -50,10 +61,14 @@ def requires_permission(file_path):
             #print("method_dic_sub:", method_dic_sub, "\n")
 
             """
-            TODO: 处理method_name, return_value, method_arg
+            DONE: 处理method_name, return_value, method_arg
+            TODO: method_arg BUG
             """
 
             method = match[1].replace("\n","") 
+
+
+            # 1.return_value
             #去除强制匹配
             if method.startswith("("):  
                 continue
@@ -63,7 +78,8 @@ def requires_permission(file_path):
             #print ("match:", match)
 
 
-            #method_args = re.search(r'\(.*\)',method).group(1).split(",")
+            # 2.method_args 
+            # BUG in require_json_3: 'method_arg': '(String,String,t,t,e)', etc...
             method_arg = ""
             method_arg_per = []
             args = re.search(r'\((.*)\)',method).group(1)
@@ -81,7 +97,7 @@ def requires_permission(file_path):
             method_dic_sub["return_value"] = return_value
             method_dic_sub["method_arg"] = method_arg
 
-
+            # 3.method_name
             method_name = re.search(r'\s+(\w+)\(', method).group(1)
             
             # method = match[1].replace("\n","") #.replace(" ","")
@@ -94,8 +110,8 @@ def requires_permission(file_path):
         
             
             #将permission和method_name保存到text.txt中
-            with open('require_json_2.txt', 'a') as file:
-                file.write(f'match0: {match[0]}\nmatch1: {match[1]}\nmethod_dic: {method_dic_sub}\n\n')
+            with open('require_json_3.txt', 'a') as file:
+                file.write(f'match0: {match[0]}\nmatch1: {match[1]}\nmethod_dic: {method_dic}\n\n')
 
         #print("method_dic",method_dic,"\n")
         return method_dic #permissions
