@@ -1,0 +1,380 @@
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\AudioManager.java
+Method: startBluetoothSco
+Permission: android.Manifest.permission#MODIFY_AUDIO_SETTINGS
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_AUDIO_SETTINGS', 'file_path': 'android.media.AudioManager', 'method_name': 'startBluetoothSco', 'method_arg': '()', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\AudioManager.java
+Method: startBluetoothScoVirtualCall
+Permission: android.Manifest.permission#MODIFY_AUDIO_SETTINGS
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_AUDIO_SETTINGS', 'file_path': 'android.media.AudioManager', 'method_name': 'startBluetoothScoVirtualCall', 'method_arg': '()', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\AudioManager.java
+Method: setBluetoothScoOn
+Permission: android.Manifest.permission#MODIFY_AUDIO_SETTINGS
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_AUDIO_SETTINGS', 'file_path': 'android.media.AudioManager', 'method_name': 'setBluetoothScoOn', 'method_arg': '(boolean)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\service\carrier\CarrierService.java
+Method: notifyCarrierNetworkChange
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.service.carrier.CarrierService', 'method_name': 'notifyCarrierNetworkChange', 'method_arg': '(boolean)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getDefaultOutgoingPhoneAccount
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'getDefaultOutgoingPhoneAccount', 'method_arg': '(String)', 'return_value': 'PhoneAccountHandle'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getCallCapablePhoneAccounts
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'getCallCapablePhoneAccounts', 'method_arg': '()', 'return_value': 'List<PhoneAccountHandle>'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: setDefaultDialer
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'setDefaultDialer', 'method_arg': '(String)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: isVoiceMailNumber
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'isVoiceMailNumber', 'method_arg': '(PhoneAccountHandle,String)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getVoiceMailNumber
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'getVoiceMailNumber', 'method_arg': '(PhoneAccountHandle)', 'return_value': 'String'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getLine1Number
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'getLine1Number', 'method_arg': '(PhoneAccountHandle)', 'return_value': 'String'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: isInCall
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'isInCall', 'method_arg': '()', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: isInManagedCall
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'isInManagedCall', 'method_arg': '()', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: silenceRinger
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'silenceRinger', 'method_arg': '()', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: handleMmi
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'handleMmi', 'method_arg': '(String)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: handleMmi
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'handleMmi', 'method_arg': '(String,PhoneAccountHandle)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getAdnUriForPhoneAccount
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'getAdnUriForPhoneAccount', 'method_arg': '(PhoneAccountHandle)', 'return_value': 'Uri'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: cancelMissedCallsNotification
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'cancelMissedCallsNotification', 'method_arg': '()', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: createManageBlockedNumbersIntent
+Permission: android.Manifest.permission#CALL_PHONE
+method_dic: {'permission': 'android.Manifest.permission.CALL_PHONE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'createManageBlockedNumbersIntent', 'method_arg': '()', 'return_value': 'Intent'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\CarrierConfigManager.java
+Method: getConfigForSubId
+Permission: android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telephony.CarrierConfigManager', 'method_name': 'getConfigForSubId', 'method_arg': '(int)', 'return_value': 'PersistableBundle'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\CarrierConfigManager.java
+Method: getConfig
+Permission: android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telephony.CarrierConfigManager', 'method_name': 'getConfig', 'method_arg': '()', 'return_value': 'PersistableBundle'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\AudioManager.java
+Method: startBluetoothSco
+Permission: android.Manifest.permission#MODIFY_AUDIO_SETTINGS
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_AUDIO_SETTINGS', 'file_path': 'android.media.AudioManager', 'method_name': 'startBluetoothSco', 'method_arg': '()', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\AudioManager.java
+Method: startBluetoothScoVirtualCall
+Permission: android.Manifest.permission#MODIFY_AUDIO_SETTINGS
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_AUDIO_SETTINGS', 'file_path': 'android.media.AudioManager', 'method_name': 'startBluetoothScoVirtualCall', 'method_arg': '()', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\media\AudioManager.java
+Method: setBluetoothScoOn
+Permission: android.Manifest.permission#MODIFY_AUDIO_SETTINGS
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_AUDIO_SETTINGS', 'file_path': 'android.media.AudioManager', 'method_name': 'setBluetoothScoOn', 'method_arg': '(boolean)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\service\carrier\CarrierService.java
+Method: notifyCarrierNetworkChange
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.service.carrier.CarrierService', 'method_name': 'notifyCarrierNetworkChange', 'method_arg': '(boolean)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getDefaultOutgoingPhoneAccount
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'getDefaultOutgoingPhoneAccount', 'method_arg': '(String)', 'return_value': 'PhoneAccountHandle'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getCallCapablePhoneAccounts
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'getCallCapablePhoneAccounts', 'method_arg': '()', 'return_value': 'List<PhoneAccountHandle>'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: setDefaultDialer
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'setDefaultDialer', 'method_arg': '(String)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: isVoiceMailNumber
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'isVoiceMailNumber', 'method_arg': '(PhoneAccountHandle,String)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getVoiceMailNumber
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'getVoiceMailNumber', 'method_arg': '(PhoneAccountHandle)', 'return_value': 'String'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getLine1Number
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'getLine1Number', 'method_arg': '(PhoneAccountHandle)', 'return_value': 'String'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: isInCall
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'isInCall', 'method_arg': '()', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: isInManagedCall
+Permission: android.Manifest.permission#READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'isInManagedCall', 'method_arg': '()', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: silenceRinger
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'silenceRinger', 'method_arg': '()', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: handleMmi
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'handleMmi', 'method_arg': '(String)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: handleMmi
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'handleMmi', 'method_arg': '(String,PhoneAccountHandle)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: getAdnUriForPhoneAccount
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'getAdnUriForPhoneAccount', 'method_arg': '(PhoneAccountHandle)', 'return_value': 'Uri'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: cancelMissedCallsNotification
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'cancelMissedCallsNotification', 'method_arg': '()', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telecom\TelecomManager.java
+Method: createManageBlockedNumbersIntent
+Permission: android.Manifest.permission#CALL_PHONE
+method_dic: {'permission': 'android.Manifest.permission.CALL_PHONE', 'file_path': 'android.telecom.TelecomManager', 'method_name': 'createManageBlockedNumbersIntent', 'method_arg': '()', 'return_value': 'Intent'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\CarrierConfigManager.java
+Method: getConfigForSubId
+Permission: android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telephony.CarrierConfigManager', 'method_name': 'getConfigForSubId', 'method_arg': '(int)', 'return_value': 'PersistableBundle'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\CarrierConfigManager.java
+Method: getConfig
+Permission: android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telephony.CarrierConfigManager', 'method_name': 'getConfig', 'method_arg': '()', 'return_value': 'PersistableBundle'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\SmsManager.java
+Method: sendTextMessageWithSelfPermissions
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.SmsManager', 'method_name': 'sendTextMessageWithSelfPermissions', 'method_arg': '(String,String,String,PendingIntent,PendingIntent,boolean)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\SmsManager.java
+Method: injectSmsPdu
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.SmsManager', 'method_name': 'injectSmsPdu', 'method_arg': '(byte[],String,PendingIntent)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\SmsManager.java
+Method: sendDataMessage
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.SmsManager', 'method_name': 'sendDataMessage', 'method_arg': '(String,String,short,byte[],PendingIntent,PendingIntent)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setVisualVoicemailSmsFilterSettings
+Permission: android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'setVisualVoicemailSmsFilterSettings', 'method_arg': '(VisualVoicemailSmsFilterSettings)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: sendVisualVoicemailSms
+Permission: android.Manifest.permission#SEND_SMS SEND_SMS
+method_dic: {'permission': 'android.Manifest.permission.SEND_SMS', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'sendVisualVoicemailSms', 'method_arg': '(String,int,String,PendingIntent)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setVoiceActivationState
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'setVoiceActivationState', 'method_arg': '(int,int)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setDataActivationState
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'setDataActivationState', 'method_arg': '(int,int)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: iccOpenLogicalChannel
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'iccOpenLogicalChannel', 'method_arg': '(String)', 'return_value': 'IccOpenLogicalChannelResponse'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: iccOpenLogicalChannel
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'iccOpenLogicalChannel', 'method_arg': '(String,int)', 'return_value': 'IccOpenLogicalChannelResponse'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: iccOpenLogicalChannel
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'iccOpenLogicalChannel', 'method_arg': '(int,String,int)', 'return_value': 'IccOpenLogicalChannelResponse'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: iccCloseLogicalChannel
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'iccCloseLogicalChannel', 'method_arg': '(int)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: iccCloseLogicalChannel
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'iccCloseLogicalChannel', 'method_arg': '(int,int)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: iccTransmitApduLogicalChannel
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'iccTransmitApduLogicalChannel', 'method_arg': '(int,int,int,int,int,int,String)', 'return_value': 'String'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: iccTransmitApduLogicalChannel
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'iccTransmitApduLogicalChannel', 'method_arg': '(int,int,int,int,int,int,int,String)', 'return_value': 'String'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: iccTransmitApduBasicChannel
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'iccTransmitApduBasicChannel', 'method_arg': '(int,int,int,int,int,String)', 'return_value': 'String'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: iccTransmitApduBasicChannel
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'iccTransmitApduBasicChannel', 'method_arg': '(int,int,int,int,int,int,String)', 'return_value': 'String'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: iccExchangeSimIO
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'iccExchangeSimIO', 'method_arg': '(int,int,int,int,int,String)', 'return_value': 'byte[]'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: iccExchangeSimIO
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'iccExchangeSimIO', 'method_arg': '(int,int,int,int,int,int,String)', 'return_value': 'byte[]'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: sendEnvelopeWithStatus
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'sendEnvelopeWithStatus', 'method_arg': '(String)', 'return_value': 'String'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: sendEnvelopeWithStatus
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'sendEnvelopeWithStatus', 'method_arg': '(int,String)', 'return_value': 'String'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: nvReadItem
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'nvReadItem', 'method_arg': '(int)', 'return_value': 'String'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: nvWriteItem
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'nvWriteItem', 'method_arg': '(int,String)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: nvWriteCdmaPrl
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'nvWriteCdmaPrl', 'method_arg': '(byte[])', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: nvResetConfig
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'nvResetConfig', 'method_arg': '(int)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getPreferredNetworkType
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'getPreferredNetworkType', 'method_arg': '(int)', 'return_value': 'int'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setNetworkSelectionModeAutomatic
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'setNetworkSelectionModeAutomatic', 'method_arg': '(int)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: getCellNetworkScanResults
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'getCellNetworkScanResults', 'method_arg': '(int)', 'return_value': 'CellNetworkScanResult'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setNetworkSelectionModeManual
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'setNetworkSelectionModeManual', 'method_arg': '(int,OperatorInfo,boolean)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setPreferredNetworkType
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'setPreferredNetworkType', 'method_arg': '(int,int)', 'return_value': 'boolean'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: sendUssdRequest
+Permission: android.Manifest.permission#CALL_PHONE
+method_dic: {'permission': 'android.Manifest.permission.CALL_PHONE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'sendUssdRequest', 'method_arg': '(String,UssdResponseCallback,Handler)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setDataEnabled
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'setDataEnabled', 'method_arg': '(boolean)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setSimPowerState
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'setSimPowerState', 'method_arg': '(boolean)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: setSimPowerStateForSlot
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'setSimPowerStateForSlot', 'method_arg': '(int,boolean)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\TelephonyManager.java
+Method: carrierActionSetMeteredApnsEnabled
+Permission: android.Manifest.permission#MODIFY_PHONE_STATE MODIFY_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.MODIFY_PHONE_STATE', 'file_path': 'android.telephony.TelephonyManager', 'method_name': 'carrierActionSetMeteredApnsEnabled', 'method_arg': '(int,boolean)', 'return_value': 'void'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\VisualVoicemailService.java
+Method: setSmsFilterSettings
+Permission: android.Manifest.permission#READ_PHONE_STATE READ_PHONE_STATE
+method_dic: {'permission': 'android.Manifest.permission.READ_PHONE_STATE', 'file_path': 'android.telephony.VisualVoicemailService', 'method_name': 'setSmsFilterSettings', 'method_arg': '(Context,PhoneAccountHandle,VisualVoicemailSmsFilterSettings)', 'return_value': 'final'}
+
+Path: D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/android\telephony\VisualVoicemailService.java
+Method: sendVisualVoicemailSms
+Permission: android.Manifest.permission#SEND_SMS SEND_SMS
+method_dic: {'permission': 'android.Manifest.permission.SEND_SMS', 'file_path': 'android.telephony.VisualVoicemailService', 'method_name': 'sendVisualVoicemailSms', 'method_arg': '(Context,PhoneAccountHandle,String,short,String,PendingIntent)', 'return_value': 'final'}
+

@@ -1,0 +1,1988 @@
+match0: android.Manifest.permission.USE_FINGERPRINT
+match1: FingerprintGestureController getFingerprintGestureController()
+method_dic: {'file_path': 'android.accessibilityservice.AccessibilityService', 'permission': {'android.permission.USE_FINGERPRINT'}, 'return_value': 'FingerprintGestureController', 'method_arg': '()', 'method_name': 'getFingerprintGestureController'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS_FULL
+match1: AccountManagerFuture<Bundle> finishSessionAsUser(
+            final Bundle sessionBundle,
+            final Activity activity,
+            final UserHandle userHandle,
+            AccountManagerCallback<Bundle> callback,
+            Handler handler)
+method_dic: {'file_path': 'android.accounts.AccountManager', 'permission': {'android.permission.INTERACT_ACROSS_USERS_FULL'}, 'return_value': 'AccountManagerFuture<Bundle>', 'method_arg': '(Bundle,Activity,UserHandle,AccountManagerCallback<Bundle>,Handler)', 'method_name': 'finishSessionAsUser'}
+
+match0: android.Manifest.permission.REORDER_TASKS
+match1: void moveTaskToFront(int taskId, @MoveTaskFlags int flags)
+method_dic: {'file_path': 'android.app.ActivityManager', 'permission': {'android.permission.REORDER_TASKS'}, 'return_value': 'void', 'method_arg': '(int,int)', 'method_name': 'moveTaskToFront'}
+
+match0: android.Manifest.permission.REORDER_TASKS
+match1: void moveTaskToFront(int taskId, @MoveTaskFlags int flags, Bundle options)
+method_dic: {'file_path': 'android.app.ActivityManager', 'permission': {'android.permission.REORDER_TASKS'}, 'return_value': 'void', 'method_arg': '(int,int,Bundle)', 'method_name': 'moveTaskToFront'}
+
+match0: Manifest.permission.PACKAGE_USAGE_STATS
+match1: int getPackageImportance(String packageName)
+method_dic: {'file_path': 'android.app.ActivityManager', 'permission': {'android.permission.PACKAGE_USAGE_STATS'}, 'return_value': 'int', 'method_arg': '(String)', 'method_name': 'getPackageImportance'}
+
+match0: Manifest.permission.PACKAGE_USAGE_STATS
+match1: int getUidImportance(int uid)
+method_dic: {'file_path': 'android.app.ActivityManager', 'permission': {'android.permission.PACKAGE_USAGE_STATS'}, 'return_value': 'int', 'method_arg': '(int)', 'method_name': 'getUidImportance'}
+
+match0: Manifest.permission.PACKAGE_USAGE_STATS
+match1: void addOnUidImportanceListener(OnUidImportanceListener listener,
+            @RunningAppProcessInfo.Importance int importanceCutpoint)
+method_dic: {'file_path': 'android.app.ActivityManager', 'permission': {'android.permission.PACKAGE_USAGE_STATS'}, 'return_value': 'void', 'method_arg': '(OnUidImportanceListener,int)', 'method_name': 'addOnUidImportanceListener'}
+
+match0: Manifest.permission.PACKAGE_USAGE_STATS
+match1: void removeOnUidImportanceListener(OnUidImportanceListener listener)
+method_dic: {'file_path': 'android.app.ActivityManager', 'permission': {'android.permission.PACKAGE_USAGE_STATS'}, 'return_value': 'void', 'method_arg': '(OnUidImportanceListener)', 'method_name': 'removeOnUidImportanceListener'}
+
+match0: Manifest.permission.KILL_BACKGROUND_PROCESSES
+match1: void killBackgroundProcesses(String packageName)
+method_dic: {'file_path': 'android.app.ActivityManager', 'permission': {'android.permission.KILL_BACKGROUND_PROCESSES'}, 'return_value': 'void', 'method_arg': '(String)', 'method_name': 'killBackgroundProcesses'}
+
+match0: Manifest.permission.KILL_UID
+match1: void killUid(int uid, String reason)
+method_dic: {'file_path': 'android.app.ActivityManager', 'permission': {'android.permission.KILL_UID'}, 'return_value': 'void', 'method_arg': '(int,String)', 'method_name': 'killUid'}
+
+match0: Manifest.permission.FORCE_STOP_PACKAGES
+match1: void forceStopPackage(String packageName)
+method_dic: {'file_path': 'android.app.ActivityManager', 'permission': {'android.permission.FORCE_STOP_PACKAGES'}, 'return_value': 'void', 'method_arg': '(String)', 'method_name': 'forceStopPackage'}
+
+match0: anyOf = {
+            "android.permission.INTERACT_ACROSS_USERS",
+            "android.permission.INTERACT_ACROSS_USERS_FULL"
+    }
+match1: int getCurrentUser()
+method_dic: {'file_path': 'android.app.ActivityManager', 'permission': {'android.permission.INTERACT_ACROSS_USERS_FULL', 'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getCurrentUser'}
+
+match0: Manifest.permission.DUMP
+match1: void dumpPackageState(FileDescriptor fd, String packageName)
+method_dic: {'file_path': 'android.app.ActivityManager', 'permission': {'android.permission.DUMP'}, 'return_value': 'void', 'method_arg': '(FileDescriptor,String)', 'method_name': 'dumpPackageState'}
+
+match0: Manifest.permission.RESTRICTED_VR_ACCESS
+match1: void setPersistentVrThread(int tid)
+method_dic: {'file_path': 'android.app.ActivityManager', 'permission': {'android.permission.RESTRICTED_VR_ACCESS'}, 'return_value': 'void', 'method_arg': '(int)', 'method_name': 'setPersistentVrThread'}
+
+match0: android.Manifest.permission.UPDATE_DEVICE_STATS
+match1: void set(@AlarmType int type, long triggerAtMillis, long windowMillis,
+            long intervalMillis, PendingIntent operation, WorkSource workSource)
+method_dic: {'file_path': 'android.app.AlarmManager', 'permission': {'android.permission.UPDATE_DEVICE_STATS'}, 'return_value': 'void', 'method_arg': '(int,long,long,long,PendingIntent,WorkSource)', 'method_name': 'set'}
+
+match0: android.Manifest.permission.UPDATE_DEVICE_STATS
+match1: void set(@AlarmType int type, long triggerAtMillis, long windowMillis,
+            long intervalMillis, OnAlarmListener listener, Handler targetHandler,
+            WorkSource workSource)
+method_dic: {'file_path': 'android.app.AlarmManager', 'permission': {'android.permission.UPDATE_DEVICE_STATS'}, 'return_value': 'void', 'method_arg': '(int,long,long,long,OnAlarmListener,Handler,WorkSource)', 'method_name': 'set'}
+
+match0: android.Manifest.permission.UPDATE_APP_OPS_STATS
+match1: void setUidMode(String appOp, int uid, int mode)
+method_dic: {'file_path': 'android.app.AppOpsManager', 'permission': {'android.permission.UPDATE_APP_OPS_STATS'}, 'return_value': 'void', 'method_arg': '(String,int,int)', 'method_name': 'setUidMode'}
+
+match0: android.Manifest.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST
+match1: void setTemporaryAppWhitelistDuration(long duration)
+method_dic: {'file_path': 'android.app.BroadcastOptions', 'permission': {'android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST'}, 'return_value': 'void', 'method_arg': '(long)', 'method_name': 'setTemporaryAppWhitelistDuration'}
+
+match0: Manifest.permission.DISABLE_KEYGUARD
+match1: void disableKeyguard()
+method_dic: {'file_path': 'android.app.KeyguardManager', 'permission': {'android.permission.DISABLE_KEYGUARD'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'disableKeyguard'}
+
+match0: Manifest.permission.DISABLE_KEYGUARD
+match1: void reenableKeyguard()
+method_dic: {'file_path': 'android.app.KeyguardManager', 'permission': {'android.permission.DISABLE_KEYGUARD'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'reenableKeyguard'}
+
+match0: Manifest.permission.DISABLE_KEYGUARD
+match1: void exitKeyguardSecurely(final OnKeyguardExitResult callback)
+method_dic: {'file_path': 'android.app.KeyguardManager', 'permission': {'android.permission.DISABLE_KEYGUARD'}, 'return_value': 'void', 'method_arg': '(OnKeyguardExitResult)', 'method_name': 'exitKeyguardSecurely'}
+
+match0: android.Manifest.permission.RESTRICTED_VR_ACCESS
+match1: void setPersistentVrModeEnabled(boolean enabled)
+method_dic: {'file_path': 'android.app.VrManager', 'permission': {'android.permission.RESTRICTED_VR_ACCESS'}, 'return_value': 'void', 'method_arg': '(boolean)', 'method_name': 'setPersistentVrModeEnabled'}
+
+match0: android.Manifest.permission.RESTRICTED_VR_ACCESS
+match1: void setVr2dDisplayProperties(
+            Vr2dDisplayProperties vr2dDisplayProp)
+method_dic: {'file_path': 'android.app.VrManager', 'permission': {'android.permission.RESTRICTED_VR_ACCESS'}, 'return_value': 'void', 'method_arg': '(Vr2dDisplayProperties)', 'method_name': 'setVr2dDisplayProperties'}
+
+match0: android.Manifest.permission.SET_WALLPAPER_HINTS
+match1: void setDisplayPadding(Rect padding)
+method_dic: {'file_path': 'android.app.WallpaperManager', 'permission': {'android.permission.SET_WALLPAPER_HINTS'}, 'return_value': 'void', 'method_arg': '(Rect)', 'method_name': 'setDisplayPadding'}
+
+match0: android.Manifest.permission.SET_WALLPAPER
+match1: void clearWallpaper()
+method_dic: {'file_path': 'android.app.WallpaperManager', 'permission': {'android.permission.SET_WALLPAPER'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'clearWallpaper'}
+
+match0: android.Manifest.permission.SET_WALLPAPER
+match1: void clearWallpaper(@SetWallpaperFlags int which, int userId)
+method_dic: {'file_path': 'android.app.WallpaperManager', 'permission': {'android.permission.SET_WALLPAPER'}, 'return_value': 'void', 'method_arg': '(int,int)', 'method_name': 'clearWallpaper'}
+
+match0: android.Manifest.permission.SET_WALLPAPER_COMPONENT
+match1: boolean setWallpaperComponent(ComponentName name)
+method_dic: {'file_path': 'android.app.WallpaperManager', 'permission': {'android.permission.SET_WALLPAPER_COMPONENT'}, 'return_value': 'boolean', 'method_arg': '(ComponentName)', 'method_name': 'setWallpaperComponent'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS_FULL
+match1: boolean packageHasActiveAdmins(String packageName)
+method_dic: {'file_path': 'android.app.admin.DevicePolicyManager', 'permission': {'android.permission.INTERACT_ACROSS_USERS_FULL'}, 'return_value': 'boolean', 'method_arg': '(String)', 'method_name': 'packageHasActiveAdmins'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: ComponentName getDeviceOwnerComponentOnAnyUser()
+method_dic: {'file_path': 'android.app.admin.DevicePolicyManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'ComponentName', 'method_arg': '()', 'method_name': 'getDeviceOwnerComponentOnAnyUser'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: String getDeviceOwner()
+method_dic: {'file_path': 'android.app.admin.DevicePolicyManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getDeviceOwner'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: String getDeviceOwnerNameOnAnyUser()
+method_dic: {'file_path': 'android.app.admin.DevicePolicyManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getDeviceOwnerNameOnAnyUser'}
+
+match0: android.Manifest.permission.MANAGE_DEVICE_ADMINS
+match1: boolean setActiveProfileOwner(@NonNull ComponentName admin, @Deprecated String ownerName)
+method_dic: {'file_path': 'android.app.admin.DevicePolicyManager', 'permission': {'android.permission.MANAGE_DEVICE_ADMINS'}, 'return_value': 'boolean', 'method_arg': '(ComponentName,String)', 'method_name': 'setActiveProfileOwner'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: String getProfileOwnerNameAsUser(int userId)
+method_dic: {'file_path': 'android.app.admin.DevicePolicyManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getProfileOwnerNameAsUser'}
+
+match0: android.Manifest.permission.NOTIFY_PENDING_SYSTEM_UPDATE
+match1: void notifyPendingSystemUpdate(long updateReceivedTime)
+method_dic: {'file_path': 'android.app.admin.DevicePolicyManager', 'permission': {'android.permission.NOTIFY_PENDING_SYSTEM_UPDATE'}, 'return_value': 'void', 'method_arg': '(long)', 'method_name': 'notifyPendingSystemUpdate'}
+
+match0: android.Manifest.permission.NOTIFY_PENDING_SYSTEM_UPDATE
+match1: void notifyPendingSystemUpdate(long updateReceivedTime, boolean isSecurityPatch)
+method_dic: {'file_path': 'android.app.admin.DevicePolicyManager', 'permission': {'android.permission.NOTIFY_PENDING_SYSTEM_UPDATE'}, 'return_value': 'void', 'method_arg': '(long,boolean)', 'method_name': 'notifyPendingSystemUpdate'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: void setDeviceProvisioningConfigApplied()
+method_dic: {'file_path': 'android.app.admin.DevicePolicyManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'setDeviceProvisioningConfigApplied'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: boolean isDeviceProvisioningConfigApplied()
+method_dic: {'file_path': 'android.app.admin.DevicePolicyManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isDeviceProvisioningConfigApplied'}
+
+match0: android.Manifest.permission.BACKUP
+match1: RestoreSession beginRestoreSession()
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'RestoreSession', 'method_arg': '()', 'method_name': 'beginRestoreSession'}
+
+match0: android.Manifest.permission.BACKUP
+match1: void setBackupEnabled(boolean isEnabled)
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'void', 'method_arg': '(boolean)', 'method_name': 'setBackupEnabled'}
+
+match0: android.Manifest.permission.BACKUP
+match1: boolean isBackupEnabled()
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isBackupEnabled'}
+
+match0: android.Manifest.permission.BACKUP
+match1: void setAutoRestore(boolean isEnabled)
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'void', 'method_arg': '(boolean)', 'method_name': 'setAutoRestore'}
+
+match0: android.Manifest.permission.BACKUP
+match1: String getCurrentTransport()
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getCurrentTransport'}
+
+match0: android.Manifest.permission.BACKUP
+match1: String[] listAllTransports()
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'String[]', 'method_arg': '()', 'method_name': 'listAllTransports'}
+
+match0: android.Manifest.permission.BACKUP
+match1: String selectBackupTransport(String transport)
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'String', 'method_arg': '(String)', 'method_name': 'selectBackupTransport'}
+
+match0: android.Manifest.permission.BACKUP
+match1: void selectBackupTransport(ComponentName transport,
+            SelectBackupTransportCallback listener)
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'void', 'method_arg': '(ComponentName,SelectBackupTransportCallback)', 'method_name': 'selectBackupTransport'}
+
+match0: android.Manifest.permission.BACKUP
+match1: void backupNow()
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'backupNow'}
+
+match0: android.Manifest.permission.BACKUP
+match1: long getAvailableRestoreToken(String packageName)
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'long', 'method_arg': '(String)', 'method_name': 'getAvailableRestoreToken'}
+
+match0: android.Manifest.permission.BACKUP
+match1: boolean isAppEligibleForBackup(String packageName)
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'boolean', 'method_arg': '(String)', 'method_name': 'isAppEligibleForBackup'}
+
+match0: android.Manifest.permission.BACKUP
+match1: int requestBackup(String[] packages, BackupObserver observer)
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'int', 'method_arg': '(String[],BackupObserver)', 'method_name': 'requestBackup'}
+
+match0: android.Manifest.permission.BACKUP
+match1: int requestBackup(String[] packages, BackupObserver observer,
+            BackupManagerMonitor monitor, int flags)
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'int', 'method_arg': '(String[],BackupObserver,BackupManagerMonitor,int)', 'method_name': 'requestBackup'}
+
+match0: android.Manifest.permission.BACKUP
+match1: void cancelBackups()
+method_dic: {'file_path': 'android.app.backup.BackupManager', 'permission': {'android.permission.BACKUP'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'cancelBackups'}
+
+match0: android.Manifest.permission.RECEIVE_BOOT_COMPLETED
+match1: Builder setPersisted(boolean isPersisted)
+method_dic: {'file_path': 'android.app.job.JobInfo', 'permission': {'android.permission.RECEIVE_BOOT_COMPLETED'}, 'return_value': 'Builder', 'method_arg': '(boolean)', 'method_name': 'setPersisted'}
+
+match0: android.Manifest.permission.UPDATE_DEVICE_STATS
+match1: int scheduleAsPackage(@NonNull JobInfo job, @NonNull String packageName,
+            int userId, String tag)
+method_dic: {'file_path': 'android.app.job.JobScheduler', 'permission': {'android.permission.UPDATE_DEVICE_STATS'}, 'return_value': 'int', 'method_arg': '(JobInfo,String,int,String)', 'method_name': 'scheduleAsPackage'}
+
+match0: Manifest.permission.ACCESS_KEYGUARD_SECURE_STORAGE
+match1: void setDeviceLockedForUser(int userId, boolean locked)
+method_dic: {'file_path': 'android.app.trust.TrustManager', 'permission': {'android.permission.ACCESS_KEYGUARD_SECURE_STORAGE'}, 'return_value': 'void', 'method_arg': '(int,boolean)', 'method_name': 'setDeviceLockedForUser'}
+
+match0: android.Manifest.permission.TRUST_LISTENER
+match1: boolean isTrustUsuallyManaged(int userId)
+method_dic: {'file_path': 'android.app.trust.TrustManager', 'permission': {'android.permission.TRUST_LISTENER'}, 'return_value': 'boolean', 'method_arg': '(int)', 'method_name': 'isTrustUsuallyManaged'}
+
+match0: android.Manifest.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST
+match1: void whitelistAppTemporarily(String packageName, long duration, UserHandle user)
+method_dic: {'file_path': 'android.app.usage.UsageStatsManager', 'permission': {'android.permission.CHANGE_DEVICE_IDLE_TEMP_WHITELIST'}, 'return_value': 'void', 'method_arg': '(String,long,UserHandle)', 'method_name': 'whitelistAppTemporarily'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: int getPriority(BluetoothDevice device)
+method_dic: {'file_path': 'android.bluetooth.BluetoothA2dp', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'int', 'method_arg': '(BluetoothDevice)', 'method_name': 'getPriority'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: boolean isEnabled()
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isEnabled'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: int getState()
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getState'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: int getLeState()
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getLeState'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: boolean enable()
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'enable'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: boolean disable()
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'disable'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: String getAddress()
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getAddress'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: boolean setName(String name)
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'boolean', 'method_arg': '(String)', 'method_name': 'setName'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: int getScanMode()
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getScanMode'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: boolean startDiscovery()
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'startDiscovery'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: boolean cancelDiscovery()
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'cancelDiscovery'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: boolean isDiscovering()
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isDiscovering'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: Set<BluetoothDevice> getBondedDevices()
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'Set<BluetoothDevice>', 'method_arg': '()', 'method_name': 'getBondedDevices'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: int getProfileConnectionState(int profile)
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'int', 'method_arg': '(int)', 'method_name': 'getProfileConnectionState'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: BluetoothServerSocket listenUsingRfcommWithServiceRecord(String name, UUID uuid)
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'BluetoothServerSocket', 'method_arg': '(String,UUID)', 'method_name': 'listenUsingRfcommWithServiceRecord'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: BluetoothServerSocket listenUsingInsecureRfcommWithServiceRecord(String name, UUID uuid)
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'BluetoothServerSocket', 'method_arg': '(String,UUID)', 'method_name': 'listenUsingInsecureRfcommWithServiceRecord'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: boolean startLeScan(LeScanCallback callback)
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'boolean', 'method_arg': '(LeScanCallback)', 'method_name': 'startLeScan'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: boolean startLeScan(final UUID[] serviceUuids, final LeScanCallback callback)
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'boolean', 'method_arg': '(UUID[],LeScanCallback)', 'method_name': 'startLeScan'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: void stopLeScan(LeScanCallback callback)
+method_dic: {'file_path': 'android.bluetooth.BluetoothAdapter', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'void', 'method_arg': '(LeScanCallback)', 'method_name': 'stopLeScan'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: String getName()
+method_dic: {'file_path': 'android.bluetooth.BluetoothDevice', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getName'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: int getType()
+method_dic: {'file_path': 'android.bluetooth.BluetoothDevice', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getType'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: boolean createBond()
+method_dic: {'file_path': 'android.bluetooth.BluetoothDevice', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'createBond'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: int getBondState()
+method_dic: {'file_path': 'android.bluetooth.BluetoothDevice', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getBondState'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: BluetoothClass getBluetoothClass()
+method_dic: {'file_path': 'android.bluetooth.BluetoothDevice', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'BluetoothClass', 'method_arg': '()', 'method_name': 'getBluetoothClass'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: ParcelUuid[] getUuids()
+method_dic: {'file_path': 'android.bluetooth.BluetoothDevice', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'ParcelUuid[]', 'method_arg': '()', 'method_name': 'getUuids'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: boolean fetchUuidsWithSdp()
+method_dic: {'file_path': 'android.bluetooth.BluetoothDevice', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'fetchUuidsWithSdp'}
+
+match0: Manifest.permission.BLUETOOTH_PRIVILEGED
+match1: boolean setPairingConfirmation(boolean confirm)
+method_dic: {'file_path': 'android.bluetooth.BluetoothDevice', 'permission': {'android.permission.BLUETOOTH_PRIVILEGED'}, 'return_value': 'boolean', 'method_arg': '(boolean)', 'method_name': 'setPairingConfirmation'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: BluetoothSocket createRfcommSocketToServiceRecord(UUID uuid)
+method_dic: {'file_path': 'android.bluetooth.BluetoothDevice', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'BluetoothSocket', 'method_arg': '(UUID)', 'method_name': 'createRfcommSocketToServiceRecord'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: BluetoothSocket createInsecureRfcommSocketToServiceRecord(UUID uuid)
+method_dic: {'file_path': 'android.bluetooth.BluetoothDevice', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'BluetoothSocket', 'method_arg': '(UUID)', 'method_name': 'createInsecureRfcommSocketToServiceRecord'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: int getConnectionState(BluetoothDevice device, int profile)
+method_dic: {'file_path': 'android.bluetooth.BluetoothManager', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'int', 'method_arg': '(BluetoothDevice,int)', 'method_name': 'getConnectionState'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: List<BluetoothDevice> getConnectedDevices(int profile)
+method_dic: {'file_path': 'android.bluetooth.BluetoothManager', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'List<BluetoothDevice>', 'method_arg': '(int)', 'method_name': 'getConnectedDevices'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: List<BluetoothDevice> getDevicesMatchingConnectionStates(int profile, int[] states)
+method_dic: {'file_path': 'android.bluetooth.BluetoothManager', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'List<BluetoothDevice>', 'method_arg': '(int,int[])', 'method_name': 'getDevicesMatchingConnectionStates'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: List<BluetoothDevice> getConnectedDevices()
+method_dic: {'file_path': 'android.bluetooth.BluetoothProfile', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'List<BluetoothDevice>', 'method_arg': '()', 'method_name': 'getConnectedDevices'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: List<BluetoothDevice> getDevicesMatchingConnectionStates(int[] states)
+method_dic: {'file_path': 'android.bluetooth.BluetoothProfile', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'List<BluetoothDevice>', 'method_arg': '(int[])', 'method_name': 'getDevicesMatchingConnectionStates'}
+
+match0: Manifest.permission.BLUETOOTH
+match1: int getConnectionState(BluetoothDevice device)
+method_dic: {'file_path': 'android.bluetooth.BluetoothProfile', 'permission': {'android.permission.BLUETOOTH'}, 'return_value': 'int', 'method_arg': '(BluetoothDevice)', 'method_name': 'getConnectionState'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: void startScan(final ScanCallback callback)
+method_dic: {'file_path': 'android.bluetooth.le.BluetoothLeScanner', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'void', 'method_arg': '(ScanCallback)', 'method_name': 'startScan'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: void startScan(List<ScanFilter> filters, ScanSettings settings,
+            final ScanCallback callback)
+method_dic: {'file_path': 'android.bluetooth.le.BluetoothLeScanner', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'void', 'method_arg': '(List<ScanFilter>,ScanSettings,ScanCallback)', 'method_name': 'startScan'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: int startScan(@Nullable List<ScanFilter> filters, @Nullable ScanSettings settings,
+            @NonNull PendingIntent callbackIntent)
+method_dic: {'file_path': 'android.bluetooth.le.BluetoothLeScanner', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'int', 'method_arg': '(List<ScanFilter>,ScanSettings,PendingIntent)', 'method_name': 'startScan'}
+
+match0: allOf = {
+            Manifest.permission.BLUETOOTH_ADMIN, Manifest.permission.UPDATE_DEVICE_STATS }
+match1: void startScanFromSource(final WorkSource workSource, final ScanCallback callback)
+method_dic: {'file_path': 'android.bluetooth.le.BluetoothLeScanner', 'permission': {'android.permission.UPDATE_DEVICE_STATS', 'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'void', 'method_arg': '(WorkSource,ScanCallback)', 'method_name': 'startScanFromSource'}
+
+match0: allOf = {
+            Manifest.permission.BLUETOOTH_ADMIN, Manifest.permission.UPDATE_DEVICE_STATS }
+match1: void startScanFromSource(List<ScanFilter> filters, ScanSettings settings,
+                                    final WorkSource workSource, final ScanCallback callback)
+method_dic: {'file_path': 'android.bluetooth.le.BluetoothLeScanner', 'permission': {'android.permission.UPDATE_DEVICE_STATS', 'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'void', 'method_arg': '(List<ScanFilter>,ScanSettings,WorkSource,ScanCallback)', 'method_name': 'startScanFromSource'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: void stopScan(ScanCallback callback)
+method_dic: {'file_path': 'android.bluetooth.le.BluetoothLeScanner', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'void', 'method_arg': '(ScanCallback)', 'method_name': 'stopScan'}
+
+match0: Manifest.permission.BLUETOOTH_ADMIN
+match1: void stopScan(PendingIntent callbackIntent)
+method_dic: {'file_path': 'android.bluetooth.le.BluetoothLeScanner', 'permission': {'android.permission.BLUETOOTH_ADMIN'}, 'return_value': 'void', 'method_arg': '(PendingIntent)', 'method_name': 'stopScan'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS_FULL
+match1: void startActivityAsUser(@RequiresPermission Intent intent, UserHandle user)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS_FULL'}, 'return_value': 'void', 'method_arg': '(Intent,UserHandle)', 'method_name': 'startActivityAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS_FULL
+match1: void startActivityAsUser(@RequiresPermission Intent intent, @Nullable Bundle options,
+            UserHandle userId)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS_FULL'}, 'return_value': 'void', 'method_arg': '(Intent,Bundle,UserHandle)', 'method_name': 'startActivityAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS_FULL
+match1: void startActivitiesAsUser(Intent[] intents, Bundle options, UserHandle userHandle)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS_FULL'}, 'return_value': 'void', 'method_arg': '(Intent[],Bundle,UserHandle)', 'method_name': 'startActivitiesAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS
+match1: void sendBroadcastAsUser(@RequiresPermission Intent intent,
+            UserHandle user)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'void', 'method_arg': '(Intent,UserHandle)', 'method_name': 'sendBroadcastAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS
+match1: void sendBroadcastAsUser(@RequiresPermission Intent intent,
+            UserHandle user, @Nullable String receiverPermission)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'void', 'method_arg': '(Intent,UserHandle,String)', 'method_name': 'sendBroadcastAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS
+match1: void sendBroadcastAsUser(@RequiresPermission Intent intent,
+            UserHandle user, @Nullable String receiverPermission, @Nullable Bundle options)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'void', 'method_arg': '(Intent,UserHandle,String,Bundle)', 'method_name': 'sendBroadcastAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS
+match1: void sendBroadcastAsUser(@RequiresPermission Intent intent,
+            UserHandle user, @Nullable String receiverPermission, int appOp)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'void', 'method_arg': '(Intent,UserHandle,String,int)', 'method_name': 'sendBroadcastAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS
+match1: void sendOrderedBroadcastAsUser(@RequiresPermission Intent intent,
+            UserHandle user, @Nullable String receiverPermission, BroadcastReceiver resultReceiver,
+            @Nullable Handler scheduler, int initialCode, @Nullable String initialData,
+            @Nullable  Bundle initialExtras)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'void', 'method_arg': '(Intent,UserHandle,String,BroadcastReceiver,Handler,int,String,Bundle)', 'method_name': 'sendOrderedBroadcastAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS
+match1: void sendOrderedBroadcastAsUser(Intent intent, UserHandle user,
+            @Nullable String receiverPermission, int appOp, BroadcastReceiver resultReceiver,
+            @Nullable Handler scheduler, int initialCode, @Nullable String initialData,
+            @Nullable  Bundle initialExtras)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'void', 'method_arg': '(Intent,UserHandle,String,int,BroadcastReceiver,Handler,int,String,Bundle)', 'method_name': 'sendOrderedBroadcastAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS
+match1: void sendOrderedBroadcastAsUser(Intent intent, UserHandle user,
+            @Nullable String receiverPermission, int appOp, @Nullable Bundle options,
+            BroadcastReceiver resultReceiver, @Nullable Handler scheduler, int initialCode,
+            @Nullable String initialData, @Nullable  Bundle initialExtras)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'void', 'method_arg': '(Intent,UserHandle,String,int,Bundle,BroadcastReceiver,Handler,int,String,Bundle)', 'method_name': 'sendOrderedBroadcastAsUser'}
+
+match0: android.Manifest.permission.BROADCAST_STICKY
+match1: void sendStickyBroadcast(@RequiresPermission Intent intent)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.BROADCAST_STICKY'}, 'return_value': 'void', 'method_arg': '(Intent)', 'method_name': 'sendStickyBroadcast'}
+
+match0: android.Manifest.permission.BROADCAST_STICKY
+match1: void sendStickyOrderedBroadcast(@RequiresPermission Intent intent,
+            BroadcastReceiver resultReceiver,
+            @Nullable Handler scheduler, int initialCode, @Nullable String initialData,
+            @Nullable Bundle initialExtras)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.BROADCAST_STICKY'}, 'return_value': 'void', 'method_arg': '(Intent,BroadcastReceiver,Handler,int,String,Bundle)', 'method_name': 'sendStickyOrderedBroadcast'}
+
+match0: android.Manifest.permission.BROADCAST_STICKY
+match1: void removeStickyBroadcast(@RequiresPermission Intent intent)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.BROADCAST_STICKY'}, 'return_value': 'void', 'method_arg': '(Intent)', 'method_name': 'removeStickyBroadcast'}
+
+match0: allOf = {
+            android.Manifest.permission.INTERACT_ACROSS_USERS,
+            android.Manifest.permission.BROADCAST_STICKY
+    }
+match1: void sendStickyBroadcastAsUser(@RequiresPermission Intent intent,
+            UserHandle user)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS', 'android.permission.BROADCAST_STICKY'}, 'return_value': 'void', 'method_arg': '(Intent,UserHandle)', 'method_name': 'sendStickyBroadcastAsUser'}
+
+match0: allOf = {
+            android.Manifest.permission.INTERACT_ACROSS_USERS,
+            android.Manifest.permission.BROADCAST_STICKY
+    }
+match1: void sendStickyBroadcastAsUser(@RequiresPermission Intent intent,
+            UserHandle user, Bundle options)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS', 'android.permission.BROADCAST_STICKY'}, 'return_value': 'void', 'method_arg': '(Intent,UserHandle,Bundle)', 'method_name': 'sendStickyBroadcastAsUser'}
+
+match0: allOf = {
+            android.Manifest.permission.INTERACT_ACROSS_USERS,
+            android.Manifest.permission.BROADCAST_STICKY
+    }
+match1: void sendStickyOrderedBroadcastAsUser(@RequiresPermission Intent intent,
+            UserHandle user, BroadcastReceiver resultReceiver,
+            @Nullable Handler scheduler, int initialCode, @Nullable String initialData,
+            @Nullable Bundle initialExtras)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS', 'android.permission.BROADCAST_STICKY'}, 'return_value': 'void', 'method_arg': '(Intent,UserHandle,BroadcastReceiver,Handler,int,String,Bundle)', 'method_name': 'sendStickyOrderedBroadcastAsUser'}
+
+match0: allOf = {
+            android.Manifest.permission.INTERACT_ACROSS_USERS,
+            android.Manifest.permission.BROADCAST_STICKY
+    }
+match1: void removeStickyBroadcastAsUser(@RequiresPermission Intent intent,
+            UserHandle user)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS', 'android.permission.BROADCAST_STICKY'}, 'return_value': 'void', 'method_arg': '(Intent,UserHandle)', 'method_name': 'removeStickyBroadcastAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS_FULL
+match1: Intent registerReceiverAsUser(BroadcastReceiver receiver,
+            UserHandle user, IntentFilter filter, @Nullable String broadcastPermission,
+            @Nullable Handler scheduler)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS_FULL'}, 'return_value': 'Intent', 'method_arg': '(BroadcastReceiver,UserHandle,IntentFilter,String,Handler)', 'method_name': 'registerReceiverAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS
+match1: ComponentName startForegroundServiceAsUser(Intent service, UserHandle user)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'ComponentName', 'method_arg': '(Intent,UserHandle)', 'method_name': 'startForegroundServiceAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS
+match1: ComponentName startServiceAsUser(Intent service, UserHandle user)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'ComponentName', 'method_arg': '(Intent,UserHandle)', 'method_name': 'startServiceAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS
+match1: boolean stopServiceAsUser(Intent service, UserHandle user)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'boolean', 'method_arg': '(Intent,UserHandle)', 'method_name': 'stopServiceAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS
+match1: boolean bindServiceAsUser(@RequiresPermission Intent service, ServiceConnection conn,
+            int flags, UserHandle user)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'boolean', 'method_arg': '(Intent,ServiceConnection,int,UserHandle)', 'method_name': 'bindServiceAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS
+match1: boolean bindServiceAsUser(Intent service, ServiceConnection conn, int flags,
+            Handler handler, UserHandle user)
+method_dic: {'file_path': 'android.content.Context', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'boolean', 'method_arg': '(Intent,ServiceConnection,int,Handler,UserHandle)', 'method_name': 'bindServiceAsUser'}
+
+match0: anyOf = {
+            Manifest.permission.DELETE_PACKAGES,
+            Manifest.permission.REQUEST_DELETE_PACKAGES}
+match1: void uninstall(@NonNull VersionedPackage versionedPackage,
+            @NonNull IntentSender statusReceiver)
+method_dic: {'file_path': 'android.content.pm.PackageInstaller', 'permission': {'android.permission.REQUEST_DELETE_PACKAGES', 'android.permission.DELETE_PACKAGES'}, 'return_value': 'void', 'method_arg': '(VersionedPackage,IntentSender)', 'method_name': 'uninstall'}
+
+match0: android.Manifest.permission.INSTALL_PACKAGES
+match1: void setPermissionsResult(int sessionId, boolean accepted)
+method_dic: {'file_path': 'android.content.pm.PackageInstaller', 'permission': {'android.permission.INSTALL_PACKAGES'}, 'return_value': 'void', 'method_arg': '(int,boolean)', 'method_name': 'setPermissionsResult'}
+
+match0: android.Manifest.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS
+match1: void setGrantedRuntimePermissions(String[] permissions)
+method_dic: {'file_path': 'android.content.pm.PackageInstaller', 'permission': {'android.permission.INSTALL_GRANT_RUNTIME_PERMISSIONS'}, 'return_value': 'void', 'method_arg': '(String[])', 'method_name': 'setGrantedRuntimePermissions'}
+
+match0: android.Manifest.permission.ALLOCATE_AGGRESSIVE
+match1: void setAllocateAggressive(boolean allocateAggressive)
+method_dic: {'file_path': 'android.content.pm.PackageInstaller', 'permission': {'android.permission.ALLOCATE_AGGRESSIVE'}, 'return_value': 'void', 'method_arg': '(boolean)', 'method_name': 'setAllocateAggressive'}
+
+match0: Manifest.permission.INTERACT_ACROSS_USERS
+match1: PackageInfo getPackageInfoAsUser(String packageName,
+            @PackageInfoFlags int flags, @UserIdInt int userId)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.INTERACT_ACROSS_USERS'}, 'return_value': 'PackageInfo', 'method_arg': '(String,int,int)', 'method_name': 'getPackageInfoAsUser'}
+
+match0: android.Manifest.permission.INTERACT_ACROSS_USERS_FULL
+match1: List<PackageInfo> getInstalledPackagesAsUser(@PackageInfoFlags int flags,
+            @UserIdInt int userId)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.INTERACT_ACROSS_USERS_FULL'}, 'return_value': 'List<PackageInfo>', 'method_arg': '(int,int)', 'method_name': 'getInstalledPackagesAsUser'}
+
+match0: android.Manifest.permission.GRANT_RUNTIME_PERMISSIONS
+match1: void grantRuntimePermission(@NonNull String packageName,
+            @NonNull String permissionName, @NonNull UserHandle user)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.GRANT_RUNTIME_PERMISSIONS'}, 'return_value': 'void', 'method_arg': '(String,String,UserHandle)', 'method_name': 'grantRuntimePermission'}
+
+match0: android.Manifest.permission.REVOKE_RUNTIME_PERMISSIONS
+match1: void revokeRuntimePermission(@NonNull String packageName,
+            @NonNull String permissionName, @NonNull UserHandle user)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.REVOKE_RUNTIME_PERMISSIONS'}, 'return_value': 'void', 'method_arg': '(String,String,UserHandle)', 'method_name': 'revokeRuntimePermission'}
+
+match0: anyOf = {
+            android.Manifest.permission.GRANT_RUNTIME_PERMISSIONS,
+            android.Manifest.permission.REVOKE_RUNTIME_PERMISSIONS
+    }
+match1: int getPermissionFlags(String permissionName,
+            String packageName, @NonNull UserHandle user)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.REVOKE_RUNTIME_PERMISSIONS', 'android.permission.GRANT_RUNTIME_PERMISSIONS'}, 'return_value': 'int', 'method_arg': '(String,String,UserHandle)', 'method_name': 'getPermissionFlags'}
+
+match0: anyOf = {
+            android.Manifest.permission.GRANT_RUNTIME_PERMISSIONS,
+            android.Manifest.permission.REVOKE_RUNTIME_PERMISSIONS
+    }
+match1: void updatePermissionFlags(String permissionName,
+            String packageName, @PermissionFlags int flagMask, @PermissionFlags int flagValues,
+            @NonNull UserHandle user)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.REVOKE_RUNTIME_PERMISSIONS', 'android.permission.GRANT_RUNTIME_PERMISSIONS'}, 'return_value': 'void', 'method_arg': '(String,String,int,int,UserHandle)', 'method_name': 'updatePermissionFlags'}
+
+match0: Manifest.permission.ACCESS_INSTANT_APPS
+match1: List<InstantAppInfo> getInstantApps()
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.ACCESS_INSTANT_APPS'}, 'return_value': 'List<InstantAppInfo>', 'method_arg': '()', 'method_name': 'getInstantApps'}
+
+match0: Manifest.permission.ACCESS_INSTANT_APPS
+match1: Drawable getInstantAppIcon(String packageName)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.ACCESS_INSTANT_APPS'}, 'return_value': 'Drawable', 'method_arg': '(String)', 'method_name': 'getInstantAppIcon'}
+
+match0: anyOf = {
+            Manifest.permission.INSTALL_PACKAGES,
+            Manifest.permission.INTERACT_ACROSS_USERS_FULL}
+match1: int installExistingPackageAsUser(String packageName, @UserIdInt int userId)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.INTERACT_ACROSS_USERS_FULL', 'android.permission.INSTALL_PACKAGES'}, 'return_value': 'int', 'method_arg': '(String,int)', 'method_name': 'installExistingPackageAsUser'}
+
+match0: android.Manifest.permission.INTENT_FILTER_VERIFICATION_AGENT
+match1: void verifyIntentFilter(int verificationId, int verificationCode,
+            List<String> failedDomains)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.INTENT_FILTER_VERIFICATION_AGENT'}, 'return_value': 'void', 'method_arg': '(int,int,List<String>)', 'method_name': 'verifyIntentFilter'}
+
+match0: android.Manifest.permission.SET_PREFERRED_APPLICATIONS
+match1: boolean updateIntentVerificationStatusAsUser(String packageName, int status,
+            @UserIdInt int userId)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.SET_PREFERRED_APPLICATIONS'}, 'return_value': 'boolean', 'method_arg': '(String,int,int)', 'method_name': 'updateIntentVerificationStatusAsUser'}
+
+match0: android.Manifest.permission.SET_PREFERRED_APPLICATIONS
+match1: boolean setDefaultBrowserPackageNameAsUser(String packageName,
+            @UserIdInt int userId)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.SET_PREFERRED_APPLICATIONS'}, 'return_value': 'boolean', 'method_arg': '(String,int)', 'method_name': 'setDefaultBrowserPackageNameAsUser'}
+
+match0: Manifest.permission.INSTALL_PACKAGES
+match1: void setUpdateAvailable(String packageName, boolean updateAvaialble)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.INSTALL_PACKAGES'}, 'return_value': 'void', 'method_arg': '(String,boolean)', 'method_name': 'setUpdateAvailable'}
+
+match0: Manifest.permission.DELETE_PACKAGES
+match1: void deletePackage(String packageName, IPackageDeleteObserver observer,
+            @DeleteFlags int flags)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.DELETE_PACKAGES'}, 'return_value': 'void', 'method_arg': '(String,IPackageDeleteObserver,int)', 'method_name': 'deletePackage'}
+
+match0: anyOf = {
+            Manifest.permission.DELETE_PACKAGES,
+            Manifest.permission.INTERACT_ACROSS_USERS_FULL}
+match1: void deletePackageAsUser(@NonNull String packageName,
+            IPackageDeleteObserver observer, @DeleteFlags int flags, @UserIdInt int userId)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.INTERACT_ACROSS_USERS_FULL', 'android.permission.DELETE_PACKAGES'}, 'return_value': 'void', 'method_arg': '(String,IPackageDeleteObserver,int,int)', 'method_name': 'deletePackageAsUser'}
+
+match0: Manifest.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS
+match1: void addOnPermissionsChangeListener(OnPermissionsChangedListener listener)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS'}, 'return_value': 'void', 'method_arg': '(OnPermissionsChangedListener)', 'method_name': 'addOnPermissionsChangeListener'}
+
+match0: Manifest.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS
+match1: void removeOnPermissionsChangeListener(OnPermissionsChangedListener listener)
+method_dic: {'file_path': 'android.content.pm.PackageManager', 'permission': {'android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS'}, 'return_value': 'void', 'method_arg': '(OnPermissionsChangedListener)', 'method_name': 'removeOnPermissionsChangeListener'}
+
+match0: android.Manifest.permission.CAMERA
+match1: void openCamera(@NonNull String cameraId,
+            @NonNull final CameraDevice.StateCallback callback, @Nullable Handler handler)
+method_dic: {'file_path': 'android.hardware.camera2.CameraManager', 'permission': {'android.permission.CAMERA'}, 'return_value': 'void', 'method_arg': '(String,CameraDevice.StateCallback,Handler)', 'method_name': 'openCamera'}
+
+match0: USE_FINGERPRINT
+match1: void authenticate(@Nullable CryptoObject crypto, @Nullable CancellationSignal cancel,
+            int flags, @NonNull AuthenticationCallback callback, @Nullable Handler handler)
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.USE_FINGERPRINT'}, 'return_value': 'void', 'method_arg': '(CryptoObject,CancellationSignal,int,AuthenticationCallback,Handler)', 'method_name': 'authenticate'}
+
+match0: USE_FINGERPRINT
+match1: void authenticate(@Nullable CryptoObject crypto, @Nullable CancellationSignal cancel,
+            int flags, @NonNull AuthenticationCallback callback, Handler handler, int userId)
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.USE_FINGERPRINT'}, 'return_value': 'void', 'method_arg': '(CryptoObject,CancellationSignal,int,AuthenticationCallback,Handler,int)', 'method_name': 'authenticate'}
+
+match0: MANAGE_FINGERPRINT
+match1: void enroll(byte [] token, CancellationSignal cancel, int flags,
+            int userId, EnrollmentCallback callback)
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.MANAGE_FINGERPRINT'}, 'return_value': 'void', 'method_arg': '(byte,CancellationSignal,int,int,EnrollmentCallback)', 'method_name': 'enroll'}
+
+match0: MANAGE_FINGERPRINT
+match1: long preEnroll()
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.MANAGE_FINGERPRINT'}, 'return_value': 'long', 'method_arg': '()', 'method_name': 'preEnroll'}
+
+match0: MANAGE_FINGERPRINT
+match1: int postEnroll()
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.MANAGE_FINGERPRINT'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'postEnroll'}
+
+match0: MANAGE_FINGERPRINT
+match1: void setActiveUser(int userId)
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.MANAGE_FINGERPRINT'}, 'return_value': 'void', 'method_arg': '(int)', 'method_name': 'setActiveUser'}
+
+match0: MANAGE_FINGERPRINT
+match1: void remove(Fingerprint fp, int userId, RemovalCallback callback)
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.MANAGE_FINGERPRINT'}, 'return_value': 'void', 'method_arg': '(Fingerprint,int,RemovalCallback)', 'method_name': 'remove'}
+
+match0: MANAGE_FINGERPRINT
+match1: void enumerate(int userId, @NonNull EnumerateCallback callback)
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.MANAGE_FINGERPRINT'}, 'return_value': 'void', 'method_arg': '(int,EnumerateCallback)', 'method_name': 'enumerate'}
+
+match0: MANAGE_FINGERPRINT
+match1: void rename(int fpId, int userId, String newName)
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.MANAGE_FINGERPRINT'}, 'return_value': 'void', 'method_arg': '(int,int,String)', 'method_name': 'rename'}
+
+match0: USE_FINGERPRINT
+match1: List<Fingerprint> getEnrolledFingerprints(int userId)
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.USE_FINGERPRINT'}, 'return_value': 'List<Fingerprint>', 'method_arg': '(int)', 'method_name': 'getEnrolledFingerprints'}
+
+match0: USE_FINGERPRINT
+match1: List<Fingerprint> getEnrolledFingerprints()
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.USE_FINGERPRINT'}, 'return_value': 'List<Fingerprint>', 'method_arg': '()', 'method_name': 'getEnrolledFingerprints'}
+
+match0: USE_FINGERPRINT
+match1: boolean hasEnrolledFingerprints()
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.USE_FINGERPRINT'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'hasEnrolledFingerprints'}
+
+match0: allOf = {
+            USE_FINGERPRINT,
+            INTERACT_ACROSS_USERS}
+match1: boolean hasEnrolledFingerprints(int userId)
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.INTERACT_ACROSS_USERS', 'android.permission.USE_FINGERPRINT'}, 'return_value': 'boolean', 'method_arg': '(int)', 'method_name': 'hasEnrolledFingerprints'}
+
+match0: USE_FINGERPRINT
+match1: boolean isHardwareDetected()
+method_dic: {'file_path': 'android.hardware.fingerprint.FingerprintManager', 'permission': {'android.permission.USE_FINGERPRINT'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isHardwareDetected'}
+
+match0: android.Manifest.permission.HDMI_CEC
+match1: void setStandbyMode(boolean isStandbyModeOn)
+method_dic: {'file_path': 'android.hardware.hdmi.HdmiControlManager', 'permission': {'android.permission.HDMI_CEC'}, 'return_value': 'void', 'method_arg': '(boolean)', 'method_name': 'setStandbyMode'}
+
+match0: android.Manifest.permission.HDMI_CEC
+match1: void addHotplugEventListener(HotplugEventListener listener)
+method_dic: {'file_path': 'android.hardware.hdmi.HdmiControlManager', 'permission': {'android.permission.HDMI_CEC'}, 'return_value': 'void', 'method_arg': '(HotplugEventListener)', 'method_name': 'addHotplugEventListener'}
+
+match0: android.Manifest.permission.HDMI_CEC
+match1: void removeHotplugEventListener(HotplugEventListener listener)
+method_dic: {'file_path': 'android.hardware.hdmi.HdmiControlManager', 'permission': {'android.permission.HDMI_CEC'}, 'return_value': 'void', 'method_arg': '(HotplugEventListener)', 'method_name': 'removeHotplugEventListener'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: int[] getContextHubHandles()
+method_dic: {'file_path': 'android.hardware.location.ContextHubManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'int[]', 'method_arg': '()', 'method_name': 'getContextHubHandles'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: ContextHubInfo getContextHubInfo(int hubHandle)
+method_dic: {'file_path': 'android.hardware.location.ContextHubManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'ContextHubInfo', 'method_arg': '(int)', 'method_name': 'getContextHubInfo'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: int loadNanoApp(int hubHandle, NanoApp app)
+method_dic: {'file_path': 'android.hardware.location.ContextHubManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'int', 'method_arg': '(int,NanoApp)', 'method_name': 'loadNanoApp'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: int unloadNanoApp(int nanoAppHandle)
+method_dic: {'file_path': 'android.hardware.location.ContextHubManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'int', 'method_arg': '(int)', 'method_name': 'unloadNanoApp'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: NanoAppInstanceInfo getNanoAppInstanceInfo(int nanoAppHandle)
+method_dic: {'file_path': 'android.hardware.location.ContextHubManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'NanoAppInstanceInfo', 'method_arg': '(int)', 'method_name': 'getNanoAppInstanceInfo'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: int[] findNanoAppOnHub(int hubHandle, NanoAppFilter filter)
+method_dic: {'file_path': 'android.hardware.location.ContextHubManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'int[]', 'method_arg': '(int,NanoAppFilter)', 'method_name': 'findNanoAppOnHub'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: int sendMessage(int hubHandle, int nanoAppHandle, ContextHubMessage message)
+method_dic: {'file_path': 'android.hardware.location.ContextHubManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'int', 'method_arg': '(int,int,ContextHubMessage)', 'method_name': 'sendMessage'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void requestLocationUpdates(String provider, long minTime, float minDistance,
+            LocationListener listener)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(String,long,float,LocationListener)', 'method_name': 'requestLocationUpdates'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void requestLocationUpdates(String provider, long minTime, float minDistance,
+            LocationListener listener, Looper looper)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(String,long,float,LocationListener,Looper)', 'method_name': 'requestLocationUpdates'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void requestLocationUpdates(long minTime, float minDistance, Criteria criteria,
+            LocationListener listener, Looper looper)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(long,float,Criteria,LocationListener,Looper)', 'method_name': 'requestLocationUpdates'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void requestLocationUpdates(String provider, long minTime, float minDistance,
+            PendingIntent intent)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(String,long,float,PendingIntent)', 'method_name': 'requestLocationUpdates'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void requestLocationUpdates(long minTime, float minDistance, Criteria criteria,
+            PendingIntent intent)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(long,float,Criteria,PendingIntent)', 'method_name': 'requestLocationUpdates'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void requestSingleUpdate(String provider, LocationListener listener, Looper looper)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(String,LocationListener,Looper)', 'method_name': 'requestSingleUpdate'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void requestSingleUpdate(Criteria criteria, LocationListener listener, Looper looper)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(Criteria,LocationListener,Looper)', 'method_name': 'requestSingleUpdate'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void requestSingleUpdate(String provider, PendingIntent intent)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(String,PendingIntent)', 'method_name': 'requestSingleUpdate'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void requestSingleUpdate(Criteria criteria, PendingIntent intent)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(Criteria,PendingIntent)', 'method_name': 'requestSingleUpdate'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void requestLocationUpdates(LocationRequest request, LocationListener listener,
+            Looper looper)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(LocationRequest,LocationListener,Looper)', 'method_name': 'requestLocationUpdates'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void requestLocationUpdates(LocationRequest request, PendingIntent intent)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(LocationRequest,PendingIntent)', 'method_name': 'requestLocationUpdates'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void addProximityAlert(double latitude, double longitude, float radius, long expiration,
+            PendingIntent intent)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(double,double,float,long,PendingIntent)', 'method_name': 'addProximityAlert'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: void addGeofence(LocationRequest request, Geofence fence, PendingIntent intent)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'void', 'method_arg': '(LocationRequest,Geofence,PendingIntent)', 'method_name': 'addGeofence'}
+
+match0: anyOf = {ACCESS_COARSE_LOCATION, ACCESS_FINE_LOCATION}
+match1: Location getLastKnownLocation(String provider)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'Location', 'method_arg': '(String)', 'method_name': 'getLastKnownLocation'}
+
+match0: ACCESS_FINE_LOCATION
+match1: boolean addGpsStatusListener(GpsStatus.Listener listener)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION'}, 'return_value': 'boolean', 'method_arg': '(GpsStatus.Listener)', 'method_name': 'addGpsStatusListener'}
+
+match0: ACCESS_FINE_LOCATION
+match1: boolean registerGnssStatusCallback(GnssStatus.Callback callback)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION'}, 'return_value': 'boolean', 'method_arg': '(GnssStatus.Callback)', 'method_name': 'registerGnssStatusCallback'}
+
+match0: ACCESS_FINE_LOCATION
+match1: boolean registerGnssStatusCallback(GnssStatus.Callback callback, Handler handler)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION'}, 'return_value': 'boolean', 'method_arg': '(GnssStatus.Callback,Handler)', 'method_name': 'registerGnssStatusCallback'}
+
+match0: ACCESS_FINE_LOCATION
+match1: boolean addNmeaListener(GpsStatus.NmeaListener listener)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION'}, 'return_value': 'boolean', 'method_arg': '(GpsStatus.NmeaListener)', 'method_name': 'addNmeaListener'}
+
+match0: ACCESS_FINE_LOCATION
+match1: boolean addNmeaListener(OnNmeaMessageListener listener)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION'}, 'return_value': 'boolean', 'method_arg': '(OnNmeaMessageListener)', 'method_name': 'addNmeaListener'}
+
+match0: ACCESS_FINE_LOCATION
+match1: boolean addNmeaListener(OnNmeaMessageListener listener, Handler handler)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION'}, 'return_value': 'boolean', 'method_arg': '(OnNmeaMessageListener,Handler)', 'method_name': 'addNmeaListener'}
+
+match0: ACCESS_FINE_LOCATION
+match1: boolean registerGnssMeasurementsCallback(GnssMeasurementsEvent.Callback callback)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION'}, 'return_value': 'boolean', 'method_arg': '(GnssMeasurementsEvent.Callback)', 'method_name': 'registerGnssMeasurementsCallback'}
+
+match0: ACCESS_FINE_LOCATION
+match1: boolean registerGnssMeasurementsCallback(GnssMeasurementsEvent.Callback callback,
+            Handler handler)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION'}, 'return_value': 'boolean', 'method_arg': '(GnssMeasurementsEvent.Callback,Handler)', 'method_name': 'registerGnssMeasurementsCallback'}
+
+match0: ACCESS_FINE_LOCATION
+match1: boolean registerGnssNavigationMessageCallback(
+            GnssNavigationMessage.Callback callback, Handler handler)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION'}, 'return_value': 'boolean', 'method_arg': '(GnssNavigationMessage.Callback,Handler)', 'method_name': 'registerGnssNavigationMessageCallback'}
+
+match0: ACCESS_FINE_LOCATION
+match1: GpsStatus getGpsStatus(GpsStatus status)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION'}, 'return_value': 'GpsStatus', 'method_arg': '(GpsStatus)', 'method_name': 'getGpsStatus'}
+
+match0: Manifest.permission.LOCATION_HARDWARE
+match1: int getGnssBatchSize()
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getGnssBatchSize'}
+
+match0: Manifest.permission.LOCATION_HARDWARE
+match1: boolean registerGnssBatchedLocationCallback(long periodNanos, boolean wakeOnFifoFull,
+                                  BatchedLocationCallback callback, Handler handler)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'boolean', 'method_arg': '(long,boolean,BatchedLocationCallback,Handler)', 'method_name': 'registerGnssBatchedLocationCallback'}
+
+match0: Manifest.permission.LOCATION_HARDWARE
+match1: void flushGnssBatch()
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'flushGnssBatch'}
+
+match0: Manifest.permission.LOCATION_HARDWARE
+match1: boolean unregisterGnssBatchedLocationCallback(BatchedLocationCallback callback)
+method_dic: {'file_path': 'android.location.LocationManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'boolean', 'method_arg': '(BatchedLocationCallback)', 'method_name': 'unregisterGnssBatchedLocationCallback'}
+
+match0: android.Manifest.permission.MODIFY_AUDIO_ROUTING
+match1: int registerAudioPolicy(@NonNull AudioPolicy policy)
+method_dic: {'file_path': 'android.media.AudioManager', 'permission': {'android.permission.MODIFY_AUDIO_ROUTING'}, 'return_value': 'int', 'method_arg': '(AudioPolicy)', 'method_name': 'registerAudioPolicy'}
+
+match0: android.Manifest.permission.MODIFY_AUDIO_ROUTING
+match1: void unregisterAudioPolicyAsync(@NonNull AudioPolicy policy)
+method_dic: {'file_path': 'android.media.AudioManager', 'permission': {'android.permission.MODIFY_AUDIO_ROUTING'}, 'return_value': 'void', 'method_arg': '(AudioPolicy)', 'method_name': 'unregisterAudioPolicyAsync'}
+
+match0: Manifest.permission.WRITE_SECURE_SETTINGS
+match1: void enableSyncFromParent(Context userContext)
+method_dic: {'file_path': 'android.media.RingtoneManager', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'void', 'method_arg': '(Context)', 'method_name': 'enableSyncFromParent'}
+
+match0: android.Manifest.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER
+match1: void setOnVolumeKeyLongPressListener(
+            OnVolumeKeyLongPressListener listener, @Nullable Handler handler)
+method_dic: {'file_path': 'android.media.session.MediaSessionManager', 'permission': {'android.permission.SET_VOLUME_KEY_LONG_PRESS_LISTENER'}, 'return_value': 'void', 'method_arg': '(OnVolumeKeyLongPressListener,Handler)', 'method_name': 'setOnVolumeKeyLongPressListener'}
+
+match0: android.Manifest.permission.SET_MEDIA_KEY_LISTENER
+match1: void setOnMediaKeyListener(OnMediaKeyListener listener, @Nullable Handler handler)
+method_dic: {'file_path': 'android.media.session.MediaSessionManager', 'permission': {'android.permission.SET_MEDIA_KEY_LISTENER'}, 'return_value': 'void', 'method_arg': '(OnMediaKeyListener,Handler)', 'method_name': 'setOnMediaKeyListener'}
+
+match0: android.Manifest.permission.MANAGE_SOUND_TRIGGER
+match1: boolean startRecognition(@RecognitionFlags int recognitionFlags)
+method_dic: {'file_path': 'android.media.soundtrigger.SoundTriggerDetector', 'permission': {'android.permission.MANAGE_SOUND_TRIGGER'}, 'return_value': 'boolean', 'method_arg': '(int)', 'method_name': 'startRecognition'}
+
+match0: android.Manifest.permission.MANAGE_SOUND_TRIGGER
+match1: boolean stopRecognition()
+method_dic: {'file_path': 'android.media.soundtrigger.SoundTriggerDetector', 'permission': {'android.permission.MANAGE_SOUND_TRIGGER'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'stopRecognition'}
+
+match0: android.Manifest.permission.MANAGE_SOUND_TRIGGER
+match1: void updateModel(Model model)
+method_dic: {'file_path': 'android.media.soundtrigger.SoundTriggerManager', 'permission': {'android.permission.MANAGE_SOUND_TRIGGER'}, 'return_value': 'void', 'method_arg': '(Model)', 'method_name': 'updateModel'}
+
+match0: android.Manifest.permission.MANAGE_SOUND_TRIGGER
+match1: Model getModel(UUID soundModelId)
+method_dic: {'file_path': 'android.media.soundtrigger.SoundTriggerManager', 'permission': {'android.permission.MANAGE_SOUND_TRIGGER'}, 'return_value': 'Model', 'method_arg': '(UUID)', 'method_name': 'getModel'}
+
+match0: android.Manifest.permission.MANAGE_SOUND_TRIGGER
+match1: void deleteModel(UUID soundModelId)
+method_dic: {'file_path': 'android.media.soundtrigger.SoundTriggerManager', 'permission': {'android.permission.MANAGE_SOUND_TRIGGER'}, 'return_value': 'void', 'method_arg': '(UUID)', 'method_name': 'deleteModel'}
+
+match0: android.Manifest.permission.MANAGE_SOUND_TRIGGER
+match1: SoundTriggerDetector createSoundTriggerDetector(UUID soundModelId,
+            @NonNull SoundTriggerDetector.Callback callback, @Nullable Handler handler)
+method_dic: {'file_path': 'android.media.soundtrigger.SoundTriggerManager', 'permission': {'android.permission.MANAGE_SOUND_TRIGGER'}, 'return_value': 'SoundTriggerDetector', 'method_arg': '(UUID,SoundTriggerDetector.Callback,Handler)', 'method_name': 'createSoundTriggerDetector'}
+
+match0: android.Manifest.permission.MODIFY_PARENTAL_CONTROLS
+match1: void setParentalControlsEnabled(boolean enabled)
+method_dic: {'file_path': 'android.media.tv.TvInputManager', 'permission': {'android.permission.MODIFY_PARENTAL_CONTROLS'}, 'return_value': 'void', 'method_arg': '(boolean)', 'method_name': 'setParentalControlsEnabled'}
+
+match0: android.Manifest.permission.MODIFY_PARENTAL_CONTROLS
+match1: void addBlockedRating(@NonNull TvContentRating rating)
+method_dic: {'file_path': 'android.media.tv.TvInputManager', 'permission': {'android.permission.MODIFY_PARENTAL_CONTROLS'}, 'return_value': 'void', 'method_arg': '(TvContentRating)', 'method_name': 'addBlockedRating'}
+
+match0: android.Manifest.permission.MODIFY_PARENTAL_CONTROLS
+match1: void removeBlockedRating(@NonNull TvContentRating rating)
+method_dic: {'file_path': 'android.media.tv.TvInputManager', 'permission': {'android.permission.MODIFY_PARENTAL_CONTROLS'}, 'return_value': 'void', 'method_arg': '(TvContentRating)', 'method_name': 'removeBlockedRating'}
+
+match0: android.Manifest.permission.NOTIFY_TV_INPUTS
+match1: void notifyPreviewProgramBrowsableDisabled(String packageName, long programId)
+method_dic: {'file_path': 'android.media.tv.TvInputManager', 'permission': {'android.permission.NOTIFY_TV_INPUTS'}, 'return_value': 'void', 'method_arg': '(String,long)', 'method_name': 'notifyPreviewProgramBrowsableDisabled'}
+
+match0: android.Manifest.permission.NOTIFY_TV_INPUTS
+match1: void notifyWatchNextProgramBrowsableDisabled(String packageName, long programId)
+method_dic: {'file_path': 'android.media.tv.TvInputManager', 'permission': {'android.permission.NOTIFY_TV_INPUTS'}, 'return_value': 'void', 'method_arg': '(String,long)', 'method_name': 'notifyWatchNextProgramBrowsableDisabled'}
+
+match0: android.Manifest.permission.NOTIFY_TV_INPUTS
+match1: void notifyPreviewProgramAddedToWatchNext(String packageName, long previewProgramId,
+            long watchNextProgramId)
+method_dic: {'file_path': 'android.media.tv.TvInputManager', 'permission': {'android.permission.NOTIFY_TV_INPUTS'}, 'return_value': 'void', 'method_arg': '(String,long,long)', 'method_name': 'notifyPreviewProgramAddedToWatchNext'}
+
+match0: android.Manifest.permission.CAPTURE_TV_INPUT
+match1: List<TvStreamConfig> getAvailableTvStreamConfigList(String inputId)
+method_dic: {'file_path': 'android.media.tv.TvInputManager', 'permission': {'android.permission.CAPTURE_TV_INPUT'}, 'return_value': 'List<TvStreamConfig>', 'method_arg': '(String)', 'method_name': 'getAvailableTvStreamConfigList'}
+
+match0: android.Manifest.permission.CAPTURE_TV_INPUT
+match1: boolean captureFrame(String inputId, Surface surface, TvStreamConfig config)
+method_dic: {'file_path': 'android.media.tv.TvInputManager', 'permission': {'android.permission.CAPTURE_TV_INPUT'}, 'return_value': 'boolean', 'method_arg': '(String,Surface,TvStreamConfig)', 'method_name': 'captureFrame'}
+
+match0: android.Manifest.permission.TV_INPUT_HARDWARE
+match1: List<TvInputHardwareInfo> getHardwareList()
+method_dic: {'file_path': 'android.media.tv.TvInputManager', 'permission': {'android.permission.TV_INPUT_HARDWARE'}, 'return_value': 'List<TvInputHardwareInfo>', 'method_arg': '()', 'method_name': 'getHardwareList'}
+
+match0: android.Manifest.permission.TV_INPUT_HARDWARE
+match1: Hardware acquireTvInputHardware(int deviceId, final HardwareCallback callback,
+            TvInputInfo info)
+method_dic: {'file_path': 'android.media.tv.TvInputManager', 'permission': {'android.permission.TV_INPUT_HARDWARE'}, 'return_value': 'Hardware', 'method_arg': '(int,HardwareCallback,TvInputInfo)', 'method_name': 'acquireTvInputHardware'}
+
+match0: android.Manifest.permission.TV_INPUT_HARDWARE
+match1: Hardware acquireTvInputHardware(int deviceId, TvInputInfo info,
+            final HardwareCallback callback)
+method_dic: {'file_path': 'android.media.tv.TvInputManager', 'permission': {'android.permission.TV_INPUT_HARDWARE'}, 'return_value': 'Hardware', 'method_arg': '(int,TvInputInfo,HardwareCallback)', 'method_name': 'acquireTvInputHardware'}
+
+match0: android.Manifest.permission.TV_INPUT_HARDWARE
+match1: void releaseTvInputHardware(int deviceId, Hardware hardware)
+method_dic: {'file_path': 'android.media.tv.TvInputManager', 'permission': {'android.permission.TV_INPUT_HARDWARE'}, 'return_value': 'void', 'method_arg': '(int,Hardware)', 'method_name': 'releaseTvInputHardware'}
+
+match0: android.Manifest.permission.MODIFY_PARENTAL_CONTROLS
+match1: void unblockContent(TvContentRating unblockedRating)
+method_dic: {'file_path': 'android.media.tv.TvView', 'permission': {'android.permission.MODIFY_PARENTAL_CONTROLS'}, 'return_value': 'void', 'method_arg': '(TvContentRating)', 'method_name': 'unblockContent'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: int getNetworkPreference()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getNetworkPreference'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: NetworkInfo getActiveNetworkInfo()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'NetworkInfo', 'method_arg': '()', 'method_name': 'getActiveNetworkInfo'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: Network getActiveNetwork()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'Network', 'method_arg': '()', 'method_name': 'getActiveNetwork'}
+
+match0: android.Manifest.permission.CONNECTIVITY_INTERNAL
+match1: Network getActiveNetworkForUid(int uid)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.CONNECTIVITY_INTERNAL'}, 'return_value': 'Network', 'method_arg': '(int)', 'method_name': 'getActiveNetworkForUid'}
+
+match0: android.Manifest.permission.CONNECTIVITY_INTERNAL
+match1: NetworkInfo getActiveNetworkInfoForUid(int uid)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.CONNECTIVITY_INTERNAL'}, 'return_value': 'NetworkInfo', 'method_arg': '(int)', 'method_name': 'getActiveNetworkInfoForUid'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: NetworkInfo getNetworkInfo(int networkType)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'NetworkInfo', 'method_arg': '(int)', 'method_name': 'getNetworkInfo'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: NetworkInfo getNetworkInfo(Network network)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'NetworkInfo', 'method_arg': '(Network)', 'method_name': 'getNetworkInfo'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: NetworkInfo[] getAllNetworkInfo()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'NetworkInfo[]', 'method_arg': '()', 'method_name': 'getAllNetworkInfo'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: Network getNetworkForType(int networkType)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'Network', 'method_arg': '(int)', 'method_name': 'getNetworkForType'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: Network[] getAllNetworks()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'Network[]', 'method_arg': '()', 'method_name': 'getAllNetworks'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: LinkProperties getActiveLinkProperties()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'LinkProperties', 'method_arg': '()', 'method_name': 'getActiveLinkProperties'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: LinkProperties getLinkProperties(int networkType)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'LinkProperties', 'method_arg': '(int)', 'method_name': 'getLinkProperties'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: LinkProperties getLinkProperties(Network network)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'LinkProperties', 'method_arg': '(Network)', 'method_name': 'getLinkProperties'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: NetworkCapabilities getNetworkCapabilities(Network network)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'NetworkCapabilities', 'method_arg': '(Network)', 'method_name': 'getNetworkCapabilities'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: NetworkQuotaInfo getActiveNetworkQuotaInfo()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'NetworkQuotaInfo', 'method_arg': '()', 'method_name': 'getActiveNetworkQuotaInfo'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: String[] getTetherableIfaces()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'String[]', 'method_arg': '()', 'method_name': 'getTetherableIfaces'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: String[] getTetheredIfaces()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'String[]', 'method_arg': '()', 'method_name': 'getTetheredIfaces'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: String[] getTetheringErroredIfaces()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'String[]', 'method_arg': '()', 'method_name': 'getTetheringErroredIfaces'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: boolean isTetheringSupported()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isTetheringSupported'}
+
+match0: android.Manifest.permission.TETHER_PRIVILEGED
+match1: void startTethering(int type, boolean showProvisioningUi,
+            final OnStartTetheringCallback callback, Handler handler)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.TETHER_PRIVILEGED'}, 'return_value': 'void', 'method_arg': '(int,boolean,OnStartTetheringCallback,Handler)', 'method_name': 'startTethering'}
+
+match0: android.Manifest.permission.TETHER_PRIVILEGED
+match1: void stopTethering(int type)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.TETHER_PRIVILEGED'}, 'return_value': 'void', 'method_arg': '(int)', 'method_name': 'stopTethering'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: String[] getTetherableUsbRegexs()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'String[]', 'method_arg': '()', 'method_name': 'getTetherableUsbRegexs'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: String[] getTetherableWifiRegexs()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'String[]', 'method_arg': '()', 'method_name': 'getTetherableWifiRegexs'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: String[] getTetherableBluetoothRegexs()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'String[]', 'method_arg': '()', 'method_name': 'getTetherableBluetoothRegexs'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: int getLastTetherError(String iface)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'int', 'method_arg': '(String)', 'method_name': 'getLastTetherError'}
+
+match0: android.Manifest.permission.CONNECTIVITY_INTERNAL
+match1: void setGlobalProxy(ProxyInfo p)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.CONNECTIVITY_INTERNAL'}, 'return_value': 'void', 'method_arg': '(ProxyInfo)', 'method_name': 'setGlobalProxy'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: boolean isNetworkSupported(int networkType)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'boolean', 'method_arg': '(int)', 'method_name': 'isNetworkSupported'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: boolean isActiveNetworkMetered()
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isActiveNetworkMetered'}
+
+match0: android.Manifest.permission.CONNECTIVITY_INTERNAL
+match1: void setAirplaneMode(boolean enable)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.CONNECTIVITY_INTERNAL'}, 'return_value': 'void', 'method_arg': '(boolean)', 'method_name': 'setAirplaneMode'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: void registerNetworkCallback(NetworkRequest request, NetworkCallback networkCallback)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'void', 'method_arg': '(NetworkRequest,NetworkCallback)', 'method_name': 'registerNetworkCallback'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: void registerNetworkCallback(
+            NetworkRequest request, NetworkCallback networkCallback, Handler handler)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'void', 'method_arg': '(NetworkRequest,NetworkCallback,Handler)', 'method_name': 'registerNetworkCallback'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: void registerNetworkCallback(NetworkRequest request, PendingIntent operation)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'void', 'method_arg': '(NetworkRequest,PendingIntent)', 'method_name': 'registerNetworkCallback'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: void registerDefaultNetworkCallback(NetworkCallback networkCallback)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'void', 'method_arg': '(NetworkCallback)', 'method_name': 'registerDefaultNetworkCallback'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: void registerDefaultNetworkCallback(NetworkCallback networkCallback, Handler handler)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'void', 'method_arg': '(NetworkCallback,Handler)', 'method_name': 'registerDefaultNetworkCallback'}
+
+match0: android.Manifest.permission.CONNECTIVITY_INTERNAL
+match1: void setAcceptUnvalidated(Network network, boolean accept, boolean always)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.CONNECTIVITY_INTERNAL'}, 'return_value': 'void', 'method_arg': '(Network,boolean,boolean)', 'method_name': 'setAcceptUnvalidated'}
+
+match0: android.Manifest.permission.CONNECTIVITY_INTERNAL
+match1: void setAvoidUnvalidated(Network network)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.CONNECTIVITY_INTERNAL'}, 'return_value': 'void', 'method_arg': '(Network)', 'method_name': 'setAvoidUnvalidated'}
+
+match0: android.Manifest.permission.CONNECTIVITY_INTERNAL
+match1: void startCaptivePortalApp(Network network)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.CONNECTIVITY_INTERNAL'}, 'return_value': 'void', 'method_arg': '(Network)', 'method_name': 'startCaptivePortalApp'}
+
+match0: android.Manifest.permission.ACCESS_NETWORK_STATE
+match1: int getMultipathPreference(Network network)
+method_dic: {'file_path': 'android.net.ConnectivityManager', 'permission': {'android.permission.ACCESS_NETWORK_STATE'}, 'return_value': 'int', 'method_arg': '(Network)', 'method_name': 'getMultipathPreference'}
+
+match0: android.Manifest.permission.REQUEST_NETWORK_SCORES
+match1: NetworkScorerAppData getActiveScorer()
+method_dic: {'file_path': 'android.net.NetworkScoreManager', 'permission': {'android.permission.REQUEST_NETWORK_SCORES'}, 'return_value': 'NetworkScorerAppData', 'method_arg': '()', 'method_name': 'getActiveScorer'}
+
+match0: android.Manifest.permission.SCORE_NETWORKS
+match1: boolean updateScores(ScoredNetwork[] networks)
+method_dic: {'file_path': 'android.net.NetworkScoreManager', 'permission': {'android.permission.SCORE_NETWORKS'}, 'return_value': 'boolean', 'method_arg': '(ScoredNetwork[])', 'method_name': 'updateScores'}
+
+match0: android.Manifest.permission.REQUEST_NETWORK_SCORES
+match1: boolean clearScores()
+method_dic: {'file_path': 'android.net.NetworkScoreManager', 'permission': {'android.permission.REQUEST_NETWORK_SCORES'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'clearScores'}
+
+match0: android.Manifest.permission.SCORE_NETWORKS
+match1: boolean setActiveScorer(String packageName)
+method_dic: {'file_path': 'android.net.NetworkScoreManager', 'permission': {'android.permission.SCORE_NETWORKS'}, 'return_value': 'boolean', 'method_arg': '(String)', 'method_name': 'setActiveScorer'}
+
+match0: android.Manifest.permission.REQUEST_NETWORK_SCORES
+match1: void disableScoring()
+method_dic: {'file_path': 'android.net.NetworkScoreManager', 'permission': {'android.permission.REQUEST_NETWORK_SCORES'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'disableScoring'}
+
+match0: android.Manifest.permission.UPDATE_DEVICE_STATS
+match1: void setThreadStatsUid(int uid)
+method_dic: {'file_path': 'android.net.TrafficStats', 'permission': {'android.permission.UPDATE_DEVICE_STATS'}, 'return_value': 'void', 'method_arg': '(int)', 'method_name': 'setThreadStatsUid'}
+
+match0: android.Manifest.permission.UPDATE_DEVICE_STATS
+match1: void clearThreadStatsUid()
+method_dic: {'file_path': 'android.net.TrafficStats', 'permission': {'android.permission.UPDATE_DEVICE_STATS'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'clearThreadStatsUid'}
+
+match0: android.Manifest.permission.CONTROL_VPN
+match1: void prepareAndAuthorize(Context context)
+method_dic: {'file_path': 'android.net.VpnService', 'permission': {'android.permission.CONTROL_VPN'}, 'return_value': 'void', 'method_arg': '(Context)', 'method_name': 'prepareAndAuthorize'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: void startRanging(RttParams[] params, RttListener listener)
+method_dic: {'file_path': 'android.net.wifi.RttManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'void', 'method_arg': '(RttParams[],RttListener)', 'method_name': 'startRanging'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: void stopRanging(RttListener listener)
+method_dic: {'file_path': 'android.net.wifi.RttManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'void', 'method_arg': '(RttListener)', 'method_name': 'stopRanging'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: void enableResponder(ResponderCallback callback)
+method_dic: {'file_path': 'android.net.wifi.RttManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'void', 'method_arg': '(ResponderCallback)', 'method_name': 'enableResponder'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: void disableResponder(ResponderCallback callback)
+method_dic: {'file_path': 'android.net.wifi.RttManager', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'void', 'method_arg': '(ResponderCallback)', 'method_name': 'disableResponder'}
+
+match0: android.Manifest.permission.READ_WIFI_CREDENTIAL
+match1: List<WifiConfiguration> getPrivilegedConfiguredNetworks()
+method_dic: {'file_path': 'android.net.wifi.WifiManager', 'permission': {'android.permission.READ_WIFI_CREDENTIAL'}, 'return_value': 'List<WifiConfiguration>', 'method_arg': '()', 'method_name': 'getPrivilegedConfiguredNetworks'}
+
+match0: android.Manifest.permission.READ_WIFI_CREDENTIAL
+match1: WifiConnectionStatistics getConnectionStatistics()
+method_dic: {'file_path': 'android.net.wifi.WifiManager', 'permission': {'android.permission.READ_WIFI_CREDENTIAL'}, 'return_value': 'WifiConnectionStatistics', 'method_arg': '()', 'method_name': 'getConnectionStatistics'}
+
+match0: android.Manifest.permission.UPDATE_DEVICE_STATS
+match1: boolean startScan(WorkSource workSource)
+method_dic: {'file_path': 'android.net.wifi.WifiManager', 'permission': {'android.permission.UPDATE_DEVICE_STATS'}, 'return_value': 'boolean', 'method_arg': '(WorkSource)', 'method_name': 'startScan'}
+
+match0: android.Manifest.permission.TETHER_PRIVILEGED
+match1: boolean setWifiApEnabled(WifiConfiguration wifiConfig, boolean enabled)
+method_dic: {'file_path': 'android.net.wifi.WifiManager', 'permission': {'android.permission.TETHER_PRIVILEGED'}, 'return_value': 'boolean', 'method_arg': '(WifiConfiguration,boolean)', 'method_name': 'setWifiApEnabled'}
+
+match0: android.Manifest.permission.ACCESS_WIFI_STATE
+match1: int getWifiApState()
+method_dic: {'file_path': 'android.net.wifi.WifiManager', 'permission': {'android.permission.ACCESS_WIFI_STATE'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getWifiApState'}
+
+match0: android.Manifest.permission.ACCESS_WIFI_STATE
+match1: boolean isWifiApEnabled()
+method_dic: {'file_path': 'android.net.wifi.WifiManager', 'permission': {'android.permission.ACCESS_WIFI_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isWifiApEnabled'}
+
+match0: android.Manifest.permission.ACCESS_WIFI_STATE
+match1: WifiConfiguration getWifiApConfiguration()
+method_dic: {'file_path': 'android.net.wifi.WifiManager', 'permission': {'android.permission.ACCESS_WIFI_STATE'}, 'return_value': 'WifiConfiguration', 'method_arg': '()', 'method_name': 'getWifiApConfiguration'}
+
+match0: android.Manifest.permission.CHANGE_WIFI_STATE
+match1: boolean setWifiApConfiguration(WifiConfiguration wifiConfig)
+method_dic: {'file_path': 'android.net.wifi.WifiManager', 'permission': {'android.permission.CHANGE_WIFI_STATE'}, 'return_value': 'boolean', 'method_arg': '(WifiConfiguration)', 'method_name': 'setWifiApConfiguration'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: void startBackgroundScan(ScanSettings settings, ScanListener listener)
+method_dic: {'file_path': 'android.net.wifi.WifiScanner', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'void', 'method_arg': '(ScanSettings,ScanListener)', 'method_name': 'startBackgroundScan'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: void startBackgroundScan(ScanSettings settings, ScanListener listener,
+            WorkSource workSource)
+method_dic: {'file_path': 'android.net.wifi.WifiScanner', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'void', 'method_arg': '(ScanSettings,ScanListener,WorkSource)', 'method_name': 'startBackgroundScan'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: void stopBackgroundScan(ScanListener listener)
+method_dic: {'file_path': 'android.net.wifi.WifiScanner', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'void', 'method_arg': '(ScanListener)', 'method_name': 'stopBackgroundScan'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: boolean getScanResults()
+method_dic: {'file_path': 'android.net.wifi.WifiScanner', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'getScanResults'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: void startScan(ScanSettings settings, ScanListener listener)
+method_dic: {'file_path': 'android.net.wifi.WifiScanner', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'void', 'method_arg': '(ScanSettings,ScanListener)', 'method_name': 'startScan'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: void startScan(ScanSettings settings, ScanListener listener, WorkSource workSource)
+method_dic: {'file_path': 'android.net.wifi.WifiScanner', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'void', 'method_arg': '(ScanSettings,ScanListener,WorkSource)', 'method_name': 'startScan'}
+
+match0: android.Manifest.permission.LOCATION_HARDWARE
+match1: void stopScan(ScanListener listener)
+method_dic: {'file_path': 'android.net.wifi.WifiScanner', 'permission': {'android.permission.LOCATION_HARDWARE'}, 'return_value': 'void', 'method_arg': '(ScanListener)', 'method_name': 'stopScan'}
+
+match0: android.Manifest.permission.WRITE_SECURE_SETTINGS
+match1: boolean enable()
+method_dic: {'file_path': 'android.nfc.NfcAdapter', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'enable'}
+
+match0: android.Manifest.permission.WRITE_SECURE_SETTINGS
+match1: boolean disable()
+method_dic: {'file_path': 'android.nfc.NfcAdapter', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'disable'}
+
+match0: android.Manifest.permission.WRITE_SECURE_SETTINGS
+match1: boolean disable(boolean persist)
+method_dic: {'file_path': 'android.nfc.NfcAdapter', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'boolean', 'method_arg': '(boolean)', 'method_name': 'disable'}
+
+match0: android.Manifest.permission.WRITE_SECURE_SETTINGS
+match1: boolean enableNdefPush()
+method_dic: {'file_path': 'android.nfc.NfcAdapter', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'enableNdefPush'}
+
+match0: android.Manifest.permission.WRITE_SECURE_SETTINGS
+match1: boolean disableNdefPush()
+method_dic: {'file_path': 'android.nfc.NfcAdapter', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'disableNdefPush'}
+
+match0: android.Manifest.permission.WRITE_SECURE_SETTINGS
+match1: boolean addNfcUnlockHandler(final NfcUnlockHandler unlockHandler,
+                                       String[] tagTechnologies)
+method_dic: {'file_path': 'android.nfc.NfcAdapter', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'boolean', 'method_arg': '(NfcUnlockHandler,String[])', 'method_name': 'addNfcUnlockHandler'}
+
+match0: android.Manifest.permission.WRITE_SECURE_SETTINGS
+match1: boolean removeNfcUnlockHandler(NfcUnlockHandler unlockHandler)
+method_dic: {'file_path': 'android.nfc.NfcAdapter', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'boolean', 'method_arg': '(NfcUnlockHandler)', 'method_name': 'removeNfcUnlockHandler'}
+
+match0: Manifest.permission.READ_PHONE_STATE
+match1: String getSerial()
+method_dic: {'file_path': 'android.os.Build', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getSerial'}
+
+match0: allOf = {
+            android.Manifest.permission.DUMP,
+            android.Manifest.permission.PACKAGE_USAGE_STATS
+    }
+match1: void reportIncident(IncidentReportArgs args)
+method_dic: {'file_path': 'android.os.IncidentManager', 'permission': {'android.permission.PACKAGE_USAGE_STATS', 'android.permission.DUMP'}, 'return_value': 'void', 'method_arg': '(IncidentReportArgs)', 'method_name': 'reportIncident'}
+
+match0: allOf = {
+            android.Manifest.permission.DUMP,
+            android.Manifest.permission.PACKAGE_USAGE_STATS
+    }
+match1: void reportIncident(String settingName, byte[] headerProto)
+method_dic: {'file_path': 'android.os.IncidentManager', 'permission': {'android.permission.PACKAGE_USAGE_STATS', 'android.permission.DUMP'}, 'return_value': 'void', 'method_arg': '(String,byte[])', 'method_name': 'reportIncident'}
+
+match0: anyOf = {
+            android.Manifest.permission.DEVICE_POWER,
+            android.Manifest.permission.USER_ACTIVITY
+    }
+match1: void userActivity(long when, int event, int flags)
+method_dic: {'file_path': 'android.os.PowerManager', 'permission': {'android.permission.DEVICE_POWER', 'android.permission.USER_ACTIVITY'}, 'return_value': 'void', 'method_arg': '(long,int,int)', 'method_name': 'userActivity'}
+
+match0: android.Manifest.permission.RECOVERY
+match1: void processPackage(Context context,
+                                      File packageFile,
+                                      final ProgressListener listener,
+                                      final Handler handler)
+method_dic: {'file_path': 'android.os.RecoverySystem', 'permission': {'android.permission.RECOVERY'}, 'return_value': 'void', 'method_arg': '(Context,File,ProgressListener,Handler)', 'method_name': 'processPackage'}
+
+match0: android.Manifest.permission.RECOVERY
+match1: void processPackage(Context context,
+                                      File packageFile,
+                                      final ProgressListener listener)
+method_dic: {'file_path': 'android.os.RecoverySystem', 'permission': {'android.permission.RECOVERY'}, 'return_value': 'void', 'method_arg': '(Context,File,ProgressListener)', 'method_name': 'processPackage'}
+
+match0: android.Manifest.permission.RECOVERY
+match1: void installPackage(Context context, File packageFile)
+method_dic: {'file_path': 'android.os.RecoverySystem', 'permission': {'android.permission.RECOVERY'}, 'return_value': 'void', 'method_arg': '(Context,File)', 'method_name': 'installPackage'}
+
+match0: android.Manifest.permission.RECOVERY
+match1: void installPackage(Context context, File packageFile, boolean processed)
+method_dic: {'file_path': 'android.os.RecoverySystem', 'permission': {'android.permission.RECOVERY'}, 'return_value': 'void', 'method_arg': '(Context,File,boolean)', 'method_name': 'installPackage'}
+
+match0: android.Manifest.permission.RECOVERY
+match1: void scheduleUpdateOnBoot(Context context, File packageFile)
+method_dic: {'file_path': 'android.os.RecoverySystem', 'permission': {'android.permission.RECOVERY'}, 'return_value': 'void', 'method_arg': '(Context,File)', 'method_name': 'scheduleUpdateOnBoot'}
+
+match0: android.Manifest.permission.RECOVERY
+match1: void cancelScheduledUpdate(Context context)
+method_dic: {'file_path': 'android.os.RecoverySystem', 'permission': {'android.permission.RECOVERY'}, 'return_value': 'void', 'method_arg': '(Context)', 'method_name': 'cancelScheduledUpdate'}
+
+match0: allOf = {
+            android.Manifest.permission.RECOVERY,
+            android.Manifest.permission.REBOOT
+    }
+match1: void rebootWipeAb(Context context, File packageFile, String reason)
+method_dic: {'file_path': 'android.os.RecoverySystem', 'permission': {'android.permission.REBOOT', 'android.permission.RECOVERY'}, 'return_value': 'void', 'method_arg': '(Context,File,String)', 'method_name': 'rebootWipeAb'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: boolean isManagedProfile()
+method_dic: {'file_path': 'android.os.UserManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isManagedProfile'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: boolean isManagedProfile(@UserIdInt int userId)
+method_dic: {'file_path': 'android.os.UserManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'boolean', 'method_arg': '(int)', 'method_name': 'isManagedProfile'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: int getUserRestrictionSource(String restrictionKey, UserHandle userHandle)
+method_dic: {'file_path': 'android.os.UserManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'int', 'method_arg': '(String,UserHandle)', 'method_name': 'getUserRestrictionSource'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: List<EnforcingUser> getUserRestrictionSources(
+            String restrictionKey, UserHandle userHandle)
+method_dic: {'file_path': 'android.os.UserManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'List<EnforcingUser>', 'method_arg': '(String,UserHandle)', 'method_name': 'getUserRestrictionSources'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: String getSeedAccountName()
+method_dic: {'file_path': 'android.os.UserManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getSeedAccountName'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: String getSeedAccountType()
+method_dic: {'file_path': 'android.os.UserManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getSeedAccountType'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: PersistableBundle getSeedAccountOptions()
+method_dic: {'file_path': 'android.os.UserManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'PersistableBundle', 'method_arg': '()', 'method_name': 'getSeedAccountOptions'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: void clearSeedAccountData()
+method_dic: {'file_path': 'android.os.UserManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'clearSeedAccountData'}
+
+match0: android.Manifest.permission.MANAGE_USERS
+match1: long[] getSerialNumbersOfUsers(boolean excludeDying)
+method_dic: {'file_path': 'android.os.UserManager', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'long[]', 'method_arg': '(boolean)', 'method_name': 'getSerialNumbersOfUsers'}
+
+match0:  allOf = {
+            Manifest.permission.INTERACT_ACROSS_USERS_FULL,
+            Manifest.permission.MANAGE_USERS
+    }
+match1: String getUserAccount(@UserIdInt int userHandle)
+method_dic: {'file_path': 'android.os.UserManager', 'permission': {'android.permission.INTERACT_ACROSS_USERS_FULL', 'android.permission.MANAGE_USERS'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getUserAccount'}
+
+match0:  allOf = {
+            Manifest.permission.INTERACT_ACROSS_USERS_FULL,
+            Manifest.permission.MANAGE_USERS
+    }
+match1: void setUserAccount(@UserIdInt int userHandle, @Nullable String accountName)
+method_dic: {'file_path': 'android.os.UserManager', 'permission': {'android.permission.INTERACT_ACROSS_USERS_FULL', 'android.permission.MANAGE_USERS'}, 'return_value': 'void', 'method_arg': '(int,String)', 'method_name': 'setUserAccount'}
+
+match0: android.Manifest.permission.VIBRATE
+match1: void vibrate(long milliseconds)
+method_dic: {'file_path': 'android.os.Vibrator', 'permission': {'android.permission.VIBRATE'}, 'return_value': 'void', 'method_arg': '(long)', 'method_name': 'vibrate'}
+
+match0: android.Manifest.permission.VIBRATE
+match1: void vibrate(long milliseconds, AudioAttributes attributes)
+method_dic: {'file_path': 'android.os.Vibrator', 'permission': {'android.permission.VIBRATE'}, 'return_value': 'void', 'method_arg': '(long,AudioAttributes)', 'method_name': 'vibrate'}
+
+match0: android.Manifest.permission.VIBRATE
+match1: void vibrate(long[] pattern, int repeat)
+method_dic: {'file_path': 'android.os.Vibrator', 'permission': {'android.permission.VIBRATE'}, 'return_value': 'void', 'method_arg': '(long[],int)', 'method_name': 'vibrate'}
+
+match0: android.Manifest.permission.VIBRATE
+match1: void vibrate(long[] pattern, int repeat, AudioAttributes attributes)
+method_dic: {'file_path': 'android.os.Vibrator', 'permission': {'android.permission.VIBRATE'}, 'return_value': 'void', 'method_arg': '(long[],int,AudioAttributes)', 'method_name': 'vibrate'}
+
+match0: android.Manifest.permission.VIBRATE
+match1: void vibrate(VibrationEffect vibe)
+method_dic: {'file_path': 'android.os.Vibrator', 'permission': {'android.permission.VIBRATE'}, 'return_value': 'void', 'method_arg': '(VibrationEffect)', 'method_name': 'vibrate'}
+
+match0: android.Manifest.permission.VIBRATE
+match1: void vibrate(VibrationEffect vibe, AudioAttributes attributes)
+method_dic: {'file_path': 'android.os.Vibrator', 'permission': {'android.permission.VIBRATE'}, 'return_value': 'void', 'method_arg': '(VibrationEffect,AudioAttributes)', 'method_name': 'vibrate'}
+
+match0: android.Manifest.permission.VIBRATE
+match1: void vibrate(int uid, String opPkg,
+            VibrationEffect vibe, AudioAttributes attributes)
+method_dic: {'file_path': 'android.os.Vibrator', 'permission': {'android.permission.VIBRATE'}, 'return_value': 'void', 'method_arg': '(int,String,VibrationEffect,AudioAttributes)', 'method_name': 'vibrate'}
+
+match0: android.Manifest.permission.VIBRATE
+match1: void cancel()
+method_dic: {'file_path': 'android.os.Vibrator', 'permission': {'android.permission.VIBRATE'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'cancel'}
+
+match0: Manifest.permission.WRITE_SECURE_SETTINGS
+match1: boolean putString(@NonNull ContentResolver resolver,
+                @NonNull String name, @Nullable String value, @Nullable String tag,
+                boolean makeDefault)
+method_dic: {'file_path': 'android.provider.Settings', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'boolean', 'method_arg': '(ContentResolver,String,String,String,boolean)', 'method_name': 'putString'}
+
+match0: Manifest.permission.WRITE_SECURE_SETTINGS
+match1: void resetToDefaults(@NonNull ContentResolver resolver,
+                @Nullable String tag)
+method_dic: {'file_path': 'android.provider.Settings', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'void', 'method_arg': '(ContentResolver,String)', 'method_name': 'resetToDefaults'}
+
+match0: Manifest.permission.WRITE_SECURE_SETTINGS
+match1: boolean putString(@NonNull ContentResolver resolver,
+                @NonNull String name, @Nullable String value, @Nullable String tag,
+                boolean makeDefault)
+method_dic: {'file_path': 'android.provider.Settings', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'boolean', 'method_arg': '(ContentResolver,String,String,String,boolean)', 'method_name': 'putString'}
+
+match0: Manifest.permission.WRITE_SECURE_SETTINGS
+match1: void resetToDefaults(@NonNull ContentResolver resolver,
+                @Nullable String tag)
+method_dic: {'file_path': 'android.provider.Settings', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'void', 'method_arg': '(ContentResolver,String)', 'method_name': 'resetToDefaults'}
+
+match0: Manifest.permission.READ_PRIVILEGED_PHONE_STATE
+match1: X509Certificate[] attestDeviceIds(Context context,
+            @NonNull int[] idTypes, @NonNull byte[] attestationChallenge)
+method_dic: {'file_path': 'android.security.keystore.AttestationUtils', 'permission': {'android.permission.READ_PRIVILEGED_PHONE_STATE'}, 'return_value': 'X509Certificate[]', 'method_arg': '(Context,int[],byte[])', 'method_name': 'attestDeviceIds'}
+
+match0: android.Manifest.permission.MANAGE_CARRIER_OEM_UNLOCK_STATE
+match1: void setOemUnlockAllowedByCarrier(boolean allowed, @Nullable byte[] signature)
+method_dic: {'file_path': 'android.service.oemlock.OemLockManager', 'permission': {'android.permission.MANAGE_CARRIER_OEM_UNLOCK_STATE'}, 'return_value': 'void', 'method_arg': '(boolean,byte[])', 'method_name': 'setOemUnlockAllowedByCarrier'}
+
+match0: android.Manifest.permission.MANAGE_CARRIER_OEM_UNLOCK_STATE
+match1: boolean isOemUnlockAllowedByCarrier()
+method_dic: {'file_path': 'android.service.oemlock.OemLockManager', 'permission': {'android.permission.MANAGE_CARRIER_OEM_UNLOCK_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isOemUnlockAllowedByCarrier'}
+
+match0: android.Manifest.permission.MANAGE_USER_OEM_UNLOCK_STATE
+match1: void setOemUnlockAllowedByUser(boolean allowed)
+method_dic: {'file_path': 'android.service.oemlock.OemLockManager', 'permission': {'android.permission.MANAGE_USER_OEM_UNLOCK_STATE'}, 'return_value': 'void', 'method_arg': '(boolean)', 'method_name': 'setOemUnlockAllowedByUser'}
+
+match0: android.Manifest.permission.MANAGE_USER_OEM_UNLOCK_STATE
+match1: boolean isOemUnlockAllowedByUser()
+method_dic: {'file_path': 'android.service.oemlock.OemLockManager', 'permission': {'android.permission.MANAGE_USER_OEM_UNLOCK_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isOemUnlockAllowedByUser'}
+
+match0: android.Manifest.permission.ACCESS_PDB_STATE
+match1: int getDataBlockSize()
+method_dic: {'file_path': 'android.service.persistentdata.PersistentDataBlockManager', 'permission': {'android.permission.ACCESS_PDB_STATE'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getDataBlockSize'}
+
+match0: android.Manifest.permission.OEM_UNLOCK_STATE
+match1: void wipe()
+method_dic: {'file_path': 'android.service.persistentdata.PersistentDataBlockManager', 'permission': {'android.permission.OEM_UNLOCK_STATE'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'wipe'}
+
+match0: android.Manifest.permission.OEM_UNLOCK_STATE
+match1: void setOemUnlockEnabled(boolean enabled)
+method_dic: {'file_path': 'android.service.persistentdata.PersistentDataBlockManager', 'permission': {'android.permission.OEM_UNLOCK_STATE'}, 'return_value': 'void', 'method_arg': '(boolean)', 'method_name': 'setOemUnlockEnabled'}
+
+match0: anyOf = {
+            android.Manifest.permission.READ_OEM_UNLOCK_STATE,
+            android.Manifest.permission.OEM_UNLOCK_STATE
+    }
+match1: boolean getOemUnlockEnabled()
+method_dic: {'file_path': 'android.service.persistentdata.PersistentDataBlockManager', 'permission': {'android.permission.READ_OEM_UNLOCK_STATE', 'android.permission.OEM_UNLOCK_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'getOemUnlockEnabled'}
+
+match0: anyOf = {
+            android.Manifest.permission.READ_OEM_UNLOCK_STATE,
+            android.Manifest.permission.OEM_UNLOCK_STATE
+    }
+match1: int getFlashLockState()
+method_dic: {'file_path': 'android.service.persistentdata.PersistentDataBlockManager', 'permission': {'android.permission.READ_OEM_UNLOCK_STATE', 'android.permission.OEM_UNLOCK_STATE'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getFlashLockState'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: PhoneAccountHandle getDefaultOutgoingPhoneAccount(String uriScheme)
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'PhoneAccountHandle', 'method_arg': '(String)', 'method_name': 'getDefaultOutgoingPhoneAccount'}
+
+match0: anyOf = {
+            android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE,
+            android.Manifest.permission.READ_PHONE_STATE
+    }
+match1: List<PhoneAccountHandle> getPhoneAccountsSupportingScheme(String uriScheme)
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.READ_PRIVILEGED_PHONE_STATE', 'android.permission.READ_PHONE_STATE'}, 'return_value': 'List<PhoneAccountHandle>', 'method_arg': '(String)', 'method_name': 'getPhoneAccountsSupportingScheme'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: List<PhoneAccountHandle> getCallCapablePhoneAccounts()
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'List<PhoneAccountHandle>', 'method_arg': '()', 'method_name': 'getCallCapablePhoneAccounts'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: List<PhoneAccountHandle> getSelfManagedPhoneAccounts()
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'List<PhoneAccountHandle>', 'method_arg': '()', 'method_name': 'getSelfManagedPhoneAccounts'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: boolean isVoiceMailNumber(PhoneAccountHandle accountHandle, String number)
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '(PhoneAccountHandle,String)', 'method_name': 'isVoiceMailNumber'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getVoiceMailNumber(PhoneAccountHandle accountHandle)
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(PhoneAccountHandle)', 'method_name': 'getVoiceMailNumber'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getLine1Number(PhoneAccountHandle accountHandle)
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(PhoneAccountHandle)', 'method_name': 'getLine1Number'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: boolean isInCall()
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isInCall'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: boolean isInManagedCall()
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isInManagedCall'}
+
+match0: anyOf = {
+            android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE,
+            android.Manifest.permission.READ_PHONE_STATE
+    }
+match1: boolean isRinging()
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.READ_PRIVILEGED_PHONE_STATE', 'android.permission.READ_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isRinging'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: boolean endCall()
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'endCall'}
+
+match0: anyOf =
+            {Manifest.permission.ANSWER_PHONE_CALLS, Manifest.permission.MODIFY_PHONE_STATE}
+match1: void acceptRingingCall()
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.ANSWER_PHONE_CALLS', 'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'acceptRingingCall'}
+
+match0: anyOf =
+            {Manifest.permission.ANSWER_PHONE_CALLS, Manifest.permission.MODIFY_PHONE_STATE}
+match1: void acceptRingingCall(int videoState)
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.ANSWER_PHONE_CALLS', 'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '(int)', 'method_name': 'acceptRingingCall'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: void silenceRinger()
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'silenceRinger'}
+
+match0: anyOf = {
+            android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE,
+            android.Manifest.permission.READ_PHONE_STATE
+    }
+match1: boolean isTtySupported()
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.READ_PRIVILEGED_PHONE_STATE', 'android.permission.READ_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isTtySupported'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: boolean handleMmi(String dialString)
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '(String)', 'method_name': 'handleMmi'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: boolean handleMmi(String dialString, PhoneAccountHandle accountHandle)
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '(String,PhoneAccountHandle)', 'method_name': 'handleMmi'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: Uri getAdnUriForPhoneAccount(PhoneAccountHandle accountHandle)
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'Uri', 'method_arg': '(PhoneAccountHandle)', 'method_name': 'getAdnUriForPhoneAccount'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: void cancelMissedCallsNotification()
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'cancelMissedCallsNotification'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: void showInCallScreen(boolean showDialpad)
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '(boolean)', 'method_name': 'showInCallScreen'}
+
+match0: anyOf = {android.Manifest.permission.CALL_PHONE,
+            android.Manifest.permission.MANAGE_OWN_CALLS}
+match1: void placeCall(Uri address, Bundle extras)
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.MANAGE_OWN_CALLS', 'android.permission.CALL_PHONE'}, 'return_value': 'void', 'method_arg': '(Uri,Bundle)', 'method_name': 'placeCall'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: void enablePhoneAccount(PhoneAccountHandle handle, boolean isEnabled)
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '(PhoneAccountHandle,boolean)', 'method_name': 'enablePhoneAccount'}
+
+match0: Manifest.permission.DUMP
+match1: TelecomAnalytics dumpAnalytics()
+method_dic: {'file_path': 'android.telecom.TelecomManager', 'permission': {'android.permission.DUMP'}, 'return_value': 'TelecomAnalytics', 'method_arg': '()', 'method_name': 'dumpAnalytics'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: void updateConfigForPhoneId(int phoneId, String simState)
+method_dic: {'file_path': 'android.telephony.CarrierConfigManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '(int,String)', 'method_name': 'updateConfigForPhoneId'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: void sendTextMessageWithoutPersisting(
+            String destinationAddress, String scAddress, String text,
+            PendingIntent sentIntent, PendingIntent deliveryIntent)
+method_dic: {'file_path': 'android.telephony.SmsManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '(String,String,String,PendingIntent,PendingIntent)', 'method_name': 'sendTextMessageWithoutPersisting'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: void sendMultipartTextMessageWithoutPersisting(
+            String destinationAddress, String scAddress, List<String> parts,
+            List<PendingIntent> sentIntents, List<PendingIntent> deliveryIntents)
+method_dic: {'file_path': 'android.telephony.SmsManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '(String,String,List<String>,List<PendingIntent>,List<PendingIntent>)', 'method_name': 'sendMultipartTextMessageWithoutPersisting'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getDeviceSoftwareVersion()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getDeviceSoftwareVersion'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getDeviceSoftwareVersion(int slotIndex)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getDeviceSoftwareVersion'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getDeviceId()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getDeviceId'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getDeviceId(int slotIndex)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getDeviceId'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getImei()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getImei'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getImei(int slotIndex)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getImei'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getMeid()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getMeid'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getMeid(int slotIndex)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getMeid'}
+
+match0: anyOf = {
+            android.Manifest.permission.ACCESS_COARSE_LOCATION,
+            android.Manifest.permission.ACCESS_FINE_LOCATION
+    }
+match1: CellLocation getCellLocation()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.ACCESS_FINE_LOCATION', 'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'CellLocation', 'method_arg': '()', 'method_name': 'getCellLocation'}
+
+match0: android.Manifest.permission.CONTROL_LOCATION_UPDATES
+match1: void enableLocationUpdates()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.CONTROL_LOCATION_UPDATES'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'enableLocationUpdates'}
+
+match0: android.Manifest.permission.CONTROL_LOCATION_UPDATES
+match1: void enableLocationUpdates(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.CONTROL_LOCATION_UPDATES'}, 'return_value': 'void', 'method_arg': '(int)', 'method_name': 'enableLocationUpdates'}
+
+match0: android.Manifest.permission.CONTROL_LOCATION_UPDATES
+match1: void disableLocationUpdates()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.CONTROL_LOCATION_UPDATES'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'disableLocationUpdates'}
+
+match0: android.Manifest.permission.ACCESS_COARSE_LOCATION
+match1: List<NeighboringCellInfo> getNeighboringCellInfo()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'List<NeighboringCellInfo>', 'method_arg': '()', 'method_name': 'getNeighboringCellInfo'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: PersistableBundle getCarrierConfig()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'PersistableBundle', 'method_arg': '()', 'method_name': 'getCarrierConfig'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getNetworkType(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '(int)', 'method_name': 'getNetworkType'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getDataNetworkType()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getDataNetworkType'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getDataNetworkType(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '(int)', 'method_name': 'getDataNetworkType'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getVoiceNetworkType()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getVoiceNetworkType'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getVoiceNetworkType(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '(int)', 'method_name': 'getVoiceNetworkType'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getSimSerialNumber()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getSimSerialNumber'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getSimSerialNumber(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getSimSerialNumber'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getLteOnCdmaMode()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getLteOnCdmaMode'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getLteOnCdmaMode(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '(int)', 'method_name': 'getLteOnCdmaMode'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getSubscriberId()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getSubscriberId'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getSubscriberId(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getSubscriberId'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getGroupIdLevel1()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getGroupIdLevel1'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getGroupIdLevel1(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getGroupIdLevel1'}
+
+match0: anyOf = {
+            android.Manifest.permission.READ_PHONE_STATE,
+            android.Manifest.permission.READ_SMS,
+            android.Manifest.permission.READ_PHONE_NUMBERS
+    }
+match1: String getLine1Number()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_SMS', 'android.permission.READ_PHONE_NUMBERS', 'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getLine1Number'}
+
+match0: anyOf = {
+            android.Manifest.permission.READ_PHONE_STATE,
+            android.Manifest.permission.READ_SMS,
+            android.Manifest.permission.READ_PHONE_NUMBERS
+    }
+match1: String getLine1Number(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_SMS', 'android.permission.READ_PHONE_NUMBERS', 'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getLine1Number'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getLine1AlphaTag()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getLine1AlphaTag'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getLine1AlphaTag(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getLine1AlphaTag'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getMsisdn()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getMsisdn'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getMsisdn(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getMsisdn'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getVoiceMailNumber()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getVoiceMailNumber'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getVoiceMailNumber(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getVoiceMailNumber'}
+
+match0: android.Manifest.permission.CALL_PRIVILEGED
+match1: String getCompleteVoiceMailNumber()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.CALL_PRIVILEGED'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getCompleteVoiceMailNumber'}
+
+match0: android.Manifest.permission.CALL_PRIVILEGED
+match1: String getCompleteVoiceMailNumber(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.CALL_PRIVILEGED'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getCompleteVoiceMailNumber'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getVisualVoicemailPackageName()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getVisualVoicemailPackageName'}
+
+match0: android.Manifest.permission.SEND_SMS
+match1: void sendVisualVoicemailSmsForSubscriber(int subId, String number, int port,
+            String text, PendingIntent sentIntent)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.SEND_SMS'}, 'return_value': 'void', 'method_arg': '(int,String,int,String,PendingIntent)', 'method_name': 'sendVisualVoicemailSmsForSubscriber'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getVoiceActivationState(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '(int)', 'method_name': 'getVoiceActivationState'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getDataActivationState(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '(int)', 'method_name': 'getDataActivationState'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getVoiceMessageCount()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getVoiceMessageCount'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getVoiceMessageCount(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '(int)', 'method_name': 'getVoiceMessageCount'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getVoiceMailAlphaTag()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getVoiceMailAlphaTag'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getVoiceMailAlphaTag(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getVoiceMailAlphaTag'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getCdmaEriIconIndex()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getCdmaEriIconIndex'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getCdmaEriIconIndex(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '(int)', 'method_name': 'getCdmaEriIconIndex'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getCdmaEriIconMode()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '()', 'method_name': 'getCdmaEriIconMode'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: int getCdmaEriIconMode(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '(int)', 'method_name': 'getCdmaEriIconMode'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getCdmaEriText()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getCdmaEriText'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String getCdmaEriText(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getCdmaEriText'}
+
+match0: android.Manifest.permission.ACCESS_COARSE_LOCATION
+match1: List<CellInfo> getAllCellInfo()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.ACCESS_COARSE_LOCATION'}, 'return_value': 'List<CellInfo>', 'method_arg': '()', 'method_name': 'getAllCellInfo'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String[] getForbiddenPlmns()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String[]', 'method_arg': '()', 'method_name': 'getForbiddenPlmns'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: String[] getForbiddenPlmns(int subId, int appType)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'String[]', 'method_arg': '(int,int)', 'method_name': 'getForbiddenPlmns'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: String getCdmaMdn()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getCdmaMdn'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: String getCdmaMdn(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getCdmaMdn'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: String getCdmaMin()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '()', 'method_name': 'getCdmaMin'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: String getCdmaMin(int subId)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'String', 'method_arg': '(int)', 'method_name': 'getCdmaMin'}
+
+match0: android.Manifest.permission.CALL_PHONE
+match1: void call(String callingPackage, String number)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.CALL_PHONE'}, 'return_value': 'void', 'method_arg': '(String,String)', 'method_name': 'call'}
+
+match0: android.Manifest.permission.CALL_PHONE
+match1: boolean endCall()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.CALL_PHONE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'endCall'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: void answerRingingCall()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'answerRingingCall'}
+
+match0: anyOf = {
+            android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE,
+            android.Manifest.permission.READ_PHONE_STATE
+    }
+match1: boolean isOffhook()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PRIVILEGED_PHONE_STATE', 'android.permission.READ_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isOffhook'}
+
+match0: anyOf = {
+            android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE,
+            android.Manifest.permission.READ_PHONE_STATE
+    }
+match1: boolean isRinging()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PRIVILEGED_PHONE_STATE', 'android.permission.READ_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isRinging'}
+
+match0: anyOf = {
+            android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE,
+            android.Manifest.permission.READ_PHONE_STATE
+    }
+match1: boolean isIdle()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PRIVILEGED_PHONE_STATE', 'android.permission.READ_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isIdle'}
+
+match0: anyOf = {
+            android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE,
+            android.Manifest.permission.READ_PHONE_STATE
+    }
+match1: boolean isRadioOn()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PRIVILEGED_PHONE_STATE', 'android.permission.READ_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isRadioOn'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: boolean supplyPin(String pin)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '(String)', 'method_name': 'supplyPin'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: boolean supplyPuk(String puk, String pin)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '(String,String)', 'method_name': 'supplyPuk'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: int[] supplyPinReportResult(String pin)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'int[]', 'method_arg': '(String)', 'method_name': 'supplyPinReportResult'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: int[] supplyPukReportResult(String puk, String pin)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'int[]', 'method_arg': '(String,String)', 'method_name': 'supplyPukReportResult'}
+
+match0: android.Manifest.permission.CALL_PHONE
+match1: void sendUssdRequest(String ussdRequest,
+                                final UssdResponseCallback callback, Handler handler)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.CALL_PHONE'}, 'return_value': 'void', 'method_arg': '(String,UssdResponseCallback,Handler)', 'method_name': 'sendUssdRequest'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: boolean handlePinMmi(String dialString)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '(String)', 'method_name': 'handlePinMmi'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: boolean handlePinMmiForSubscriber(int subId, String dialString)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '(int,String)', 'method_name': 'handlePinMmiForSubscriber'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: void toggleRadioOnOff()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '()', 'method_name': 'toggleRadioOnOff'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: boolean setRadio(boolean turnOn)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '(boolean)', 'method_name': 'setRadio'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: boolean setRadioPower(boolean turnOn)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '(boolean)', 'method_name': 'setRadioPower'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: boolean enableDataConnectivity()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'enableDataConnectivity'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: boolean disableDataConnectivity()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'disableDataConnectivity'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: void setDataEnabled(boolean enable)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '(boolean)', 'method_name': 'setDataEnabled'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: void setDataEnabled(int subId, boolean enable)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '(int,boolean)', 'method_name': 'setDataEnabled'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: void enableVideoCalling(boolean enable)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'void', 'method_arg': '(boolean)', 'method_name': 'enableVideoCalling'}
+
+match0: anyOf = {
+            android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE,
+            android.Manifest.permission.READ_PHONE_STATE
+    }
+match1: boolean isVideoCallingEnabled()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PRIVILEGED_PHONE_STATE', 'android.permission.READ_PHONE_STATE'}, 'return_value': 'boolean', 'method_arg': '()', 'method_name': 'isVideoCallingEnabled'}
+
+match0: android.Manifest.permission.READ_PHONE_STATE
+match1: ServiceState getServiceState()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PHONE_STATE'}, 'return_value': 'ServiceState', 'method_arg': '()', 'method_name': 'getServiceState'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: List<TelephonyHistogram> getTelephonyHistograms()
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'List<TelephonyHistogram>', 'method_arg': '()', 'method_name': 'getTelephonyHistograms'}
+
+match0: android.Manifest.permission.MODIFY_PHONE_STATE
+match1: int setAllowedCarriers(int slotIndex, List<CarrierIdentifier> carriers)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.MODIFY_PHONE_STATE'}, 'return_value': 'int', 'method_arg': '(int,List<CarrierIdentifier>)', 'method_name': 'setAllowedCarriers'}
+
+match0: android.Manifest.permission.READ_PRIVILEGED_PHONE_STATE
+match1: List<CarrierIdentifier> getAllowedCarriers(int slotIndex)
+method_dic: {'file_path': 'android.telephony.TelephonyManager', 'permission': {'android.permission.READ_PRIVILEGED_PHONE_STATE'}, 'return_value': 'List<CarrierIdentifier>', 'method_arg': '(int)', 'method_name': 'getAllowedCarriers'}
+
+match0: CONFIGURE_DISPLAY_COLOR_MODE
+match1: void requestColorMode(int colorMode)
+method_dic: {'file_path': 'android.view.Display', 'permission': {'android.permission.CONFIGURE_DISPLAY_COLOR_MODE'}, 'return_value': 'void', 'method_arg': '(int)', 'method_name': 'requestColorMode'}
+
+match0: WRITE_SECURE_SETTINGS
+match1: boolean setCurrentInputMethodSubtype(InputMethodSubtype subtype)
+method_dic: {'file_path': 'android.view.inputmethod.InputMethodManager', 'permission': {'android.permission.WRITE_SECURE_SETTINGS'}, 'return_value': 'boolean', 'method_arg': '(InputMethodSubtype)', 'method_name': 'setCurrentInputMethodSubtype'}
+
+match0: Manifest.permission.MANAGE_USERS
+match1: boolean satisifesRequiredUserType(Tile suggestion)
+method_dic: {'file_path': 'com.android.settingslib.SuggestionParser', 'permission': {'android.permission.MANAGE_USERS'}, 'return_value': 'boolean', 'method_arg': '(Tile)', 'method_name': 'satisifesRequiredUserType'}
+
