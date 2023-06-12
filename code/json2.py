@@ -38,8 +38,6 @@ def link_permission(file_path):
 
         matches = re.findall(pattern, content, re.DOTALL) 
 
-        # 4. 存储格式化结果
-        method_dic = {}
 
         for match in matches:
             comment = match[0].strip().replace('*', '') # 去除首尾空格, 去除注释中的"*"
@@ -57,6 +55,8 @@ def link_permission(file_path):
                 # 1.处理permission
                 # 1.2.以集合形式存储permission
                 #permission_dic = set ()
+                # 4. 存储格式化结果
+                method_dic = {}
 
                 method_dic["permission"] = "android.permission." + re.search(r'android.Manifest.permission#(\w+)\s*', permission).group(1)
                 print("permission:",method_dic["permission"])
@@ -105,11 +105,11 @@ def link_permission(file_path):
 
 
                 #将permission和method_name保存到text.txt中
-                with open('link_json_2.txt', 'a') as file:
-                    file.write(f'Path: {file_path}\nMethod: {method_name}\nPermission: {permission}\nmethod_dic: {method_dic}\n\n') #NOTE: 用f-string格式化输出
+                # with open('link_json_3.txt', 'a') as file:
+                #     file.write(f'Path: {file_path}\nMethod: {method_name}\nPermission: {permission}\nmethod_dic: {method_dic}\n\n') #NOTE: 用f-string格式化输出
 
-                # with open('link_string_5.txt', 'a') as file:
-                #     file.write(f'{method_dic["file_path"]}.{method_dic["method_name"]}{method_dic["method_arg"]}{method_dic["return_value"]}  ::  {method_dic["permission"]}\n')
+                with open('link_string_6.txt', 'a') as file:
+                    file.write(f'{method_dic["file_path"]}.{method_dic["method_name"]}{method_dic["method_arg"]}{method_dic["return_value"]}  ::  {method_dic["permission"]}\n')
                 
 
 

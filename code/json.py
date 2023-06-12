@@ -16,7 +16,7 @@ def requires_permission(file_path):
         格式为{
                 method_name: 
                 {
-                    file_path:..., 
+                    'file_path':..., 
                     'permission':{...}, 
                     'return_value':..., 
                     'method_arg':...
