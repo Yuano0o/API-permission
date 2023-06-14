@@ -33,10 +33,7 @@ def requires_permission(file_path):
     with open(file_path, 'r') as file:
         content = file.read()
  
-        #pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@(?:[\w._={}]+)(?:\([\w._]+\))?\s*)*\s*(?:public\s+|private\s+|protected\s+|default\s+)*(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)*(?:@(?:[\w.]+)\s+)*([^;*=/]*?\(.*?\))' #OK
-        # DEBUG 29: 除去括号中的=
-        pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@(?:[\w._={}]+)(?:\([\w._]+\))?\s*)*\s*(?:public\s+|private\s+|protected\s+|default\s+)*(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)*(?:@(?:[\w.]+)\s+)*([^;*=/]*?\([^=]*?\))' 
-        
+        pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@(?:[\w._={}]+)(?:\([\w._]+\))?\s*)*\s*(?:public\s+|private\s+|protected\s+|default\s+)*(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)*(?:@(?:[\w.]+)\s+)*([^;*=/]*?\([^=]*?\))' #BUG
         # DONE: 删除@...
         # DONE: 匹配函数名 *? > [^;*=]*+
 
@@ -92,16 +89,21 @@ def requires_permission(file_path):
             method_arg_per = []
             args = re.search(r'\((.*)\)',method).group(1)
             if args:
-                print("args:", args,"\n")
+                print("args:",args,"\n")
                 for arg in args.split(","): 
                     print("arg:", arg,"\n")
 
                     # DONE: DEBUG 
                     # NOTE: 匹配前面可能的final和@.. (不计顺序)
-                    #find = re.search(r'(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s', arg).group(1)
-                    find = re.search(r'\s*(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s?', arg).group(1)  # DEBUG: 28 加上了<>
-                    print("find:",find,"\n")
-                    method_arg_per.append(find) 
+                    # BUG: done
+                    # find = re.search(r'\s?(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s?', arg)
+                    # if find:
+                    #     find = find.group(1) 
+
+                    #     print("find:",find,"\n")
+                    
+                    find = re.search(r'\s?(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s?', arg).group(1)
+                    method_arg_per.append(find)
 
                     
                 method_arg = "(" + ",".join(method_arg_per) + ")"
@@ -115,9 +117,8 @@ def requires_permission(file_path):
 
 
             # 3.3 method_name
-            #method_name = re.search(r'\s+(\w+)\(', method).group(1)
             print("method:", method, "\n")
-            method_name = re.search(r'\s?([\w.]+)\s*\(', method).group(1)   # DEBUG 28: 加上了\s*, 29: 加上了[.]
+            method_name = re.search(r'\s+([\w.]+)\s*\(', method).group(1) #BUG
             #print("method_name:", method_name, "\n")
             method_dic["method_name"] = method_name
 
@@ -218,6 +219,7 @@ def link_permission(file_path):
                 method_arg_per = []
                 args = re.search(r'\((.*)\)',method).group(1)
                 if args:
+                    print(args)
                     for arg in args.split(","): 
                         #print("arg:", arg,"\n")
 
@@ -306,16 +308,27 @@ def get_files(folder_path):
 
 
 
+file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-29-master/'
+
+with open('string_dict_29.txt', 'a') as file:
+
+    string_dict = get_files(file_path)
+
+    for key,value in string_dict.items():
+
+        file.write(f'{key} :: {value}\n')
+
+
  
 # 示例 
 # or folder_path = sys.argv[1]
 
-for api_level in range(26, 34):
-    file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-{level}-master/'.format(level=api_level) 
-    #file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/' 
+# for api_level in range(26, 33):
+#     file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-{level}-master/'.format(level=api_level) 
+#     #file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/' 
 
-    string_dict = get_files(file_path)
+#     string_dict = get_files(file_path)
 
-    with open('string_dict_{level}.txt'.format(level=api_level), 'a') as file:
-        for key,value in string_dict.items():
-            file.write(f'{key} :: {value}\n')
+#     with open('string_dict_{level}.txt'.format(level=api_level), 'a') as file:
+#         for key,value in string_dict.items():
+#             file.write(f'{key} :: {value}\n')
