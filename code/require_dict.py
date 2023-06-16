@@ -162,4 +162,4 @@ for api_level in range(26, 34):
 
     with open('string_dict_{level}.txt'.format(level=api_level), 'a') as file:
         for key,value in string_dict.items():
-            file.write(f'{key} :: {"".join(value)}\n')
+            file.write(f'{key} :: {",".join(value)}\n')

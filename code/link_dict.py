@@ -33,19 +33,37 @@ def link_permission(file_path):
         # NOTE: 匹配/** */ + 可能的注解@xxx()/@xxx + java修饰符若干(防止强制匹配) + 关建字若干/无 + 返回值,方法名,参数(并去除;*=的强制匹配)
 
         # NOTE link_test10_26 移除返回值类型的修饰 
-        pattern = r'/\*\*(.*?)\*/\s*(?:@(?:[\w.]+)(?:\([\w.={}]+\))?\s*)*(?:public\s+|private\s+|protected\s+|default\s+)*(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)*(?:@(?:[\w.]+)\s+)*([^;*=/]*?\(.*?\))' 
+        pattern = r'/\*\*(.*?)\*/\s*(?:@(?:[\w.]+)(?:\([\w.={}]+\))?\s*)*\s*(?:public\s+|private\s+|protected\s+|default\s+)(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)*(?:@(?:[\w.]+)\s+)*([^;*=/]*?\([^=]*?\))'
       
 
         matches = re.findall(pattern, content, re.DOTALL) 
 
+        # 4. 存储格式化结果
+        
+        string_dict = {}  # per file
 
         for match in matches:
-            comment = match[0].strip().replace('*', '') # 去除首尾空格, 去除注释中的"*"
-            permission_pattern = r'Requires\s+(?:the\s+)?Permission:\s*{@link\s+(.*?)}'
-            permission_match = re.search(permission_pattern, comment, re.IGNORECASE) # DONE: 忽略大小写
 
+            #print("match:", match, "\n")
+
+            comment = match[0].strip().replace('*', '') # 去除首尾空格, 去除注释中的"*"
+            
+            
+            #      NOTE: 匹配
+            #      * Requires Permission: {@link android.Manifest.permission#READ_PRECISE_PHONE_STATE
+            #      * READ_PRECISE_PHONE_STATE}
+            #      或
+            #      * Requires Permission: {@link android.Manifest.permission#READ_PRECISE_PHONE_STATE}
+            permission_pattern = r'{@link android.Manifest.permission#(\w+)(\s+|\})' 
+            permission_match = re.findall(permission_pattern, comment, re.IGNORECASE) # DONE: 忽略大小写
+           
             if permission_match:
-                permission = permission_match.group(1)
+                #print("permission_match:", permission_match, "\n")
+
+                permission = set()
+                for permissions in permission_match:
+                    permission.add("android.permission." + permissions[0])
+
                 method = match[1].replace("\n","")
                 #print("method:", method, "\n")
 
@@ -55,22 +73,23 @@ def link_permission(file_path):
                 # 1.处理permission
                 # 1.2.以集合形式存储permission
                 #permission_dic = set ()
-                # 4. 存储格式化结果
                 method_dic = {}
 
-                method_dic["permission"] = "android.permission." + re.search(r'android.Manifest.permission#(\w+)\s*', permission).group(1)
-                print("permission:",method_dic["permission"])
+                method_dic["permission"] = permission
+                #print("permission:",method_dic["permission"])
                 #permission_dic.add(permission_string)
 
                 method_dic["file_path"] = file_path[96:-5].replace("\\", ".") #分隔
-                print("file_path_:",method_dic["file_path"])
+                #print("file_path_:",method_dic["file_path"])
 
-                method_name = re.search(r'\s+(\w+)\(', method).group(1)
+                print("method:", method, "\n")
+                #print("match:", match, "\n")
+                method_name = re.search(r'\s?([\w.]+)\s*\(', method).group(1)
                 method_dic["method_name"] = method_name
  
                 # 3.1 return_value
 
-                print("method:", method)
+                #print("method:", method)
                 #print ("match:", match)
 
 
@@ -80,21 +99,21 @@ def link_permission(file_path):
                 args = re.search(r'\((.*)\)',method).group(1)
                 if args:
                     for arg in args.split(","): 
-                        print("arg:", arg,"\n")
+                        #print("arg:", arg,"\n")
 
                         # TODO: 在append这里 匹配import的键值对
                         # DONE: DEBUG 
                         #匹配前面可能的final和@..
                         #NOTE: link_string_2, 把?改成*, 结果与1一致, 再加上. 作为3, 一致
-                        find = re.search(r'(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s', arg).group(1) 
-                        print("find:",find,"\n")
+                        find = re.search(r'(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s?', arg).group(1) 
+                        #print("find:",find,"\n")
                         method_arg_per.append(find)
 
                         
                     method_arg = "(" + ",".join(method_arg_per) + ")"
                 else:
                     method_arg = "()"
-                print("method_arg:", method_arg)  
+                #print("method_arg:", method_arg)  
 
                 # 4.1b 把返回值和参数类型 存储到method_dic中
                 method_dic["method_arg"] = method_arg
@@ -102,16 +121,23 @@ def link_permission(file_path):
                 return_value = method.split(' ')[0] # OK
                 method_dic["return_value"] = return_value
 
-
-
-                #将permission和method_name保存到text.txt中
-                # with open('link_json_3.txt', 'a') as file:
-                #     file.write(f'Path: {file_path}\nMethod: {method_name}\nPermission: {permission}\nmethod_dic: {method_dic}\n\n') #NOTE: 用f-string格式化输出
-
-                with open('link_string_6.txt', 'a') as file:
-                    file.write(f'{method_dic["file_path"]}.{method_dic["method_name"]}{method_dic["method_arg"]}{method_dic["return_value"]}  ::  {method_dic["permission"]}\n')
+                # 5 写入最终的dict
                 
 
+                method_string = method_dic["file_path"] + "." + method_dic["method_name"] + method_dic["method_arg"] + method_dic["return_value"]
+                #print("method_string:", method_string)
+
+                string_dict[method_string] = method_dic["permission"]
+                #print("string_dict:", string_dict)
+
+                #将permission和method_name保存到text.txt中
+                # with open('link_json_2.txt', 'a') as file:
+                #     file.write(f'Path: {file_path}\nMethod: {method_name}\nPermission: {permission}\nmethod_dic: {method_dic}\n\n') #NOTE: 用f-string格式化输出
+
+                # with open('link_string_5.txt', 'a') as file:
+                #     file.write(f'{method_dic["file_path"]}.{method_dic["method_name"]}{method_dic["method_arg"]}{method_dic["return_value"]}  ::  {method_dic["permission"]}\n')
+                
+    return string_dict
 
 
 def get_files(folder_path):
@@ -120,41 +146,27 @@ def get_files(folder_path):
     DONE: 保存对应的文件路径
     """
     files = []
+    string_dict_2 = {}
     for root, dirs, files in os.walk(folder_path):
         for file in files:
             if file.endswith('.java'):
                 file_path = os.path.join(root, file)
-                #requires_permission(file_path)
-                link_permission(file_path) #NOTE check 6.4 in 
 
-    return 0 #files # 返回文件路径列表
+                link_dict = link_permission(file_path)
+                if link_dict:
+                        string_dict_2.update(link_dict)
 
-
+    return string_dict_2 
 
 # 示例 
 # or folder_path = sys.argv[1]
-file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/' #/android/service/oemlock/OemLockManager.java'
-print(get_files(file_path))
 
+for api_level in range(26, 34):
+    file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-{level}-master/'.format(level=api_level) 
+    #file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/' 
 
-# data = {}
-# json_data = json.dumps(data)
+    string_dict = get_files(file_path)
 
-# for api_level in range(26, 33):
-#     folder_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-{level}-master/'.format(level=api_level) 
-#     json_data["path"][api_level-26] = folder_path
-#     permissions = get_files(folder_path)
-    #save_to_file(permissions)
-
-
-# path_name = []
-# for api_level in range(26, 33):
-
-#     folder_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-{level}-master/'.format(level=api_level) 
-#     path_name.append(folder_path)
-
-
-#     #permissions = get_files(folder_path)
-#     #save_to_file(permissions)
-
-# print(path_name)
+    with open('string_dict_{level}.txt'.format(level=api_level), 'a') as file:
+        for key,value in string_dict.items():
+            file.write(f'{key} :: {",".join(value)}\n')
