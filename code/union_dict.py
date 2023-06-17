@@ -92,15 +92,13 @@ def requires_permission(file_path):
             method_arg_per = []
             args = re.search(r'\((.*)\)',method).group(1)
             if args:
-                print("args:", args,"\n")
                 for arg in args.split(","): 
-                    print("arg:", arg,"\n")
 
                     # DONE: DEBUG 
                     # NOTE: 匹配前面可能的final和@.. (不计顺序)
                     #find = re.search(r'(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s', arg).group(1)
                     find = re.search(r'\s*(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s?', arg).group(1)  # DEBUG: 28 加上了<>
-                    print("find:",find,"\n")
+
                     method_arg_per.append(find) 
 
                     
@@ -116,14 +114,9 @@ def requires_permission(file_path):
 
             # 3.3 method_name
             #method_name = re.search(r'\s+(\w+)\(', method).group(1)
-            print("method:", method, "\n")
             method_name = re.search(r'\s?([\w.]+)\s*\(', method).group(1)   # DEBUG 28: 加上了\s*, 29: 加上了[.]
             #print("method_name:", method_name, "\n")
             method_dic["method_name"] = method_name
-
-            # 4.2 存储为method_dic, 格式为{method_name: method_dic}
-            # method_dic[method_name] = method_dic 
-            #print(method_dic, "\n")
 
             # 5 写入最终的dict
             
@@ -131,19 +124,8 @@ def requires_permission(file_path):
             string_dict[method_string] = method_dic["permission"]
 
 
-
-            # 6. 保留测试结果
-            # NOTE: method_dic in require_json_4.txt. DONE: DEBUG 
-            # with open('require_json_6.txt', 'a') as file:
-            #     file.write(f'match0: {match[0]}\nmatch1: {match[1]}\nmethod_dic: {method_dic}\n\n')
-
-            # with open('require_string_2.txt', 'a') as file:
-            #     file.write(f'{method_dic["file_path"]}.{method_dic["method_name"]}{method_dic["method_arg"]}{method_dic["return_value"]}  ::  {",".join(method_dic["permission"])}\n')
-                
-
         #print("method_dic",method_dic,"\n")
     return string_dict 
-    
 
 
 def link_permission(file_path):
@@ -170,7 +152,7 @@ def link_permission(file_path):
         # NOTE: 匹配/** */ + 可能的注解@xxx()/@xxx + java修饰符若干(防止强制匹配) + 关建字若干/无 + 返回值,方法名,参数(并去除;*=的强制匹配)
 
         # NOTE link_test10_26 移除返回值类型的修饰 
-        pattern = r'/\*\*(.*?)\*/\s*(?:@(?:[\w.]+)(?:\([\w.={}]+\))?\s*)*(?:public\s+|private\s+|protected\s+|default\s+)*(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)*(?:@(?:[\w.]+)\s+)*([^;*=/]*?\(.*?\))' 
+        pattern = r'/\*\*(.*?)\*/\s*(?:@(?:[\w.]+)(?:\([\w.={}]+\))?\s*)*\s*(?:public\s+|private\s+|protected\s+|default\s+)(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)*(?:@(?:[\w.]+)\s+)*([^;*=/]*?\([^=]*?\))'
       
 
         matches = re.findall(pattern, content, re.DOTALL) 
@@ -180,12 +162,27 @@ def link_permission(file_path):
         string_dict = {}  # per file
 
         for match in matches:
-            comment = match[0].strip().replace('*', '') # 去除首尾空格, 去除注释中的"*"
-            permission_pattern = r'Requires\s+(?:the\s+)?Permission:\s*{@link\s+(.*?)}'
-            permission_match = re.search(permission_pattern, comment, re.IGNORECASE) # DONE: 忽略大小写
 
+            #print("match:", match, "\n")
+
+            comment = match[0].strip().replace('*', '') # 去除首尾空格, 去除注释中的"*"
+            
+            
+            #      NOTE: 匹配
+            #      * Requires Permission: {@link android.Manifest.permission#READ_PRECISE_PHONE_STATE
+            #      * READ_PRECISE_PHONE_STATE}
+            #      或
+            #      * Requires Permission: {@link android.Manifest.permission#READ_PRECISE_PHONE_STATE}
+            permission_pattern = r'{@link android.Manifest.permission#(\w+)(\s+|\})' 
+            permission_match = re.findall(permission_pattern, comment, re.IGNORECASE) # DONE: 忽略大小写
+           
             if permission_match:
-                permission = permission_match.group(1)
+                #print("permission_match:", permission_match, "\n")
+
+                permission = set()
+                for permissions in permission_match:
+                    permission.add("android.permission." + permissions[0])
+
                 method = match[1].replace("\n","")
                 #print("method:", method, "\n")
 
@@ -197,14 +194,16 @@ def link_permission(file_path):
                 #permission_dic = set ()
                 method_dic = {}
 
-                method_dic["permission"] = "android.permission." + re.search(r'android.Manifest.permission#(\w+)\s*', permission).group(1)
+                method_dic["permission"] = permission
                 #print("permission:",method_dic["permission"])
                 #permission_dic.add(permission_string)
 
                 method_dic["file_path"] = file_path[96:-5].replace("\\", ".") #分隔
                 #print("file_path_:",method_dic["file_path"])
 
-                method_name = re.search(r'\s+(\w+)\(', method).group(1)
+                print("method:", method, "\n")
+                #print("match:", match, "\n")
+                method_name = re.search(r'\s?([\w.]+)\s*\(', method).group(1)
                 method_dic["method_name"] = method_name
  
                 # 3.1 return_value
@@ -225,7 +224,7 @@ def link_permission(file_path):
                         # DONE: DEBUG 
                         #匹配前面可能的final和@..
                         #NOTE: link_string_2, 把?改成*, 结果与1一致, 再加上. 作为3, 一致
-                        find = re.search(r'(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s', arg).group(1) 
+                        find = re.search(r'(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s?', arg).group(1) 
                         #print("find:",find,"\n")
                         method_arg_per.append(find)
 
@@ -243,21 +242,15 @@ def link_permission(file_path):
 
                 # 5 写入最终的dict
                 
-
                 method_string = method_dic["file_path"] + "." + method_dic["method_name"] + method_dic["method_arg"] + method_dic["return_value"]
                 #print("method_string:", method_string)
 
                 string_dict[method_string] = method_dic["permission"]
                 #print("string_dict:", string_dict)
 
-                #将permission和method_name保存到text.txt中
-                # with open('link_json_2.txt', 'a') as file:
-                #     file.write(f'Path: {file_path}\nMethod: {method_name}\nPermission: {permission}\nmethod_dic: {method_dic}\n\n') #NOTE: 用f-string格式化输出
 
-                # with open('link_string_5.txt', 'a') as file:
-                #     file.write(f'{method_dic["file_path"]}.{method_dic["method_name"]}{method_dic["method_arg"]}{method_dic["return_value"]}  ::  {method_dic["permission"]}\n')
-                
     return string_dict
+
 
 
 def get_files(folder_path):
@@ -277,34 +270,26 @@ def get_files(folder_path):
                 if requires_dict:
                         string_dict_1.update(requires_dict)
 
-                # link_dict = link_permission(file_path)
-                # if link_dict:
-                #         string_dict_2.update(link_dict)
+                link_dict = link_permission(file_path)
+                if link_dict:
+                        string_dict_2.update(link_dict)
 
-
-    # DONE DEBUG: require结果缺失 只有61 (原本447)
-    # with open('mapping2_require_dict_2.txt', 'a') as file:
-    #     for key,value in string_dict_1.items():
-    #         file.write(f'{key} :: {value}\n') #NOTE: 用f-string格式化输出
-
-    """
-    print("string_dict_1:", string_dict_1, "\n\n")
-    print("len(string_dict_1):", len(string_dict_1), "\n\n")
-    print("string_dict_2:", string_dict_2, "\n\n")
-    print("len(string_dict_2):", len(string_dict_2), "\n\n")
+    # print("string_dict_1:", string_dict_1, "\n\n")
+    # print("len(string_dict_1):", len(string_dict_1), "\n\n")
+    # print("string_dict_2:", string_dict_2, "\n\n")
+    # print("len(string_dict_2):", len(string_dict_2), "\n\n")
 
     # 用@link的结果 与 requires的结果合并
     for key,value in string_dict_2.items():
         if key in string_dict_1:
-            string_dict_1[key].add(value)
+            string_dict_1[key] = string_dict_1[key].union(value)
+        else:
+            string_dict_1[key] = value
     
-    print("string_dict_1:", string_dict_1)
-    print("len(string_dict_1):", len(string_dict_1))
-    """
+    # print("string_dict_1:", string_dict_1)
+    # print("len(string_dict_1):", len(string_dict_1))
 
     return string_dict_1 
-
-
 
  
 # 示例 
@@ -318,4 +303,5 @@ for api_level in range(26, 34):
 
     with open('string_dict_{level}.txt'.format(level=api_level), 'a') as file:
         for key,value in string_dict.items():
-            file.write(f'{key} :: {value}\n')
+            permission = ",".join(value)
+            file.write(f'{key} :: {permission}\n')
