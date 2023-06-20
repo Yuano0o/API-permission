@@ -2,6 +2,24 @@ import os
 import re
 
 
+def match_import(code):
+    """
+    DNOE 1.2: 匹配import 存储为键值表
+    TODO: 存储 {"String":"java.lang.String"}
+    """
+    pattern = r'import\s+(\S+)\s*;' #\S+表示匹配任意非空白字符
+    matches = re.findall(pattern, code)
+
+    paths = {}
+
+    for match in matches:
+        element = match.split('.')[-1]
+         # 取最后一个元素
+        paths[element] = match
+
+    return paths
+
+
 '''
 string_dict = {
 
@@ -88,6 +106,9 @@ def requires_permission(file_path):
 
 
             # 3.2 method_args 
+            #add: 匹配import
+            import_dict = match_import(content)
+
             method_arg = ""
             method_arg_per = []
             args = re.search(r'\((.*)\)',method).group(1)
@@ -98,6 +119,17 @@ def requires_permission(file_path):
                     # NOTE: 匹配前面可能的final和@.. (不计顺序)
                     #find = re.search(r'(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s', arg).group(1)
                     find = re.search(r'\s*(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s?', arg).group(1)  # DEBUG: 28 加上了<>
+
+                    #if "String" in find: #单独处理: 将string替换为java.lang.String
+                    if find in import_dict: #如果是import的类, 则替换
+                        find = import_dict[find]
+
+                    
+                    match_array = re.search(r'(.*)?\[\]', find) #匹配数组
+                    if match_array:
+                        find = "[" + match_array.group(1)
+
+                    find = find.replace("String", "java.lang.String")
 
                     method_arg_per.append(find) 
 
@@ -201,7 +233,7 @@ def link_permission(file_path):
                 method_dic["file_path"] = file_path[96:-5].replace("\\", ".") #分隔
                 #print("file_path_:",method_dic["file_path"])
 
-                print("method:", method, "\n")
+                #print("method:", method, "\n")
                 #print("match:", match, "\n")
                 method_name = re.search(r'\s?([\w.]+)\s*\(', method).group(1)
                 method_dic["method_name"] = method_name
@@ -213,6 +245,9 @@ def link_permission(file_path):
 
 
                 # 3.2 method_args 
+                #add: 匹配import
+                import_dict = match_import(content)
+                
                 method_arg = ""
                 method_arg_per = []
                 args = re.search(r'\((.*)\)',method).group(1)
@@ -226,6 +261,17 @@ def link_permission(file_path):
                         #NOTE: link_string_2, 把?改成*, 结果与1一致, 再加上. 作为3, 一致
                         find = re.search(r'(?:(?:final\s*)|(?:@(?:[\w.]+)\s+))*([\w.<>\[\]]+)\s?', arg).group(1) 
                         #print("find:",find,"\n")
+
+
+                        if find in import_dict: #如果是import的类, 则替换
+                            find = import_dict[find]
+                        
+                        match_array = re.search(r'(.*)?\[\]', find) #匹配数组
+                        if match_array:
+                            find = "[" + match_array.group(1)
+                        
+                        find = find.replace("String", "java.lang.String") #单独处理String
+    
                         method_arg_per.append(find)
 
                         
@@ -295,7 +341,7 @@ def get_files(folder_path):
 # 示例 
 # or folder_path = sys.argv[1]
 
-for api_level in range(26, 34):
+for api_level in range(26, 27):
     file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-{level}-master/'.format(level=api_level) 
     #file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/' 
 

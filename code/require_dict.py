@@ -66,7 +66,8 @@ def requires_permission(file_path):
             # 1.2.以集合形式存储permission
             permission_dic = set ()
             for permission in permission_string.split(","):  #match[0]是permission
-                permission_dic.add("android.permission." + permission.split(".")[-1])
+                if ("conditional" not in permission):
+                    permission_dic.add("android.permission." + permission.split(".")[-1])
 
 
             # 2.处理file_path
