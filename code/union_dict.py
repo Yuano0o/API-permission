@@ -341,7 +341,7 @@ def get_files(folder_path):
 # 示例 
 # or folder_path = sys.argv[1]
 
-for api_level in range(26, 27):
+for api_level in range(27, 34):
     file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-{level}-master/'.format(level=api_level) 
     #file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/' 
 
