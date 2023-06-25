@@ -53,8 +53,8 @@ def requires_permission(file_path):
  
         #pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@(?:[\w._={}]+)(?:\([\w._]+\))?\s*)*\s*(?:public\s+|private\s+|protected\s+|default\s+)*(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)*(?:@(?:[\w.]+)\s+)*([^;*=/]*?\(.*?\))' #OK
         # DEBUG 29: 除去括号中的=
-        pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@(?:[\w._={}]+)(?:\([\w._]+\))?\s*)*\s*(?:public\s+|private\s+|protected\s+|default\s+)*(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)*(?:@(?:[\w.]+)\s+)*([^;*=/]*?\([^=]*?\))' 
-        
+        pattern = r'@RequiresPermission\(([^*]*?)\)\s*(?:@(?:[\w._={}]+)(?:\([\w._]+\))?\s*)*(?:\/\/.*?\s*)?(?:public\s+|private\s+|protected\s+|default\s+)*(?:abstract\s+|static\s+|final\s+|synchronized\s+|native\s+|transient\s+)*(?:@(?:[\w.]+)\s+)*([^;*=/]*?\([^=]*?\))' 
+         
         # DONE: 删除@...
         # DONE: 匹配函数名 *? > [^;*=]*+
 
@@ -82,7 +82,8 @@ def requires_permission(file_path):
             # 1.2.以集合形式存储permission
             permission_dic = set ()
             for permission in permission_string.split(","):  #match[0]是permission
-                permission_dic.add("android.permission." + permission.split(".")[-1])
+                if "conditional" not in permission: #NOTE: 去除强制匹配
+                    permission_dic.add("android.permission." + permission.split(".")[-1])
 
 
             # 2.处理file_path
@@ -113,6 +114,7 @@ def requires_permission(file_path):
             method_arg_per = []
             args = re.search(r'\((.*)\)',method).group(1)
             if args:
+                #print ("args:", args)
                 for arg in args.split(","): 
 
                     # DONE: DEBUG 
@@ -341,7 +343,7 @@ def get_files(folder_path):
 # 示例 
 # or folder_path = sys.argv[1]
 
-for api_level in range(27, 34):
+for api_level in range(26, 34):
     file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-{level}-master/'.format(level=api_level) 
     #file_path = 'D:/CLASS/1 Now/texwork/shared/permission/sdk_source/android-sdk-sources-for-api-level-26-master/' 
 
